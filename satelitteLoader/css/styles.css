@@ -40,3 +40,25 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
+
+.svg-wrapper {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+.svg-wrapper svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.svg-wrapper .moon-satelite {
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 0.8, 0.5, 0.2);
+          animation-timing-function: cubic-bezier(0.5, 0.8, 0.5, 0.2);
+}
