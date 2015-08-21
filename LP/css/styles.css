@@ -38,9 +38,7 @@
 }
 
 @font-face {
-	font-family: icomoon;
-	src: url("../fonts/icomoon.eot");
-	src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svgicomoon") format("svg");
+	font-family: 'PT Sans', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -63,7 +61,7 @@
 
 [class^="ico-"]:before,
 [class*=" ico-"]:before {
-	font-family: "icomoon";
+    font-family: 'PT Sans', sans-serif;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
