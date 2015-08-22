@@ -1,5 +1,4 @@
         /*Your Custom Javascript file goes here.*/
-
 var Glitcher = (function () {
     function Glitcher(options) {
         this.canvas = document.createElement('canvas');

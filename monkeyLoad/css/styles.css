@@ -1,12 +1,11 @@
     /*Your Custom Style sheet goes here*/
 
-$color1: #1F3944;
 
 * {
     margin:0; padding:0;
 }
 body {
-    background : $color1;
+    background : #1F3944;
     font-size: 20px;
     font-weight: 300;
 }
