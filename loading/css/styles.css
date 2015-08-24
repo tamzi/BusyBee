@@ -184,7 +184,7 @@ input::selection
   color page-background-color
   background-color lighten(lightblue, 30%)
 
-+placeholder()
+.placeholder()
   color lighten(rgb(50, 118, 237), 35%)
   text-glow 3px lighten(rgb(50, 118, 237), 35%)
 
