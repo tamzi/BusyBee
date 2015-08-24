@@ -1,2 +1,222 @@
     /*Your Custom Style sheet goes here*/
-font-family: 'Lato', sans-serif;
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'avenir next', avenir, helvetica, 'helvetica neue','Lato', sans-serif, arial, sans-serif;;
+  color: black;
+  background-color: black;
+  background-image: radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+.page-wrap {
+  height: 1250px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.footer,
+.page-wrap:after {
+  height: -125px;
+}
+
+h1 {
+  font-size: 250%
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 15px 25vh 2px;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+
+.headshot {
+  width: 220px;
+  padding: .5em;
+  margin-bottom: -3em;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .4);
+  box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content {
+  width: 80vw;
+  max-width: 45em;
+  padding: 1.5em 2em;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, .75);
+  box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+}
+
+.slide,
+.slide:before {
+  background: 50% 50% / cover;
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#slide1:before {
+  background: linear-gradient(rgba(0, 116, 217, .75), rgba(222, 68, 21, .85)), url(//lh3.googleusercontent.com/rkgDPrYb0P2lf6RGHNIDfdy69s2yI15y-nLZFJWCQZuM=w1219-h914-no) center/cover;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+
+#slide2 {
+  background-color: black;
+  background-image: radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+#slide3:before {
+  background: url(//lh3.googleusercontent.com/DvtKuq7I2VfPS-bTXNM3KY5eEvsm5SbjvTszJR0lWs9u=w1377-h914-no) center/cover;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+
+#footer {
+  height: 125px;
+  margin-top: 45vh;
+}
+
+#footer div {
+  width: 100vw;
+}
+
+#footer img {
+  max-width: 95vw;
+  max-height: 125px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App images */
+.app-block {
+  flex-flow: row wrap;
+}
+
+.app {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  max-width: 85vw;
+  margin: 1em;
+  box-shadow: .3em .3em .3em rgba(0, 0, 0, .4);
+}
+
+/* Icon Styles*/
+i {
+  display: inline;
+}
+
+.fa {
+  font-size: calc(1em + 4vw);
+  padding: .15em .2em;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .4);
+  margin: 0 .25em;
+  box-shadow: .1em .1em .1em rgba(0, 0, 0, .4);
+  transition: all .5s ease;
+}
+
+.fa-twitter {
+  color: #4099FF;
+  transition: all .5s ease;
+}
+
+.fa-twitter:hover {
+  color: white;
+  background: #4099FF;
+  transition: all .5s ease;
+}
+
+.fa-github {
+  color: #333;
+}
+
+.fa-github:hover {
+  color: white;
+  background: #333;
+  transition: all .5s ease;
+}
+
+.fa-dribbble {
+  color: #ea4c89;
+}
+
+.fa-dribbble:hover {
+  color: white;
+  background: #ea4c89;
+  transition: all .5s ease;
+}
+
+.fa-codepen {
+  color: black;
+}
+
+.fa-codepen:hover {
+  color: white;
+  background: black;
+  transition: all .5s ease;
+}
+
+.fa-stack-overflow {
+  color: #fe7a15;
+}
+
+.fa-stack-overflow:hover {
+  color: white;
+  background: #fe7a15;
+  transition: all .5s ease;
+}
+
+.devicons {
+  font-size: 5em;
+}
+
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
