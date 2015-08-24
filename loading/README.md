@@ -1,6 +1,3 @@
-# {Project Title gos here}
-This project.....
+# Loading
 
-
-Add your readMe here. Its attached to all the projects.
-Explain what your project does etc
+A cool animated Loading bar that can be use in your project especially as an under construction page.
