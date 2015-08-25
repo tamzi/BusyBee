@@ -1,6 +1,2 @@
-# {Project Title gos here}
-This project.....
-
-
-Add your readMe here. Its attached to all the projects.
-Explain what your project does etc
+## Loading Bar
+A cool loading bar inspired from the war games
