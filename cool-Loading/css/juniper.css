@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Purista';
+    src: url('PuristaMedium.eot');
+    src: url('PuristaMedium.eot?#iefix') format('embedded-opentype'),
+         url('PuristaMedium.woff') format('woff'),
+         url('PuristaMedium.ttf') format('truetype'),
+         url('PuristaMedium.svg#puristaregular') format('svg'),
+         local('â˜º');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Purista';
+    src: url('PuristaSemibold.eot');
+    src: url('PuristaSemibold.eot?#iefix') format('embedded-opentype'),
+         url('PuristaSemibold.woff') format('woff'),
+         url('PuristaSemibold.ttf') format('truetype'),
+         url('PuristaSemibold.svg#puristasemiboldregular') format('svg'),
+         local('â˜º');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Purista';
+    src: url('PuristaBold.eot');
+    src: url('PuristaBold.eot?#iefix') format('embedded-opentype'),
+         url('PuristaBold.woff') format('woff'),
+         url('PuristaBold.ttf') format('truetype'),
+         url('PuristaBold.svg#puristaboldregular') format('svg'),
+         local('â˜º');
+    font-weight: 700;
+    font-style: normal;
+}
