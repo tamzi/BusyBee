@@ -1,2 +1,100 @@
     /*Your Custom Style sheet goes here*/
 font-family: 'Lato', sans-serif;
+
+@import url("http://fonts.googleapis.com/css?family=Holtwood+One+SC|Source+Code+Pro|Abel");
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Abel", Courier, monospace;
+    text-transform: uppercase;
+    color: #fa4b23;
+    background: #222;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-family: "Holtwood One SC", Arial, sans-serif;
+    font-size: 5em;
+    line-height: 1em;
+}
+
+h1 {
+    color: #a1400b;
+}
+
+h3 {
+    font-family: "Source Code Pro", Courier, monospace;
+    font-size: 2em;
+}
+
+.line {
+    display: block;
+    overflow-y: hidden;
+    height: 90px;
+    color: #fff;
+}
+
+.line.bottom {
+    line-height: 1.7em;
+    border-bottom: 3px solid white;
+}
+
+.line.top {
+    line-height: .4em;
+    border-top: 3px solid white;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.slogan {
+    font-size: 3em;
+    font-family: "Abel", Arial, sans-serif;
+}
+
+.slogan .fa {
+    padding: 0 .5em;
+    font-size: .75em;
+}
+
+.glitch {
+    animation: glitch 1s infinite linear;
+    animation-delay: 5s;
+}
+
+.social-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-top: 3em;
+}
+
+.social-buttons .icon-wrap {
+    padding: 0 1em;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fa4b23;
+}
+
