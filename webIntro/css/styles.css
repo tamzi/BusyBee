@@ -35,3 +35,64 @@ body {
   transition: 20s linear;
 }
 
+.passbook {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 50vh;
+  margin-top: -100px;
+  left: 50vw;
+  margin-left: -150px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  /* Chrome and Safari */
+
+  -moz-backface-visibility: hidden;
+  /* Firefox */
+
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 1;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.back h1 {
+  width: 300px;
+  height: 900px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-family: futura;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+.back img {
+  width: 100%;
+  margin-top: 50px;
+  -webkit-filter: drop-shadow(2px 50px 7px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(2px 5px 7px rgba(0, 0, 0, 0.3));
+}
+
+.back {
+  -webkit-transition: 4s ease-out;
+  -moz-transition: 4s ease-out;
+  transition: 4s ease-out;
+}
