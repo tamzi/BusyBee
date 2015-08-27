@@ -26,3 +26,32 @@ $c.each(function(i){
 		boxShadow: "0 0 "+size+"px " + color
 	})
 
+TweenMax.fromTo(c, 3, {
+			opacity: 0,
+			x: x,
+			y: y,
+			z: z
+		}, {
+			opacity: 1,
+			z: 500,
+			repeat: -1,
+			delay: i * -.015
+	});
+
+});
+
+function touches(e){
+	var x = e.touches ? e.touches[0].clientX : e.clientX,
+			y = e.touches ? e.touches[0].clientY : e.clientY;
+
+	TweenMax.to($wrap, 1, {
+		webkitPerspectiveOrigin: x + "px " + y +"px",
+		perspectiveOrigin: x + "px " + y +"px"
+	});
+
+}
+
+window.addEventListener("mousemove", touches);
+window.addEventListener("touchstart", touches);
+window.addEventListener("touchmove", touches);
+
