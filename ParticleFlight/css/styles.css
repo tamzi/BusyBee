@@ -1,2 +1,23 @@
     /*Your Custom Style sheet goes here*/
+
+
 font-family: 'Lato', sans-serif;
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: black;
+	overflow: hidden;
+}
+
+.wrap {
+	height: 100%;
+	perspective: 200px;
+	transform-style: preserve-3d;
+}
+
+.c {
+	position: absolute;
+}
