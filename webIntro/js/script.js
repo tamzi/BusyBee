@@ -3,7 +3,7 @@ window.onload = function() {
 
   setTimeout(function() {
   $(".typed-text").typed({
-    strings: ["Ballooning Classes", "Flying", "Rooftops","Savannah trips","Balloon Mornings","Cartification of Safety","Ballooning Engineering"],
+    strings: ["Law Outlines", "Casebriefs", "Quizzes","Legal Database","LegalPad","Essay Exams","Progress Statistics"],
     typeSpeed: 100,
     backDelay: 500,
     showCursor: false
