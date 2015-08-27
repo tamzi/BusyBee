@@ -98,3 +98,92 @@ a:hover {
     color: #fa4b23;
 }
 
+/* OWL MASCOT */
+
+.owl {
+    font-family: "Source Code Pro", Courier, monospace;
+    font-size: 3em;
+    color: #444;
+}
+
+.owl span {
+	display: inline-block;
+	transform: rotate(0deg) translateX(0) translateY(0) scale(1);
+    animation-delay: 5s;
+}
+
+.head { animation: 5s infinite rotate ease-in-out; }
+.brows { animation: 5s infinite downup ease-in-out; }
+.eye-left { animation: 5s infinite blink1 ease-in-out; }
+.eye-right { animation: 5s infinite blink2 ease-in-out; }
+.brow-left { animation: 5s infinite rotate-evil1 ease-in-out; }
+.brow-right { animation: 5s infinite rotate-evil2 ease-in-out; }
+.wing-left { animation: 5s infinite leftright ease-in-out; }
+.wing-right { animation: 5s infinite leftright ease-in-out; }
+.belly { animation: 5s infinite leftright2 ease-in-out; }
+.back { animation: 5s infinite leftright2 ease-in-out; }
+.foot-right { animation: 7s infinite updown ease-in-out; }
+.stick { animation: 5s infinite rightleft ease-in-out; }
+
+/* OWL MASCOT ANIMATION */
+
+@keyframes updown {
+	10% { transform: translateY(-5px); }
+	50% { transform: translateY(-5px); }
+	70% { transform: translateY(0); }
+}
+
+@keyframes downup {
+	10% { transform: translateY(10px); }
+	50% { transform: translateY(10px); }
+	70% { transform: translateY(0); }
+}
+
+@keyframes rotate {
+	10% { transform: rotate(10deg); }
+	50% { transform: rotate(10deg); }
+	70% { transform: rotate(0deg);	}
+}
+
+@keyframes rotate-evil1 {
+	10% { transform: rotate(25deg); }
+	50% { transform: rotate(25deg); }
+	70% { transform: rotate(0deg);	}
+}
+
+@keyframes rotate-evil2 {
+	10% { transform: rotate(-35deg); }
+	50% { transform: rotate(-35deg); }
+	70% { transform: rotate(0deg);	}
+}
+
+@keyframes leftright {
+	10% { transform: translateX(-10px); }
+	50% { transform: translateX(-10px); }
+	70% { transform: translateX(0); }
+}
+
+@keyframes leftright2 {
+	10% { transform: translateX(-5px); }
+	50% { transform: translateX(-5px); }
+	70% { transform: translateX(0); }
+}
+
+@keyframes rightleft {
+	10% { transform: translateX(2px); }
+	50% { transform: translateX(2px); }
+	70% { transform: translateX(0); }
+}
+
+@keyframes blink1 {
+	10% { transform: scale(1.2); }
+	50% { transform: scale(1.2); }
+	70% { transform: scale(1); }
+}
+
+@keyframes blink2 {
+	10% { transform: scale(.9); }
+	50% { transform: scale(.9); }
+	70% { transform: scale(1); }
+}
+
