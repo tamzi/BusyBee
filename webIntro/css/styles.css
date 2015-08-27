@@ -96,3 +96,40 @@ body {
   -moz-transition: 4s ease-out;
   transition: 4s ease-out;
 }
+
+.zoom .back {
+  -webkit-filter: blur(40px);
+  -moz-filter: blur(40px);
+  filter: blur(40px);
+  opacity: 0;
+}
+
+.web-address {
+  width: 300px;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  margin-left: -150px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 100;
+  text-shadow: 2px 50px 7px rgba(0, 0, 0, 0.2);
+  -webkit-filter: blur(40px);
+  -moz-filter: blur(40px);
+  filter: blur(40px);
+  opacity: 0;
+  -webkit-transition: 4s 4s ease-out;
+  -moz-transition: 4s 4s ease-out;
+  transition: 4s 4s ease-out;
+}
+
+.web-address a {
+  color: #fff;
+  text-decoration: none;
+}
+
