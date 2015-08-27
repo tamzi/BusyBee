@@ -1,2 +1,37 @@
     /*Your Custom Style sheet goes here*/
 font-family: 'Lato', sans-serif;
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 0;
+  position: fixed;
+  display: block;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e04e39+0,a32a2a+100 */
+
+  background: #2196F3;
+  /* Old browsers */
+
+
+  background: -webkit-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* W3C */
+
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e04e39', endColorstr='#a32a2a', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+  -webkit-transition: 20s linear;
+  -moz-transition: 20s linear;
+  transition: 20s linear;
+}
+
