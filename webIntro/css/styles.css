@@ -152,5 +152,45 @@ body {
   filter: drop-shadow(2px 5px 7px rgba(0, 0, 0, 0.3));
 }
 
+.typed-text {
+  font-size: 12px;
+  color: #333;
+  font-family: helvetica;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 70%;
+}
+
+.typed-text-button {
+  height: 21px;
+  background-color: #3e464f;
+  font-family: helvetica;
+  position: absolute;
+  color: #2196F3;
+  top: 0px;
+  right: 66px;
+  width: 50px;
+  text-align: center;
+  transition: all 0.05s ease;
+}
+
+.typed-cursor {
+  display: none;
+}
+
+.typed-text-button p {
+  font-size: 10px;
+  font-family: helvetica;
+  margin: 0px;
+  padding: 3px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.typed-text-button.down {
+  background-color: #2a3138;
+  color: #fff;
+}
 
 
