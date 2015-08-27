@@ -67,3 +67,12 @@ window.onload = function() {
 
   }
 
+  function frameOne() {
+    path.animate({
+      d: "M56.5,21.7L56.5,21.7L56.5,21.7L56.5,21.7L56.5,21.7L56.5,21.7L56.5,21.7L56.5,21.7l1.4,21l0,0l0,0L0,46.7l0,0l0,0L12.9,2.8L55.1,0l0,0l0,0l0.1,0.1L55.1,0l0,0L56.5,21.7L56.5,21.7L56.5,21.7z"
+    }, durLong, animType, function() {
+      setTimeout(frameTwo, timeOutDelayLong);
+    });
+
+  }
+
