@@ -37,3 +37,15 @@ table
     border-collapse:collapse;
     border-spacing:0
 }
+.c-icon
+{
+    background:url(/assets/favicons-3c3dccdce472ec54b7488cc9fa2ef1c6.png) no-repeat;
+    width:16px;height:16px
+}
+.c-2
+{
+    background-position-x:-16px
+}
+.c-3
+{
+    background-position-x:0px}.c-4{background-position-x:-32px}.c-5{background-position-x:-48px}.c-6{background-position-x:0px}.c-7{background-position-x:0px}.c-8{background-position-x:0px}.c-9{background-position-x:-64px}.c-10{background-position-x:-80px}.c-11{background-position-x:-96px}.c-12{background-position-x:-112px}.c-13{background-position-x:-128px}.c-14{background-position-x:-144px}.c-15{background-position-x:0px}.c-16{background-position-x:0px}.c-17{background-position-x:0px}.c-18{background-position-x:-160px}.c-19{background-position-x:-176px}.c-20{background-position-x:-192px}.c-21{background-position-x:-208px}.c-22{background-position-x:-224px}.c-23{background-position-x:-240px}.c-24{background-position-x:-256px}.c-25{background-position-x:-272px}.c-26{background-position-x:-288px}.c-27{background-position-x:0px}.c-28{background-position-x:0px}.c-29{background-position-x:-304px}.c-30{background-position-x:0px}.c-31{background-position-x:0px}.c-32{background-position-x:-320px}.c-33{background-position-x:0px}.c-34{background-position-x:-336px}.c-35{background-position-x:-352px}.c-36{background-position-x:0px}
