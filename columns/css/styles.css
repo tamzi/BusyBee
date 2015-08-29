@@ -1,2 +1,188 @@
-    /*Your Custom Style sheet goes here*/
+                /*Your Custom Style sheet goes here*/
 font-family: 'Lato', sans-serif;
+
+                /*From: adobe.v404.cn*/
+body{
+  font-size:12px;
+  color:#454545;
+  background:#000;
+}
+html{
+  scrollbar-face-color:#eaeaea;
+  scrollbar-highlight-color: #ffffff;
+  scrollbar-shadow-color:#999999;
+  scrollbar-3dlight-color:#999999;
+  scrollbar-arrow-color:#999999;
+  scrollbar-darkshadow-color:#ffffff;
+}
+::-webkit-scrollbar{
+  width:12px;
+  height:12px;
+}
+::-webkit-scrollbar-button:vertical{
+  display:none;
+}
+::-webkit-scrollbar-track:vertical{
+  background-color:black;
+}
+::-webkit-scrollbar-track-piece{
+  background:#F0F0F0;
+}
+::-webkit-scrollbar-thumb:vertical{
+  background-color:#8E8E8E;
+  border-radius:0px;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+  background-color:#3B3B3B;
+}
+::-webkit-scrollbar-corner:vertical{
+  background-color:#535353;
+}
+::-webkit-scrollbar-resizer:vertical{
+  background-color:#FF6E00;
+}
+
+.main{
+  min-height: 340px;
+  min-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+//.color_10{background: #000;}
+
+/*动画*/
+@keyframes entrance{
+    0%{
+        top:10%;
+        opacity:0.1
+    }
+     100%{
+         top:50%;
+         opacity:1
+     }
+ }
+
+/*每列*/
+.list_1{
+  overflow:hidden;
+}
+
+/*颜色*/
+.ico,
+.ico1{
+  top:50%;
+  position:relative;
+  margin-top:-140px;
+  left:50%;
+  margin-left:-110px;
+  width:220px;
+  height:220px;
+  overflow:hidden;
+}
+.ico{
+  .front & {  background:url(http://www.w3cplus.com/sites/default/files/blogs/2015/1508/Ico_01.png) no-repeat 0 0;
+    }
+  .back &{
+    background:url(http://www.w3cplus.com/sites/default/files/blogs/2015/1508/Ico_02.png) no-repeat 0 0;
+  }
+}
+
+.text{
+  top:50%;
+  position:relative;
+  clear:both;
+  margin-top:-40px;
+  height:40px;
+  text-align:center;
+  line-height:40px;
+  overflow:hidden;
+  width:100%;
+  color:#FFF;
+  font-size:16px;
+}
+.an{
+  top:50%;
+  position:relative;
+  width:140px;
+  height:40px;
+  line-height:40px;
+  overflow:hidden;
+  display:block;
+  text-align:center;
+  font-size:14px;
+  background:#40c666;
+  color:#FFF;
+  text-decoration:none;
+  border-radius:3px;
+  margin-top:10px;
+  margin-left:auto;
+  margin-right:auto;
+  transition:color .2s linear,background-color 0.2s linear;
+
+  &:hover {
+    text-decoration:underline;
+    background:#000;
+    text-decoration:none;
+    transition:color .2s linear,background-color 0.2s linear;
+  }
+}
+
+
+//color list
+$color-list-front: #358fc9 #40c666 #dec345 #ee9833 #db593b #c04067 #a569d7 #6156c3;
+$color-list-back: #2271b6 #2ab248 #d2ae2e #e87a21 #ce3d26 #aa2a49 #894ac8 #443bae;
+
+
+
+/*动画*/
+.rotateBox{
+  overflow:hidden;
+  height: 500px;
+  float: left;
+  position: relative;
+  perspective:600px;
+
+  @for $i from 1 through length($color-list-front){
+    &:nth-child(#{$i}) .front{
+      background: nth($color-list-front, $i);
+      .ico{
+        background-position: -($i - 1) * 240px 0;
+      }
+    }
+  }
+  @for $i from 1 through length($color-list-back){
+    &:nth-child(#{$i}) .back{
+      background: nth($color-list-back, $i);
+      .ico {
+        background-position: -($i - 1) * 240px 0;
+      }
+    }
+  }
+  &:hover .transBox{
+    transform: rotateY(-90deg);
+  }
+}
+.transBox{
+  transform-style: preserve-3d;
+  position:absolute;
+  top: 0;
+  left: 0;
+  transition:.5s;
+
+  .list_1{
+    position: absolute;
+    height: 500px;
+  }
+  .front{
+    left: 0;
+    top:0;
+  }
+  .back{
+    left: 200px;
+    top:0;
+    transform-origin: left;
+    transform: rotateY(90deg);
+    position: absolute
+  }
+}
