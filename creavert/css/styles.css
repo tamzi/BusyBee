@@ -1,2 +1,27 @@
     /*Your Custom Style sheet goes here*/
 font-family: 'Lato', sans-serif;
+
+$blue:#03A9F4;
+
+@mixin transition($in) {
+	transition:$in;
+	-webkit-transition:$in;
+	-moz-transition:$in;
+	-o-transition:$in;
+	-ms-transition:$in;
+}
+@mixin transform($in) {
+	transform:$in;
+	-webkit-transform:$in;
+	-moz-transform:$in;
+	-o-transform:$in;
+	-ms-transform:$in;
+}
+@mixin box-shadow($in) {
+	box-shadow:$in;
+	-webkit-box-shadow:$in;
+	-moz-box-shadow:$in;
+	-o-box-shadow:$in;
+	-ms-box-shadow:$in;
+}
+
