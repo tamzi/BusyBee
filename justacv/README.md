@@ -1,6 +1,3 @@
-# {Project Title gos here}
-This project.....
-
-
-Add your readMe here. Its attached to all the projects.
-Explain what your project does etc
+# Columns
+the Rotating columns project:
+Can be used as a cool about the team page
