@@ -47,4 +47,43 @@ $(function(){
     WidthHeightInit();
 
 
+    $(window).resize(function(){
+        WidthHeightInit();
+    });
+
+
+    var oTimer = null, i=0;
+    if(oTimer){return};
+    oTimer = setInterval(function(){
+        $('.ico').eq(i).addClass('icon_entrance');
+        i++;
+        if(i == $('.icon').length){
+            clearInterval(oTimer);
+            oTimer = null;
+        }
+    },1);
+
+
+    if(isIe){
+        if(navigator.userAgent.match(/MSIE 6./i) || navigator.userAgent.match(/MSIE 7./i) || navigator.userAgent.match(/MSIE 8./i) || navigator.userAgent.match(/MSIE 9./i)){
+            $('.ico').css({top:'50%',opacity:'1'})
+        }
+
+        $('.back').removeClass('back');
+        $('.rotateBox').hover(function(){
+            console.log(1)
+            var oBox = $(this).find('.transBox');
+            var oW = parseInt(oBox.css('width'));
+            oBox.stop().animate({
+                left: -oW/2
+            });
+        },function(){
+            console.log(2)
+            var oBox = $(this).find('.transBox');
+            oBox.stop().animate({
+                left: 0
+            });
+        });
+    };
+
 });
