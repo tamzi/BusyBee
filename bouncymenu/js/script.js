@@ -27,7 +27,7 @@ $(document).ready(function(){
 			scale:1
 		})
 	});
-$(document).on("touchend",function(){
+	$(document).on("touchend",function(){
 		$(document).trigger("mouseup")
 	})
 	$(".menu-toggle-button").on("mousedown",pressHandler);
@@ -49,7 +49,7 @@ $(document).on("touchend",function(){
 		on?openMenu():closeMenu();
 
 	}
-function openMenu(){
+	function openMenu(){
 		$(".menu-item").each(function(i){
 			var delay=i*0.08;
 
@@ -132,6 +132,8 @@ function openMenu(){
 			});
 		})
 	}
+
+
 	function morph() {
 		$('button.menu-toggle-button').trigger('mousedown');
 	}
@@ -149,8 +151,7 @@ function openMenu(){
 
 	var rc;
 	var $goo = $('.menu-toggle-button, .menu-item-bounce, .menu-item-button')
-
-var	changeColor = function () {
+	var	changeColor = function () {
 				rc = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
 				$goo.css('background', rc);
 			};
@@ -159,8 +160,8 @@ var	changeColor = function () {
 		changeColor();
 	}, 4000);
 
-
-
-
+	$goo.on('click', function () {
+		changeColor();
+	});
 
 });
