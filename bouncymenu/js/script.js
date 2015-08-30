@@ -150,6 +150,16 @@ function openMenu(){
 	var rc;
 	var $goo = $('.menu-toggle-button, .menu-item-bounce, .menu-item-button')
 
+var	changeColor = function () {
+				rc = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+				$goo.css('background', rc);
+			};
+
+	setInterval(function () {
+		changeColor();
+	}, 4000);
+
+
 
 
 
