@@ -1,5 +1,5 @@
         /*Your Custom Javascript file goes here.*/
-$(document).ready(function(){
+$(document).ready(function ( ) {
 	var menuItemNum=$(".menu-item").length;
 	var angle=360;
 	var distance=80;
