@@ -84,3 +84,56 @@ font-family: 'Lato', sans-serif;
 .blog-card .details a:hover {
   color: #75D13B;
 }
+.blog-card .description {
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.blog-card .description h1 {
+  font-family: "Roboto";
+  line-height: 1em;
+  margin: 0 0 10px 0;
+}
+.blog-card .description h2 {
+  color: #9b9b9b;
+  font-family: "Open Sans";
+  line-height: 1.2em;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 1.2% 0;
+}
+.blog-card .description p {
+  position: relative;
+  margin: 0;
+  padding-top: 20px;
+}
+.blog-card .description p:after {
+  content: "";
+  background: #75D13B;
+  height: 6px;
+  width: 40px;
+  /*POSITION*/
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.blog-card .description a {
+  color: #75D13B;
+  margin-bottom: 10px;
+  float: right;
+}
+.blog-card .description a:after {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+}
+.blog-card .description a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+
