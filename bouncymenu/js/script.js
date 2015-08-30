@@ -17,5 +17,15 @@ $(document).ready(function(){
 	})
 	var on=false;
 
+	$(".menu-toggle-button").mousedown(function(){
+		TweenMax.to($(".menu-toggle-icon"),0.1,{
+			scale:0.65
+		})
+	})
+	$(document).mouseup(function(){
+		TweenMax.to($(".menu-toggle-icon"),0.1,{
+			scale:1
+		})
+	});
 
 });
