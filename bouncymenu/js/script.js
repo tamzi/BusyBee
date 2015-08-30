@@ -27,5 +27,28 @@ $(document).ready(function(){
 			scale:1
 		})
 	});
+$(document).on("touchend",function(){
+		$(document).trigger("mouseup")
+	})
+	$(".menu-toggle-button").on("mousedown",pressHandler);
+	$(".menu-toggle-button").on("touchstart",function(event){
+		$(this).trigger("mousedown");
+		event.preventDefault();
+		event.stopPropagation();
+	});
+
+	function pressHandler(event){
+		on=!on;
+
+		TweenMax.to($(this).children('.menu-toggle-icon'),0.4,{
+			rotation:on?45:0,
+			ease:Quint.easeInOut,
+			force3D:true
+		});
+
+		on?openMenu():closeMenu();
+
+	}
+
 
 });
