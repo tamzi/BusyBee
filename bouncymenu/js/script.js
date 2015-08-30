@@ -132,7 +132,23 @@ function openMenu(){
 			});
 		})
 	}
+	function morph() {
+		$('button.menu-toggle-button').trigger('mousedown');
+	}
+	var rand;
 
+	(function loop() {
+	  rand = Math.round(Math.random() * (200)) + 200;
+
+	  setTimeout(function() {
+	          morph();
+	          loop();
+	  }, rand);
+
+	}());
+
+	var rc;
+	var $goo = $('.menu-toggle-button, .menu-item-bounce, .menu-item-button')
 
 
 
