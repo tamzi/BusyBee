@@ -57,4 +57,27 @@ body {
 	-webkit-transition: background-color 100ms linear;
 	transition: background-color 100ms linear;
 }
+.menu-toggle-button:hover,
+.menu-item-bounce:hover,
+.menu-item-button:hover {
+	cursor: pointer;
+}
+
+.menu-toggle-button {
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.menu-toggle-icon {
+	font-size: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+}
+
 
