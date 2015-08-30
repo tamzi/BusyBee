@@ -1,2 +1,13 @@
     /*Your Custom Style sheet goes here*/
 font-family: 'Lato', sans-serif;
+
+body {
+	background-color: black;
+	overflow: hidden;
+}
+
+/*@media (min-width: 450px) {
+	body {
+		zoom: 1.5;
+	}
+}
