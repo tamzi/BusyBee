@@ -1,2 +1,12 @@
     /*Your Custom Style sheet goes here*/
-font-family: 'Lato', sans-serif;
+body
+{
+	-webkit-transform-style: preserve-3d;
+	-webkit-perspective: 1000;
+}
+
+h1, h2, h3, h4, h5, h6, p, a,
+input, label, button, textarea, ul, li, label
+{ position:relative; vertical-align:top; display:inline-block; padding:0; margin:0; }
+
+
