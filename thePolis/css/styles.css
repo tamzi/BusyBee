@@ -8,5 +8,47 @@ body
 h1, h2, h3, h4, h5, h6, p, a,
 input, label, button, textarea, ul, li, label
 { position:relative; vertical-align:top; display:inline-block; padding:0; margin:0; }
+*
+{
+	-webkit-user-select: none;
+}
+
+@-webkit-keyframes rotate {
+    0%{
+        -webkit-transform: rotate3d(1,0,0,60deg) rotate3d(0,0,1,20deg);
+    }
+    40%{
+        -webkit-transform: rotate3d(1,0,0,88deg) rotate3d(0,0,1,120deg);
+    }
+    70%{
+        -webkit-transform: rotate3d(1,0,0,88deg) rotate3d(0,0,1,260deg);
+    }
+    90%{
+        -webkit-transform: rotate3d(1,0,0,70deg) rotate3d(0,0,1,260deg);
+    }
+    100%{
+        -webkit-transform: rotate3d(1,0,0,60deg) rotate3d(0,0,1,380deg);
+    }
+}
+
+.world
+{
+	float:left;
+	zoom:1;
+	font-size:0;
+	position:absolute;
+	left:40%;
+	top:25%;
+	width:350px;
+	height:350px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: rotate3d(1,0,0,60deg) rotate3d(0,0,1,0deg);
+
+	-webkit-animation: rotate 10s ease-in-out infinite;
+}
+.world:hover
+{
+
+}
 
 
