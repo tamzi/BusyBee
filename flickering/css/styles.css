@@ -1,2 +1,42 @@
     /*Your Custom Style sheet goes here*/
 font-family: 'Lato', sans-serif;
+
+	/*	On the Index.html there is already an import of the fonts and @import url(http://fonts.googleapis.com/css?family=Lato);*/
+
+		body {
+			background-color: #4681a0;
+			color: #fff;
+			font-family: 'Lato', sans-serif;
+			letter-spacing: 0.06em;
+			margin: 0;
+			text-align: center;
+		}
+		h1 {
+			font-family: Tahoma, Geneva, sans-serif;
+			font-size: 46px;
+			font-weight: normal;
+			letter-spacing: 0.08em;
+		}
+		p {
+    		margin-bottom: 50px;
+		}
+		a:link, a:visited {
+    		background-color: #eec75e;
+    		box-shadow: 0px 1px 3px #273a45;
+    		color: #273a45;
+    		font-family: 'Lato', sans-serif;
+    		padding: 12px 15px;
+    		text-decoration: none;
+    		text-transform: uppercase;
+    		-webkit-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+    		-o-transition-duration: 0.5s;
+     		transition-duration: 0.5s;
+		}
+		a:hover {
+            background-color: #e2bb53;
+            -webkit-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+    		-o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+		}
