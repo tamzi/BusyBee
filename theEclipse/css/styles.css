@@ -35,6 +35,27 @@ body {
   transform-origin: 50% 150%;
   transform: rotate(-60deg);
 }
-
+@-moz-keyframes eclipse {
+  0% {
+    transform: rotate(-60deg);
+  }
+  90% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(300deg);
+  }
+}
+@-webkit-keyframes eclipse {
+  0% {
+    transform: rotate(-60deg);
+  }
+  90% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(300deg);
+  }
+}
 
 
