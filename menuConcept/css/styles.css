@@ -37,3 +37,49 @@ nav a {
   text-indent: -9999px;
   width: 32px;
 }
+nav li:first-child a {
+  border-radius: 4px 4px 0 0;
+}
+nav li:last-child a {
+  border-radius: 0 0 4px 4px;
+}
+nav a:hover,
+nav a:focus {
+  background-color: #fff;
+}
+nav a:active {
+  right: 2px;
+  top: 4px;
+}
+nav a[data-title="Home"] {
+  background-image: url('http://png-5.findicons.com/files//icons/1389/g5_system/32/toolbar_home.png');
+}
+nav a[data-title="Music"] {
+  background-image: url('http://png-4.findicons.com/files//icons/1389/g5_system/32/toolbar_music.png');
+}
+nav a[data-title="Photos"] {
+  background-image: url('http://png-1.findicons.com/files//icons/1389/g5_system/32/toolbar_pictures.png');
+}
+nav a[data-title="Search"] {
+  background-image: url('http://png-3.findicons.com/files//icons/1389/g5_system/32/toolbar_find.png');
+}
+nav a:after {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 #bbb,
+              -1px 0 0 #bbb,
+              -1px 2px 0 #bbb,
+              -2px 2px 0 #bbb,
+              -16px 24px 16px hsla(0,0%,0%,.15);
+  color: #999;
+  content: attr(data-title);
+  display: none;
+  left: 60px;
+  line-height: 48px;
+  padding: 0 12px;
+  position: absolute;
+  text-indent: 0;
+  top: 0;
+  z-index: -1;
+}
