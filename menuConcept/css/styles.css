@@ -83,3 +83,32 @@ nav a:after {
   top: 0;
   z-index: -1;
 }
+nav a:before {
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #f6f6f6;
+  border-top: 8px solid transparent;
+  content: '';
+  display: none;
+  height: 0;
+  left: 53px;
+  position: absolute;
+  top: 16px;
+  width: 0;
+  -webkit-filter: drop-shadow(0 1px 0 #bbb)
+                  drop-shadow(-1px 0 0 #bbb)
+                  drop-shadow(-1px 1px 0 #bbb);
+}
+nav a:hover:after,
+nav a:focus:after,
+nav a:hover:before,
+nav a:focus:before {
+  display: block;
+}
+nav a:active:after {
+  left: 62px;
+  top: -4px;
+}
+nav a:active:before {
+  left: 55px;
+  top: 12px;
+}
