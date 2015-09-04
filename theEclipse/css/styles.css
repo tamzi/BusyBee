@@ -1,2 +1,12 @@
     /*Your Custom Style sheet goes here*/
 font-family: 'Lato', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #010101;
+  overflow: hidden;
+}
+
