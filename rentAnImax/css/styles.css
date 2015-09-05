@@ -1,2 +1,48 @@
     /*Your Custom Style sheet goes here*/
 font-family: 'Lato', sans-serif;
+
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,700);
+body {
+  position: relative;
+  margin: 0;
+  background: url(http://dl.dropbox.com/s/j7a4a1cjlk1i9fm/wood.jpg);
+}
+
+.mainwrapper {
+  position: relative;
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.boardwrapper {
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 250px;
+}
+
+.boardwrapper > ul {
+  list-style-type: none;
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 55px;
+  margin: 0;
+  padding: 0;
+}
+
+.boardwrapper > ul li {
+  float: left;
+  margin: 0 5px;
+  width: 180px;
+  position: relative;
+}
+
+.boardwrapper > ul li:first-child {
+  margin-left: 25px;
+}
+
+.boardwrapper > ul li:last-child {
+  margin-right: 25px;
+}
