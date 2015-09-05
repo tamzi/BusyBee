@@ -328,6 +328,326 @@ body {
   border-radius: 10px 10px 10px 10px;
 }
 
+.bluray .overlay:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 139px;
+  top: -17px;
+  left: 1px;
+  z-index: 10;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: -moz-linear-gradient(-35deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(255, 255, 255, 0.05)), color-stop(50%, rgba(255, 255, 255, 0.15)), color-stop(51%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(-35deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(-35deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(-35deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0dffffff', endColorstr='#00ffffff', GradientType=1);
+}
+
+.bluraywrap .shadow {
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 15px;
+  bottom: -20px;
+  left: -50%;
+  z-index: -1;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(51%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#26000000', endColorstr='#00000000', GradientType=1);
+  opacity: 1;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.boardwrapper ul li:hover .bluray {
+  top: -25px;
+}
+
+.boardwrapper ul li:hover .shadow {
+  opacity: 0.4;
+}
+
+.boardwrapper ul li:hover .buttonwrapper {
+  visibility: visible;
+  opacity: 1;
+}
+
+.boardwrapper ul li:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+.boardwrapper ul li:hover .info:before {
+  top: -12px;
+  left: 194px;
+}
+
+.boardwrapper ul li:hover .info:after {
+  top: -2px;
+  left: 204px;
+}
+
+.buttonwrapper {
+  position: absolute;
+  top: 125px;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 800ms ease-in-out;
+  -moz-transition: all 800ms ease-in-out;
+  -ms-transition: all 800ms ease-in-out;
+  -o-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+}
+
+.brbutton {
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 12px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5), inset 1px 0px 0px 0px rgba(255, 255, 255, 0.15), inset -1px 0px 0px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5), inset 1px 0px 0px 0px rgba(255, 255, 255, 0.15), inset -1px 0px 0px 0px rgba(255, 255, 255, 0.15);
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+  filter: dropshadow(color=#000000, offx=0, offy=-1);
+}
+
+.brbutton:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 104%;
+  height: 112%;
+  top: 0;
+  left: 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  z-index: -1;
+  -webkit-box-shadow: 0px 4px 6px -6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 4px 6px -6px rgba(0, 0, 0, 1);
+}
+
+.brbutton[title]:after {
+  position: absolute;
+  display: block;
+  content: attr(title);
+  width: 50px;
+  height: 14px;
+  top: -40px;
+  text-align: center;
+  font-size: 12px;
+  padding: 18px 0;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.45);
+  z-index: -2;
+  background: rgb(255, 255, 255);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(183, 183, 183, 1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(183, 183, 183, 1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(183, 183, 183, 1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(183, 183, 183, 1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(183, 183, 183, 1) 100%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0%, rgba(183, 183, 183, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b7b7b7', GradientType=1);
+  color: #000;
+  text-shadow: 0px -1px 0px rgba(255, 255, 255, 1);
+  filter: dropshadow(color=#ffffff, offx=0, offy=-1);
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45), inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45), inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+}
+
+.brbutton.buy {
+  float: left;
+  margin-left: 10px;
+  background: rgb(69, 142, 72);
+  background: -moz-linear-gradient(top, rgba(69, 142, 72, 1) 0%, rgba(21, 96, 47, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(69, 142, 72, 1)), color-stop(100%, rgba(21, 96, 47, 1)));
+  background: -webkit-linear-gradient(top, rgba(69, 142, 72, 1) 0%, rgba(21, 96, 47, 1) 100%);
+  background: -o-linear-gradient(top, rgba(69, 142, 72, 1) 0%, rgba(21, 96, 47, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(69, 142, 72, 1) 0%, rgba(21, 96, 47, 1) 100%);
+  background: linear-gradient(to bottom, rgba(69, 142, 72, 1) 0%, rgba(21, 96, 47, 1) 100%);
+}
+
+.brbutton.buy:before {
+  background: rgb(55, 102, 49);
+  background: -moz-linear-gradient(top, rgba(55, 102, 49, 1) 0%, rgba(13, 61, 34, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(55, 102, 49, 1)), color-stop(100%, rgba(13, 61, 34, 1)));
+  background: -webkit-linear-gradient(top, rgba(55, 102, 49, 1) 0%, rgba(13, 61, 34, 1) 100%);
+  background: -o-linear-gradient(top, rgba(55, 102, 49, 1) 0%, rgba(13, 61, 34, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(55, 102, 49, 1) 0%, rgba(13, 61, 34, 1) 100%);
+  background: linear-gradient(to bottom, rgba(55, 102, 49, 1) 0%, rgba(13, 61, 34, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#376631', endColorstr='#0d3d22', GradientType=0);
+}
+
+.brbutton[title].buy:after {
+  left: -40px;
+}
+
+.brbutton.rent {
+  float: right;
+  margin-right: 10px;
+  background: rgb(147, 72, 116);
+  background: -moz-linear-gradient(top, rgba(147, 72, 116, 1) 0%, rgba(102, 23, 54, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(147, 72, 116, 1)), color-stop(100%, rgba(102, 23, 54, 1)));
+  background: -webkit-linear-gradient(top, rgba(147, 72, 116, 1) 0%, rgba(102, 23, 54, 1) 100%);
+  background: -o-linear-gradient(top, rgba(147, 72, 116, 1) 0%, rgba(102, 23, 54, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(147, 72, 116, 1) 0%, rgba(102, 23, 54, 1) 100%);
+  background: linear-gradient(to bottom, rgba(147, 72, 116, 1) 0%, rgba(102, 23, 54, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#934874', endColorstr='#661736', GradientType=0);
+}
+
+.brbutton.rent:before {
+  background: rgb(107, 52, 90);
+  background: -moz-linear-gradient(top, rgba(107, 52, 90, 1) 0%, rgba(63, 14, 28, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(107, 52, 90, 1)), color-stop(100%, rgba(63, 14, 28, 1)));
+  background: -webkit-linear-gradient(top, rgba(107, 52, 90, 1) 0%, rgba(63, 14, 28, 1) 100%);
+  background: -o-linear-gradient(top, rgba(107, 52, 90, 1) 0%, rgba(63, 14, 28, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(107, 52, 90, 1) 0%, rgba(63, 14, 28, 1) 100%);
+  background: linear-gradient(to bottom, rgba(107, 52, 90, 1) 0%, rgba(63, 14, 28, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6b345a', endColorstr='#3f0e1c', GradientType=0);
+}
+
+.brbutton[title].rent:after {
+  right: -40px;
+}
+
+.info {
+  position: absolute;
+  left: -120px;
+  bottom: -350px;
+  background: #fff;
+  width: 400px;
+  height: 300px;
+  padding: 30px 10px 15px 10px;
+  z-index: 12;
+  -webkit-border-radius: 2px 2px 6px 6px;
+  border-radius: 2px 2px 6px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+  font-family: 'Dosis', sans-serif;
+}
+
+.info:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  top: -28px;
+  left: 188px;
+  -webkit-border-radius: 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  background: rgb(234, 114, 114);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(234, 114, 114, 1) 0%, rgba(160, 0, 0, 1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(234, 114, 114, 1)), color-stop(100%, rgba(160, 0, 0, 1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(234, 114, 114, 1) 0%, rgba(160, 0, 0, 1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(234, 114, 114, 1) 0%, rgba(160, 0, 0, 1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(234, 114, 114, 1) 0%, rgba(160, 0, 0, 1) 100%);
+  background: radial-gradient(ellipse at center, rgba(234, 114, 114, 1) 0%, rgba(160, 0, 0, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ea7272', endColorstr='#a00000', GradientType=1);
+  background-position: -2px -2px;
+  z-index: 2;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
+}
+
+.info:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 3px;
+  height: 8px;
+  top: -18px;
+  left: 194px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  background: rgb(170, 170, 170);
+  background: -moz-linear-gradient(left, rgba(170, 170, 170, 1) 0%, rgba(234, 234, 234, 1) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(170, 170, 170, 1)), color-stop(100%, rgba(234, 234, 234, 1)));
+  background: -webkit-linear-gradient(left, rgba(170, 170, 170, 1) 0%, rgba(234, 234, 234, 1) 100%);
+  background: -o-linear-gradient(left, rgba(170, 170, 170, 1) 0%, rgba(234, 234, 234, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(170, 170, 170, 1) 0%, rgba(234, 234, 234, 1) 100%);
+  background: linear-gradient(to right, rgba(170, 170, 170, 1) 0%, rgba(234, 234, 234, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#aaaaaa', endColorstr='#eaeaea', GradientType=1);
+  -moz-transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  z-index: 1;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
+}
+
+.infolabel {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: 6px;
+  padding: 4px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 0;
+  -webkit-border-radius: 0 0 2px 2px;
+  border-radius: 0 0 2px 2px;
+  color: #fff;
+  font-size: 10px;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  background: rgb(83, 123, 155);
+  background: -moz-linear-gradient(top, rgba(83, 123, 155, 1) 0%, rgba(21, 76, 109, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(83, 123, 155, 1)), color-stop(100%, rgba(21, 76, 109, 1)));
+  background: -webkit-linear-gradient(top, rgba(83, 123, 155, 1) 0%, rgba(21, 76, 109, 1) 100%);
+  background: -o-linear-gradient(top, rgba(83, 123, 155, 1) 0%, rgba(21, 76, 109, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(83, 123, 155, 1) 0%, rgba(21, 76, 109, 1) 100%);
+  background: linear-gradient(to bottom, rgba(83, 123, 155, 1) 0%, rgba(21, 76, 109, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#537b9b', endColorstr='#154c6d', GradientType=0);
+}
+
+.info h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 25px 0;
+  color: #154C6D;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  filter: dropshadow(color=#000000, offx=0, offy=2);
+}
+
 
 
 
