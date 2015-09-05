@@ -46,3 +46,14 @@ body {
 .boardwrapper > ul li:last-child {
   margin-right: 25px;
 }
+
+.woodwrap {
+  position: absolute;
+  display: block;
+  width: 800px;
+  height: 65px;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+}
+
