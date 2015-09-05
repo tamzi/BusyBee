@@ -283,6 +283,48 @@ body {
   -ms-transform: scale(1, 0.5);
   transform: scale(1, 0.5);
 }
+.bluray .label:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 1px;
+  left: 1px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAICAYAAADJEc7MAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA29pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkEzMkQ2MjEyQzY3MDExRTFCRDJCOUZDQkNBOEM1NkMwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkEzMkQ2MjExQzY3MDExRTFCRDJCOUZDQkNBOEM1NkMwIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUuMSBXaW5kb3dzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InV1aWQ6ZGI3OTIwODQtODMwMS0xMWRlLTk0YzEtZDgwNjEyZDNhYzYyIiBzdFJlZjpkb2N1bWVudElEPSJ1dWlkOjA3QTMwNkI1MUZCQzExREJCRUIzREEwOTFBNjc3Qjg5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ccEHYAAAAONJREFUeNps0D9LQmEUx/F7rxeDsjQlSBedBHEzaCgK3Fzu2uzq7PtwjnbhLk6+gHBvSgiHEKQlMK4GhiDh7Xv0J9yhAx/un+c55znnceM4dhRldDBGX//SKKGOO3h4wrtjifAxjPfxiAcEuMKJ9mQRIkLDU+UqWljrlFu08YIR8vhGD+doumrVR03O4OIXX3jFDDkMtOfeTcz4X1hHFdwgSJw6OSRm8AP7OMapnhlJ7S7EcT5xYQUtscvLteaZ4kNtFbFQu7Z+qbXICthsS4TYoKD5tprbLuwZc7zhSJez+hNgAHCRY0chGnbLAAAAAElFTkSuQmCC") center center no-repeat;
+}
+
+.bluray .overlay {
+  position: absolute;
+  display: block;
+  width: 98px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: inset 6px 0px 6px -7px rgba(255, 255, 255, 1), inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 6px 0px 6px -7px rgba(255, 255, 255, 1), inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.bluray .overlay:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 103px;
+  height: 143px;
+  top: -18px;
+  left: 0;
+  z-index: -1;
+  background: rgb(66, 116, 135);
+  background: -moz-linear-gradient(top, rgba(66, 116, 135, 1) 0%, rgba(40, 86, 109, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(66, 116, 135, 1)), color-stop(100%, rgba(40, 86, 109, 1)));
+  background: -webkit-linear-gradient(top, rgba(66, 116, 135, 1) 0%, rgba(40, 86, 109, 1) 100%);
+  background: -o-linear-gradient(top, rgba(66, 116, 135, 1) 0%, rgba(40, 86, 109, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(66, 116, 135, 1) 0%, rgba(40, 86, 109, 1) 100%);
+  background: linear-gradient(to bottom, rgba(66, 116, 135, 1) 0%, rgba(40, 86, 109, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#427487', endColorstr='#28566d', GradientType=0);
+  -webkit-border-radius: 8px;
+  border-radius: 10px 10px 10px 10px;
+}
 
 
 
