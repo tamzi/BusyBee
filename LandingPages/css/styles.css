@@ -77,3 +77,36 @@ p a:hover {
   bottom: 7px;
   left: 50%;
 }
+.animation .device .screen-stand {
+  position: absolute;
+  width: 100%;
+  margin-left: -10px;
+  margin-top: -1px;
+  top: 60%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.animation .device .screen-stand .leg {
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  left: 50%;
+  top: 0;
+  margin-left: -6px;
+  background: #111;
+}
+.animation .device .screen-stand .foot {
+  position: absolute;
+  width: 120px;
+  height: 4px;
+  left: 50%;
+  top: 15px;
+  margin-left: -60px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background: #111;
+}
