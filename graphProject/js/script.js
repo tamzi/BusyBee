@@ -181,3 +181,12 @@ function format( force ) {
 
     format();
   }
+
+  this.populate = function( points ) {
+    progress = 0;
+    data = points;
+
+    format();
+  }
+
+};
