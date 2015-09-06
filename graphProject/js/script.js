@@ -37,3 +37,17 @@ function format( force ) {
       maxValue = Math.max( maxValue, point.value );
       minValue = Math.min( minValue, point.value );
     } );
+
+    data.forEach( function( point, i ) {
+      point.targetX = paddingX + ( i / ( data.length - 1 ) ) * ( width - ( paddingX * 2 ) );
+      point.targetY = paddingY + ( ( point.value - minValue ) / ( maxValue - minValue ) * ( height - ( paddingY * 2 ) ) );
+      point.targetY = height - point.targetY;
+
+      if( force || ( !point.x && !point.y ) ) {
+        point.x = point.targetX + 30;
+        point.y = point.targetY;
+        point.speed = 0.04 + ( 1 - ( i / data.length ) ) * 0.05;
+      }
+    } );
+
+  }
