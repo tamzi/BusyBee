@@ -190,3 +190,15 @@ function format( force ) {
   }
 
 };
+
+var chart = new LineChart({ data: [] });
+
+reset();
+
+chart.start();
+
+function append() {
+  chart.append([
+    { label: 'Rnd', value: 1300 + ( Math.random() * 1500 ), future: true }
+  ]);
+}
