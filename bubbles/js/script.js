@@ -35,3 +35,14 @@ function particle () {
     this.pos.y += this.vel.y;
   };
 }
+
+function draw () {
+	ctx.fillStyle = "rgba(0,0,0,.75)";
+	ctx.fillRect(0,0,W,H);
+  particles.forEach(function(v, i, arr){
+    if ( v.vel.x > 0 ) v.clr = "red"; else v.clr = "#CCC";
+    v.show();
+  });
+};
+
+setInterval( draw, 16.6 );
