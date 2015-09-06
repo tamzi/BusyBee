@@ -51,3 +51,29 @@ p a:hover {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.animation .device .phone-home-button,
+.animation .device .tablet-home-button {
+  position: absolute;
+  border-radius: 50%;
+  background: #444;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.animation .device .phone-home-button {
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  right: 11px;
+  top: 50%;
+}
+.animation .device .tablet-home-button {
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  bottom: 7px;
+  left: 50%;
+}
