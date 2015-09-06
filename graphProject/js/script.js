@@ -110,3 +110,61 @@ function format( force ) {
     context.lineWidth = 2;
 
     var futureStarted = false;
+
+    data.forEach( function( point, i ) {
+
+      if( i <= progressDots ) {
+
+        var px = i === 0 ? data[0].x : data[i-1].x,
+            py = i === 0 ? data[0].y : data[i-1].y;
+
+        var x = point.x,
+            y = point.y;
+
+        if( i === progressDots ) {
+          x = px + ( ( x - px ) * progressFragment );
+          y = py + ( ( y - py ) * progressFragment );
+        }
+
+        if( point.future && !futureStarted ) {
+          futureStarted = true;
+
+          context.stroke();
+          context.beginPath();
+          context.moveTo( px, py );
+          context.strokeStyle = '#aaa';
+
+          if( typeof context.setLineDash === 'function' ) {
+            context.setLineDash( [2,3] );
+          }
+        }
+
+        if( i === 0 ) {
+          context.moveTo( x, y );
+        }
+        else {
+          context.lineTo( x, y );
+        }
+
+      }
+
+    } );
+
+    context.stroke();
+    context.restore();
+
+    progress += ( 1 - progress ) * 0.02;
+
+    requestAnimationFrame( render );
+
+  }
+
+  this.start = function() {
+    rendering = true;
+  }
+
+  this.stop = function() {
+    rendering = false;
+    progress = 0;
+    format( true );
+  }
