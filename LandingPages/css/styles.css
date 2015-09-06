@@ -1,2 +1,28 @@
     /*Your Custom Style sheet goes here*/
 font-family: 'Lato', sans-serif;
+
+html, body {
+  margin: 10px;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+p {
+  display: inline-block;
+  color: #333;
+  vertical-align: middle;
+  font-size: 20px;
+  text-align: right;
+  line-height: 1.6;
+}
+p a {
+  color: #333;
+  padding: 2px 4px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  text-decoration: none;
+}
+p a:hover {
+  border-color: #000;
+  color: #000;
+}
