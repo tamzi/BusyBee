@@ -202,3 +202,8 @@ function append() {
     { label: 'Rnd', value: 1300 + ( Math.random() * 1500 ), future: true }
   ]);
 }
+
+function restart() {
+  chart.restart();
+}
+
