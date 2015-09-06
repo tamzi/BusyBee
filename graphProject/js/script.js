@@ -207,3 +207,19 @@ function restart() {
   chart.restart();
 }
 
+function reset() {
+  chart.populate([
+    { label: 'One', value: 0 },
+    { label: 'Two', value: 100 },
+    { label: 'Three', value: 200 },
+    { label: 'Four', value: 840 },
+    { label: 'Five', value: 620 },
+    { label: 'Six', value: 500 },
+    { label: 'Seven', value: 600 },
+    { label: 'Eight', value: 1100 },
+    { label: 'Nine', value: 800 },
+    { label: 'Ten', value: 900 },
+    { label: 'Eleven', value: 1200, future: true },
+    { label: 'Twelve', value: 1400, future: true }
+  ]);
+}
