@@ -28,3 +28,12 @@ var LineChart = function( options ) {
 
   format();
   render();
+function format( force ) {
+
+    maxValue = 0;
+    minValue = Number.MAX_VALUE;
+
+    data.forEach( function( point, i ) {
+      maxValue = Math.max( maxValue, point.value );
+      minValue = Math.min( minValue, point.value );
+    } );
