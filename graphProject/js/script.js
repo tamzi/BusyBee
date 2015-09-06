@@ -174,3 +174,10 @@ function format( force ) {
     this.stop();
     this.start();
   }
+
+  this.append = function( points ) {
+    progress -= points.length / data.length;
+    data = data.concat( points );
+
+    format();
+  }
