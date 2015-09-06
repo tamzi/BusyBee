@@ -168,3 +168,9 @@ function format( force ) {
     progress = 0;
     format( true );
   }
+
+
+  this.restart = function() {
+    this.stop();
+    this.start();
+  }
