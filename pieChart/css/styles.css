@@ -716,3 +716,46 @@ div {
   -webkit-transition: all .5s;
 }
 
+#pyr_chart ul:nth-child(1) {
+  background: #BC3603;
+  background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #de3d00 10%, #BC3603 100%);
+  background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#de3d00), to(#BC3603));
+}
+
+#pyr_chart ul:nth-child(2) {
+  background: #D97904;
+  background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #fb8a00 10%, #D97904 100%);
+  background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#fb8a00), to(#D97904));
+  height: 292px;
+}
+
+#pyr_chart ul:nth-child(3) {
+  background: #F2B705;
+  background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #ffc517 10%, #F2B705 100%);
+  background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#ffc517), to(#F2B705));
+  height: 277px;
+}
+
+#pyr_chart ul:nth-child(4) {
+  background: #86AD00;
+  background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #9bc800 10%, #86AD00 100%);
+  background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#9bc800), to(#86AD00));
+  height: 255px;
+}
+
+#pyr_chart ul:nth-child(5) {
+  background: #0092B9;
+  background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #00addb 10%, #0092B9 100%);
+  background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#00addb), to(#0092B9));
+  height: 180px;
+}
+
+#pyr_chart ul:nth-child(6) {
+  width: 0;
+  height: 0;
+  border-color: transparent #d8d6cb transparent #d8d6cb;
+  border-width: 0px 150px 300px 150px;
+  border-style: solid;
+}
+/*Pyramid chart data (height value) */
+
