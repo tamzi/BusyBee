@@ -1,2 +1,16 @@
     /*Your Custom Style sheet goes here*/
-font-family: 'Lato', sans-serif;
+
+    /*
+        font-family: 'Lato', sans-serif;
+
+    */
+
+body {
+  background: #111;
+}
+.loader {
+  position: relative;
+  padding-top: 100px;
+  width: 40px;
+  margin: auto;
+}
