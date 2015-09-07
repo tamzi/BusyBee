@@ -280,3 +280,65 @@ div {
   border-bottom-right-radius: 150px;
 }
 
+#c1_l span {
+  background: #BC3603;
+  background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #de3d00 10%, #BC3603 100%);
+  background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#de3d00), to(#BC3603));
+}
+
+#c1_r span {
+  background: #BC3603;
+  background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #de3d00 10%, #BC3603 100%);
+  background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#de3d00), to(#BC3603));
+}
+
+#c2_l span {
+  background: #D97904;
+  background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #fb8a00 10%, #D97904 100%);
+  background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#fb8a00), to(#D97904));
+}
+
+#c2_r span {
+  background: #D97904;
+  background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #fb8a00 10%, #D97904 100%);
+  background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#fb8a00), to(#D97904));
+}
+
+#c3_l span {
+  background: #F2B705;
+  background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #ffc517 10%, #F2B705 100%);
+  background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#ffc517), to(#F2B705));
+}
+
+#c3_r span {
+  background: #F2B705;
+  background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #ffc517 10%, #F2B705 100%);
+  background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#ffc517), to(#F2B705));
+}
+
+#c4_l span {
+  background: #86AD00;
+  background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #9bc800 10%, #86AD00 100%);
+  background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#9bc800), to(#86AD00));
+}
+
+#c4_r span {
+  background: #86AD00;
+  background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #9bc800 10%, #86AD00 100%);
+  background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#9bc800), to(#86AD00));
+}
+
+#c5_l span {
+  background: #0092B9;
+  background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #00addb 10%, #0092B9 100%);
+  background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#00addb), to(#0092B9));
+}
+
+#c5_r span {
+  background: #0092B9;
+  background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #00addb 10%, #0092B9 100%);
+  background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#00addb), to(#0092B9));
+}
+        /*Pie chart data (degree value) */
+
+
