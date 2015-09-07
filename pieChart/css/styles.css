@@ -1,2 +1,21 @@
     /*Your Custom Style sheet goes here*/
-font-family: 'Lato', sans-serif;
+
+
+html,
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: 'Lato', sans-serif;
+  color: #817a53;
+  background: #d8d6cb;
+}
+
+p {
+  margin: 0;
+  padding: 4px;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
