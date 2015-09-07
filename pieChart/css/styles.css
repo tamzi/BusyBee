@@ -198,3 +198,32 @@ div {
   left: 535px
 }
 /* Slider end */
+/* Charts start */
+
+#chart_holder {
+  width: 600px;
+  height: 350px;
+  margin: 0;
+  padding: 0;
+}
+
+#pyr_chart,
+#pie_chart {
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.2)));
+}
+
+#pyr_chart ul,
+#pie_chart ul {
+  list-style-type: none;
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+}
+
