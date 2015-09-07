@@ -181,3 +181,20 @@ div {
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8c8775), to(#7f7a6a));
   -webkit-border-radius: 6px;
 }
+#pie_ico,
+#pyr_ico {
+  position: absolute;
+  width: 80px;
+  height: 26px;
+  top: 464px;
+  text-align: center;
+}
+
+#pie_ico {
+  left: 137px
+}
+
+#pyr_ico {
+  left: 535px
+}
+/* Slider end */
