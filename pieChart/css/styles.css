@@ -342,3 +342,133 @@ div {
         /*Pie chart data (degree value) */
 
 
+#pie_chart ul:nth-child(1) p,
+#q2_2010:target #pie_chart ul:nth-child(1) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#pie_chart ul:nth-child(2) p,
+#q2_2010:target #pie_chart ul:nth-child(2) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#pie_chart ul:nth-child(3) p,
+#q2_2010:target #pie_chart ul:nth-child(3) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#pie_chart ul:nth-child(4) p,
+#q2_2010:target #pie_chart ul:nth-child(4) p {
+  -moz-transform: rotate(170deg);
+  -webkit-transform: rotate(170deg);
+  -o-transform: rotate(170deg);
+}
+
+#pie_chart ul:nth-child(5) p,
+#q2_2010:target #pie_chart ul:nth-child(5) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#pie_chart ul:nth-child(6) p,
+#q2_2010:target #pie_chart ul:nth-child(6) p {
+  -moz-transform: rotate(152deg);
+  -webkit-transform: rotate(152deg);
+  -o-transform: rotate(152deg);
+}
+
+#pie_chart ul:nth-child(7) p,
+#q2_2010:target #pie_chart ul:nth-child(7) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#pie_chart ul:nth-child(8) p,
+#q2_2010:target #pie_chart ul:nth-child(8) p {
+  -moz-transform: rotate(126deg);
+  -webkit-transform: rotate(126deg);
+  -o-transform: rotate(126deg);
+}
+
+#pie_chart ul:nth-child(9) p,
+#q2_2010:target #pie_chart ul:nth-child(9) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#pie_chart ul:nth-child(10) p,
+#q2_2010:target #pie_chart ul:nth-child(10) p {
+  -moz-transform: rotate(36deg);
+  -webkit-transform: rotate(36deg);
+  -o-transform: rotate(36deg);
+}
+
+#q1_2010:target #pie_chart ul:nth-child(1) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#q1_2010:target #pie_chart ul:nth-child(2) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#q1_2010:target #pie_chart ul:nth-child(3) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#q1_2010:target #pie_chart ul:nth-child(4) p {
+  -moz-transform: rotate(170deg);
+  -webkit-transform: rotate(170deg);
+  -o-transform: rotate(170deg);
+}
+
+#q1_2010:target #pie_chart ul:nth-child(5) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#q1_2010:target #pie_chart ul:nth-child(6) p {
+  -moz-transform: rotate(153deg);
+  -webkit-transform: rotate(153deg);
+  -o-transform: rotate(153deg);
+}
+
+#q1_2010:target #pie_chart ul:nth-child(7) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#q1_2010:target #pie_chart ul:nth-child(8) p {
+  -moz-transform: rotate(131deg);
+  -webkit-transform: rotate(131deg);
+  -o-transform: rotate(131deg);
+}
+
+#q1_2010:target #pie_chart ul:nth-child(9) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#q1_2010:target #pie_chart ul:nth-child(10) p {
+  -moz-transform: rotate(42deg);
+  -webkit-transform: rotate(42deg);
+  -o-transform: rotate(42deg);
+}
+
