@@ -89,3 +89,44 @@ div {
   padding: 0 0 8px 0;
 }
 
+#labels span {
+  display: block;
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin: 5px 5px 0 0;
+  background: #FFFFFF;
+}
+
+#labels ul:nth-child(1) span {
+  background: #0092B9;
+}
+
+#labels ul:nth-child(2) span {
+  background: #86AD00;
+}
+
+#labels ul:nth-child(3) span {
+  background: #F2B705;
+}
+
+#labels ul:nth-child(4) span {
+  background: #D97904;
+}
+
+#labels ul:nth-child(5) span {
+  background: #BC3603;
+}
+
+#percentage p {
+  display: block;
+  width: 50px;
+  margin: 0;
+  padding: 0 0 8px 0;
+  float: left;
+}
+
+#percentage ul {
+  position: absolute;
+  width: 300px;
+}
