@@ -226,4 +226,57 @@ div {
   padding: 0;
   margin: 0;
 }
+#pyr_chart li,
+#pie_chart li {
+  position: absolute;
+  top: 0px;
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+}
+
+#pie_chart p {
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+}
+
+#pie_chart li p {
+  -webkit-transition: all .7s ease-out;
+}
+
+#pie_chart span {
+  display: block;
+  width: 150px;
+  height: 300px;
+}
+
+#pie_chart ul:nth-child(odd) {
+  clip: rect(0px, 300px, 300px, 150px);
+}
+
+#pie_chart ul:nth-child(even) {
+  clip: rect(0px, 150px, 300px, 0px);
+}
+
+.pie_left {
+  -moz-border-radius-topleft: 150px;
+  -moz-border-radius-bottomleft: 150px;
+  -webkit-border-top-left-radius: 150px;
+  -webkit-border-bottom-left-radius: 150px;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+}
+
+.pie_right {
+  margin-left: 150px;
+  -moz-border-radius-topright: 150px;
+  -moz-border-radius-bottomright: 150px;
+  -webkit-border-top-right-radius: 150px;
+  -webkit-border-bottom-right-radius: 150px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
 
