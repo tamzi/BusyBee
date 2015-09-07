@@ -130,3 +130,30 @@ div {
   position: absolute;
   width: 300px;
 }
+
+#q2_2010:target #percentage ul {
+  left: -0px;
+}
+
+#q1_2010:target #percentage ul {
+  left: -50px;
+}
+
+#q4_2009:target #percentage ul {
+  left: -100px;
+}
+
+#q3_2009:target #percentage ul {
+  left: -150px;
+}
+
+#q2_2009:target #percentage ul {
+  left: -200px;
+}
+
+#q1_2005:target #percentage ul {
+  left: -250px;
+}
+                /* Label and percentage data end */
+
+/* Slider (contains two chart div) start */
