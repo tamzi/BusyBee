@@ -157,3 +157,27 @@ div {
                 /* Label and percentage data end */
 
 /* Slider (contains two chart div) start */
+
+#slider {
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 0 auto;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+#slider::-webkit-scrollbar {
+  /* webkit only */
+
+  height: 12px;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#beb8a1), to(#cfcab9));
+  -webkit-border-radius: 6px;
+}
+
+#slider::-webkit-scrollbar-thumb {
+  /* webkit only */
+
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8c8775), to(#7f7a6a));
+  -webkit-border-radius: 6px;
+}
