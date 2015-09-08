@@ -29,3 +29,10 @@ skyTl.to(sky, travelTime/1, {fill:"#83D1DB"})
      .to(sky, travelTime/1, {fill:"#091730"})
      .to(sky, travelTime/1, {fill:"#83D1DB"})
 
+
+cloudsTl.fromTo(clouds, 1, {x:-500, ease: Power0.easeNone}, {x: 500, ease: Power0.easeNone});
+
+carsTl.fromTo(cars, 0.15, {x:500, ease: Power0.easeNone}, {x:-500, ease: Power0.easeNone});
+
+treesTl.to(trees,1,{scaleY:0.4, transformOrigin:"50% 100%"})
+       .to(trees, 1, {scaleY:1, transformOrigin:"50% 100%"})
