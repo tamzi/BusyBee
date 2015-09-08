@@ -24,3 +24,8 @@ sunTl.fromTo(sun, travelTime, {y:positionTop,scaleY:0.8, scaleX:1}, {ease: Power
      .to(sun, changeTime, {fill:"#ffc808"})
      .to(sun, travelTime, {y:positionTop, scaleY:0.8, scaleX:1});
 
+skyTl.to(sky, travelTime/1, {fill:"#83D1DB"})
+     .to(sky, travelTime/1, {fill:"#091730"})
+     .to(sky, travelTime/1, {fill:"#091730"})
+     .to(sky, travelTime/1, {fill:"#83D1DB"})
+
