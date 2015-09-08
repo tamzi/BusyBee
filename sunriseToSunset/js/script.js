@@ -9,3 +9,18 @@ var clouds = document.getElementById('clouds')
     positionTop = 30
     positionBottom = 200;
 
+
+var sunTl = new TimelineMax({repeat:-1})
+    carsTl = new TimelineMax({repeat:-1})
+    skyTl = new TimelineMax({repeat:-1})
+    cloudsTl = new TimelineMax({repeat:-1})
+    treesTl = new TimelineMax({repeat:-1})
+
+
+sunTl.fromTo(sun, travelTime, {y:positionTop,scaleY:0.8, scaleX:1}, {ease: Power1.easeIn, y:positionBottom, scaleY: 1,scaleX:0.4})
+     .to(sun, changeTime, {fill:"#f7e4ba"})
+     .to(sun, travelTime, {y:positionTop, scaleY:0.8, scaleX:1})
+     .to(sun, travelTime, {ease: Power1.easeIn, y:positionBottom, scaleX:0.4})
+     .to(sun, changeTime, {fill:"#ffc808"})
+     .to(sun, travelTime, {y:positionTop, scaleY:0.8, scaleX:1});
+
