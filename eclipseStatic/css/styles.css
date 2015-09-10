@@ -8,4 +8,14 @@ body {
   margin: 0 auto;
   padding: 30px;
 }
+.eclipse {
+  background: transparent;
+  width: 200px;
+  height: 200px;
+  border-top: solid 5px orange;
+  border-left: solid 5px orange;
+  border-bottom: solid 0px orange;
+  border-radius: 100px;
+  box-shadow: 0 0 50px orange;
+}
 
