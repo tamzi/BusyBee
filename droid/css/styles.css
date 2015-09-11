@@ -1,2 +1,17 @@
     /*Your Custom Style sheet goes here*/
-font-family: 'Lato', sans-serif;
+
+body {
+  background: #eee;
+}
+
+.left-arm,
+.right-arm,
+.antenna:before,
+.antenna:after,
+.head,
+.droid-body,
+.left-leg,
+.right-leg {
+  background: #A4C639;
+}
+
