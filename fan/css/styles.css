@@ -1,2 +1,50 @@
     /*Your Custom Style sheet goes here*/
 font-family: 'Lato', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #18b;
+  padding: 2em;
+  -webkit-animation: bg 300s infinite ease-out;
+          animation: bg 300s infinite ease-out;
+}
+
+#fan {
+  position: absolute;
+  -webkit-transform:;
+      -ms-transform:;
+          transform:
+}
+
+.oscillator {
+  height: 8em;
+  width: 8em;
+  position: absolute;
+  -webkit-animation: oscillate 8s infinite linear;
+          animation: oscillate 8s infinite linear;
+}
+
+.guard {
+  height: 8em;
+  width: 8em;
+  position: absolute;
+  z-index: 10;
+}
+
+.frame {
+  height: 8em;
+  width: 8em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 3px solid #000;
+  border-radius: 50%;
+}
+
