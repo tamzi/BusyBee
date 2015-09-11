@@ -162,3 +162,7 @@ slides.Signal.prototype.dispatch = function() {
 // Create a new instance of slides
 var k = slides( document.querySelector( '.slides' ) );
 
+
+// Demo page JS
+
+var bulletsContainer = document.body.querySelector( '.bullets' );
