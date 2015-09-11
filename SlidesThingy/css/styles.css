@@ -58,3 +58,37 @@ font-family: 'Lato', sans-serif;
   -moz-animation: show-left 1s forwards ease;
   animation: show-left 1s forwards ease;
 }
+
+
+.slides.capable.animate .layer.hide.left {
+  -webkit-animation: hide-left 1s forwards ease;
+  -moz-animation: hide-left 1s forwards ease;
+  animation: hide-left 1s forwards ease;
+}
+/* CSS animation keyframes */
+
+@-webkit-keyframes show-right {
+  0% {
+    -webkit-transform: translateZ( -200px);
+  }
+  40% {
+    -webkit-transform: translate( 40%, 0) scale( 0.8) rotateY( -20deg);
+  }
+  100% {
+    -webkit-transform: translateZ( 0px);
+  }
+}
+
+@-webkit-keyframes hide-right {
+  0% {
+    -webkit-transform: translateZ( 0px);
+    visibility: visible;
+  }
+  40% {
+    -webkit-transform: translate( -40%, 0) scale( 0.8) rotateY( 20deg);
+  }
+  100% {
+    -webkit-transform: translateZ( -200px);
+    visibility: hidden;
+  }
+}
