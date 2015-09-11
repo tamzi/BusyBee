@@ -296,3 +296,32 @@ body {
   background: #64b9d2;
 }
 
+.bullets {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.bullets li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 3px;
+  background: rgba( 255, 255, 255, 0.5);
+  box-shadow: 0px 0px 4px rgba( 0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba( 0, 0, 0, 0);
+}
+
+.bullets li:hover {
+  background: rgba( 255, 255, 255, 0.8);
+}
+
+.bullets li.active {
+  cursor: default;
+  background: #fff;
+}
