@@ -1,9 +1,10 @@
         /*Your Custom Javascript file goes here.*/
-window.slides = function( container ) {
+window.kontext = function( container ) {
 
 	// Dispatched when the current layer changes
-	var changed = new slides.Signal();
-	// All layers in this instance of slides
+	var changed = new kontext.Signal();
+
+	// All layers in this instance of kontext
 	var layers = Array.prototype.slice.call( container.querySelectorAll( '.layer' ) );
 
 	// Flag if the browser is capable of handling our fancy transition
@@ -67,7 +68,6 @@ window.slides = function( container ) {
 		}
 
 	}
-
 
 	/**
 	 * Shows the previous layer.
@@ -137,21 +137,21 @@ window.slides = function( container ) {
 /**
  * Minimal utility for dispatching signals (events).
  */
-slides.Signal = function() {
+kontext.Signal = function() {
 	this.listeners = [];
 }
 
-slides.Signal.prototype.add = function( callback ) {
+kontext.Signal.prototype.add = function( callback ) {
 	this.listeners.push( callback );
 }
 
-slides.Signal.prototype.remove = function( callback ) {
+kontext.Signal.prototype.remove = function( callback ) {
 	var i = this.listeners.indexOf( callback );
 
 	if( i >= 0 ) this.listeners.splice( i, 1 );
 }
 
-slides.Signal.prototype.dispatch = function() {
+kontext.Signal.prototype.dispatch = function() {
 	var args = Array.prototype.slice.call( arguments );
 	this.listeners.forEach( function( f, i ) {
 		f.apply( null, args );
@@ -159,8 +159,12 @@ slides.Signal.prototype.dispatch = function() {
 }
 
 
-// Create a new instance of slides
-var k = slides( document.querySelector( '.slides' ) );
+
+
+
+
+// Create a new instance of kontext
+var k = kontext( document.querySelector( '.kontext' ) );
 
 
 // Demo page JS
@@ -189,5 +193,3 @@ document.addEventListener( 'keyup', function( event ) {
 	if( event.keyCode === 37 ) k.prev();
 	if( event.keyCode === 39 ) k.next();
 }, false );
-
-
