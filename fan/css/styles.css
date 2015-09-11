@@ -167,3 +167,57 @@ li[class^="bar"] {
       -ms-transform: rotate(285deg);
           transform: rotate(285deg);
 }
+
+
+.motor {
+  height: 2.25em;
+  width: 5em;
+  display: block;
+  position: absolute;
+  top: 2.875em;
+  right: 3.325em;
+  z-index: 8;
+  background: -webkit-linear-gradient(top, #333, #000) #111;
+  background: linear-gradient(top, #333, #000) #111;
+  border-radius: 50% 20% 20% 50%;
+  -webkit-animation: motor 8s infinite linear;
+          animation: motor 8s infinite linear;
+}
+
+.base {
+  height: 2em;
+  width: 5em;
+  position: absolute;
+  top: 11.5em;
+  left: 0.75em;
+  z-index: 5;
+  border-radius: 80%;
+  background: #222;
+}
+
+.base:before {
+  height: 2em;
+  width: 5em;
+  position: absolute;
+  top: -0.25em;
+  left: 0;
+  z-index: 5;
+  border-radius: 80%;
+  content: '';
+  display: block;
+  background: -webkit-linear-gradient(top, #333 0%, #000 100%);
+  background: linear-gradient(top, #333 0%, #000 100%);
+}
+
+.base:after {
+  height: 6em;
+  width: 0.5em;
+  position: absolute;
+  top: -5.5em;
+  left: 2.25em;
+  z-index: 6;
+  content: '';
+  display: block;
+  background: -webkit-linear-gradient(top, #111 0%, #212121 100%);
+  background: linear-gradient(top, #111 0%, #212121 100%);
+}
