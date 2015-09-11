@@ -15,3 +15,12 @@ body {
   background: #A4C639;
 }
 
+.left-arm,
+.right-arm,
+.left-leg,
+.right-leg,
+.droid {
+  float: left;
+}
+
+
