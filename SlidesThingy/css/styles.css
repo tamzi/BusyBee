@@ -39,3 +39,22 @@ font-family: 'Lato', sans-serif;
   -moz-transform: translateZ( 0px);
   transform: translateZ( 0px);
 }
+
+
+.slides.capable.animate .layer.show.right {
+  -webkit-animation: show-right 1s forwards ease;
+  -moz-animation: show-right 1s forwards ease;
+  animation: show-right 1s forwards ease;
+}
+
+.slides.capable.animate .layer.hide.right {
+  -webkit-animation: hide-right 1s forwards ease;
+  -moz-animation: hide-right 1s forwards ease;
+  animation: hide-right 1s forwards ease;
+}
+
+.slides.capable.animate .layer.show.left {
+  -webkit-animation: show-left 1s forwards ease;
+  -moz-animation: show-left 1s forwards ease;
+  animation: show-left 1s forwards ease;
+}
