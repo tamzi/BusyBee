@@ -158,3 +158,7 @@ slides.Signal.prototype.dispatch = function() {
 	} );
 }
 
+
+// Create a new instance of slides
+var k = slides( document.querySelector( '.slides' ) );
+
