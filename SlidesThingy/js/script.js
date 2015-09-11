@@ -108,3 +108,53 @@ window.slides = function( container ) {
 		return index;
 
 	}
+
+	/**
+	 * Retrieves the total number of layers.
+	 */
+	function getTotal() {
+
+		return layers.length;
+
+	}
+
+	// API
+	return {
+
+		show: show,
+		prev: prev,
+		next: next,
+
+		getIndex: getIndex,
+		getTotal: getTotal,
+
+		changed: changed
+
+	};
+
+};
+
+/**
+ * Minimal utility for dispatching signals (events).
+ */
+slides.Signal = function() {
+	this.listeners = [];
+}
+
+slides.Signal.prototype.add = function( callback ) {
+	this.listeners.push( callback );
+}
+
+slides.Signal.prototype.remove = function( callback ) {
+	var i = this.listeners.indexOf( callback );
+
+	if( i >= 0 ) this.listeners.splice( i, 1 );
+}
+
+slides.Signal.prototype.dispatch = function() {
+	var args = Array.prototype.slice.call( arguments );
+	this.listeners.forEach( function( f, i ) {
+		f.apply( null, args );
+	} );
+}
+
