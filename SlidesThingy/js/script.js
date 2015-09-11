@@ -176,3 +176,18 @@ for( var i = 0, len = k.getTotal(); i < len; i++ ) {
 	bullet.ontouchstart = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
 	bulletsContainer.appendChild( bullet );
 }
+
+// Update the bullets when the layer changes
+k.changed.add( function( layer, index ) {
+	var bullets = document.body.querySelectorAll( '.bullets li' );
+	for( var i = 0, len = bullets.length; i < len; i++ ) {
+		bullets[i].className = i === index ? 'active' : '';
+	}
+} );
+
+document.addEventListener( 'keyup', function( event ) {
+	if( event.keyCode === 37 ) k.prev();
+	if( event.keyCode === 39 ) k.next();
+}, false );
+
+
