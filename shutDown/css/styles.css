@@ -32,4 +32,17 @@ body {
   top: -50px;
 }
 
+#main:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 150px;
+  background: white;
+  left: 50%;
+  margin-left: -15px;
+  top: -60px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
 
