@@ -20,6 +20,7 @@ body {
   transition: all 0.5s ease-out;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
+
 #main:before {
   content: "";
   display: block;
@@ -46,3 +47,6 @@ body {
   border-radius: 20px;
 }
 
+#main:hover {
+  transform: rotate(180deg);
+}
