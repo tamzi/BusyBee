@@ -141,4 +141,26 @@ body {
   border-radius: 0 0 15px 15px;
 }
 
+.left-leg,
+.right-leg {
+  width: 25px;
+  height: 50px;
+  margin: -10px 0 0 25px;
+  border-radius: 0 0 15px 15px;
+  transform-origin: center top;
+}
+
+.left-leg {
+  animation: leg 2s ease-in-out infinite;
+}
+
+@keyframes leg {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25%,
+  75% {
+    transform: rotate(10deg) translateY(2px);
+  }
+}
 
