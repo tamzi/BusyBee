@@ -325,3 +325,15 @@ body {
   cursor: default;
   background: #fff;
 }
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 12px;
+  }
+  .layer h2 {
+    font-size: 5em;
+  }
+  .bullets li {
+    margin: 0 6px;
+  }
+}
