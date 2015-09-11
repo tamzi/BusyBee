@@ -131,3 +131,70 @@ font-family: 'Lato', sans-serif;
     transform: translateZ( 0px);
   }
 }
+
+
+@keyframes hide-right {
+  0% {
+    transform: translateZ( 0px);
+    visibility: visible;
+  }
+  40% {
+    transform: translate( -40%, 0) scale( 0.8) rotateY( 20deg);
+  }
+  100% {
+    transform: translateZ( -200px);
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes show-left {
+  0% {
+    -webkit-transform: translateZ( -200px);
+  }
+  40% {
+    -webkit-transform: translate( -40%, 0) scale( 0.8) rotateY( 20deg);
+  }
+  100% {
+    -webkit-transform: translateZ( 0px);
+  }
+}
+
+@-webkit-keyframes hide-left {
+  0% {
+    -webkit-transform: translateZ( 0px);
+    visibility: visible;
+  }
+  40% {
+    -webkit-transform: translate( 40%, 0) scale( 0.8) rotateY( -20deg);
+  }
+  100% {
+    -webkit-transform: translateZ( -200px);
+    visibility: hidden;
+  }
+}
+
+@-moz-keyframes show-left {
+  0% {
+    -moz-transform: translateZ( -200px);
+  }
+  40% {
+    -moz-transform: translate( -40%, 0) scale( 0.8) rotateY( 20deg);
+  }
+  100% {
+    -moz-transform: translateZ( 0px);
+  }
+}
+
+@-moz-keyframes hide-left {
+  0% {
+    -moz-transform: translateZ( 0px);
+    visibility: visible;
+  }
+  40% {
+    -moz-transform: translate( 40%, 0) scale( 0.8) rotateY( -20deg);
+  }
+  100% {
+    -moz-transform: translateZ( -200px);
+    visibility: hidden;
+  }
+}
