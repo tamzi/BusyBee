@@ -48,3 +48,62 @@ body {
   border-radius: 50%;
 }
 
+li[class^="cir"] {
+  position: absolute;
+  border: 2px solid #000;
+  border-radius: 50%;
+  z-index: 12;
+}
+
+.cir1 {
+  height: 7em;
+  width: 7em;
+  left: 0.5em;
+  top: 0.5em;
+}
+
+.cir2 {
+  height: 6em;
+  width: 6em;
+  left: 1em;
+  top: 1em;
+}
+
+.cir3 {
+  height: 5em;
+  width: 5em;
+  left: 1.5em;
+  top: 1.5em;
+}
+
+.cir4 {
+  height: 4em;
+  width: 4em;
+  left: 2em;
+  top: 2em;
+}
+
+.cir5 {
+  height: 3em;
+  width: 3em;
+  left: 2.5em;
+  top: 2.5em;
+}
+
+.cir6 {
+  height: 2em;
+  width: 2em;
+  left: 3em;
+  top: 3em;
+  background: -webkit-radial-gradient(50% 30%, #222 0%, #000 100%);
+  background: radial-gradient(50% 30%, #222 0%, #000 100%);
+}
+
+li[class^="bar"] {
+  position: absolute;
+  border: 1px solid #000;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 11;
+}
