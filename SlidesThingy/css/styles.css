@@ -277,3 +277,22 @@ body {
   margin: 0;
   font-size: 6.25em;
 }
+
+.layer p {
+  position: relative;
+  top: 20%;
+  margin: 0;
+}
+
+.layer.one {
+  background: #dc6c5f;
+}
+
+.layer.two {
+  background: #95dc84;
+}
+
+.layer.three {
+  background: #64b9d2;
+}
+
