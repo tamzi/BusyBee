@@ -31,3 +31,13 @@ body {
 }
 
 
+@keyframes droid-rotate {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25%,
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
