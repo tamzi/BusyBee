@@ -221,3 +221,80 @@ li[class^="bar"] {
   background: -webkit-linear-gradient(top, #111 0%, #212121 100%);
   background: linear-gradient(top, #111 0%, #212121 100%);
 }
+/* Animation */
+
+@-webkit-keyframes blades {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes blades {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes oscillate {
+  0% {
+    -webkit-transform: perspective(500px) rotateY(20deg);
+            transform: perspective(500px) rotateY(20deg);
+  }
+  50% {
+    -webkit-transform: perspective(250px) rotateY(50deg);
+            transform: perspective(250px) rotateY(50deg);
+  }
+  100% {
+    -webkit-transform: perspective(500px) rotateY(20deg);
+            transform: perspective(500px) rotateY(20deg);
+  }
+}
+
+@keyframes oscillate {
+  0% {
+    -webkit-transform: perspective(500px) rotateY(20deg);
+            transform: perspective(500px) rotateY(20deg);
+  }
+  50% {
+    -webkit-transform: perspective(250px) rotateY(50deg);
+            transform: perspective(250px) rotateY(50deg);
+  }
+  100% {
+    -webkit-transform: perspective(500px) rotateY(20deg);
+            transform: perspective(500px) rotateY(20deg);
+  }
+}
+
+@-webkit-keyframes motor {
+  0% {
+    width: 2.5em;
+  }
+  50% {
+    width: 5em;
+  }
+  100% {
+    width: 2.5em;
+  }
+}
+
+@keyframes motor {
+  0% {
+    width: 2.5em;
+  }
+  50% {
+    width: 5em;
+  }
+  100% {
+    width: 2.5em;
+  }
+}
