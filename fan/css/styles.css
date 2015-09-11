@@ -107,3 +107,29 @@ li[class^="bar"] {
           transform: rotate(45deg);
   z-index: 11;
 }
+
+
+.bar1 {
+  height: 8em;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.bar2 {
+  width: 8em;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.blades {
+  height: 6em;
+  width: 6em;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: 9;
+  -webkit-animation: blades 130ms infinite linear;
+          animation: blades 130ms infinite linear;
+}
