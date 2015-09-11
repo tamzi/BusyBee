@@ -2,12 +2,20 @@
 
 font-family: 'Lato', sans-serif;
 
-body {
-  background: #000;
+body{
+	background: #000;
   width: 300px;
   margin: 0 auto;
   padding: 30px;
 }
+
+}
+.theCount {
+	color: black;
+align-content: center;
+}
+
+
 .eclipse {
   background: transparent;
   width: 200px;
@@ -18,4 +26,3 @@ body {
   border-radius: 100px;
   box-shadow: 0 0 50px orange;
 }
-
