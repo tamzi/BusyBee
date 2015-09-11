@@ -67,3 +67,44 @@ window.slides = function( container ) {
 		}
 
 	}
+
+
+	/**
+	 * Shows the previous layer.
+	 */
+	function prev() {
+
+		var index = getIndex() - 1;
+		show( index >= 0 ? index : layers.length + index, 'left' );
+
+	}
+
+	/**
+	 * Shows the next layer.
+	 */
+	function next() {
+
+		show( ( getIndex() + 1 ) % layers.length, 'right' );
+
+	}
+
+	/**
+	 * Retrieves the index of the current slide.
+	 *
+	 * @param of [optional] layer DOM element which index is
+	 * to be returned
+	 */
+	function getIndex( of ) {
+
+		var index = 0;
+
+		layers.forEach( function( layer, i ) {
+			if( ( of && of == layer ) || ( !of && layer.classList.contains( 'show' ) ) ) {
+				index = i;
+				return;
+			}
+		} );
+
+		return index;
+
+	}
