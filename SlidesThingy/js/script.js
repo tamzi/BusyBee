@@ -166,3 +166,13 @@ var k = slides( document.querySelector( '.slides' ) );
 // Demo page JS
 
 var bulletsContainer = document.body.querySelector( '.bullets' );
+
+// Create one bullet per layer
+for( var i = 0, len = k.getTotal(); i < len; i++ ) {
+	var bullet = document.createElement( 'li' );
+	bullet.className = i === 0 ? 'active' : '';
+	bullet.setAttribute( 'index', i );
+	bullet.onclick = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+	bullet.ontouchstart = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+	bulletsContainer.appendChild( bullet );
+}
