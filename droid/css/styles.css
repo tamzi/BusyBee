@@ -55,3 +55,21 @@ body {
   margin: 105px 5px 0;
   transform-origin: center 12.5px;
 }
+
+.left-arm {
+  animation: arm-dangle 2s ease-in-out infinite;
+}
+
+@keyframes arm-dangle {
+  0%, 100% {
+    transform: rotate(0):
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  25%,
+  75% {
+    transform: rotate(13deg);
+  }
+}
+
