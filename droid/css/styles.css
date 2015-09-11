@@ -92,4 +92,23 @@ body {
   }
 }
 
+.antenna:before,
+.antenna:after {
+  display: inline-block;
+  content: "";
+  width: 3px;
+  height: 20px;
+  margin: 25px 15px -10px 35px;
+  transform-origin: center bottom;
+  border-radius: 3px;
+}
+
+.antenna:before {
+  transform: rotate(-30deg);
+}
+
+.antenna:after {
+  transform: rotate(30deg);
+}
+
 
