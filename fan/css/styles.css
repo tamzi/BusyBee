@@ -298,3 +298,41 @@ li[class^="bar"] {
     width: 2.5em;
   }
 }
+
+
+@-webkit-keyframes bg {
+  0% {
+    background: #05acd7;
+  }
+  10% {
+    background: #1063c3;
+  }
+  20% {
+    background: #fe80d7;
+  }
+  30% {
+    background: #fe2193;
+  }
+  40% {
+    background: #f62038;
+  }
+  50% {
+    background: #f38051;
+  }
+  60% {
+    background: #f4d84d;
+  }
+  70% {
+    background: #e0eb68;
+  }
+  80% {
+    background: #7cc04b;
+  }
+  90% {
+    background: #7cd8b5;
+  }
+  100% {
+    background: #00e1f3;
+  }
+}
+
