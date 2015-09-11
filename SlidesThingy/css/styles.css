@@ -266,4 +266,14 @@ body {
   color: #fff;
 }
 
+.layer {
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.1);
+}
 
+.layer h2 {
+  position: relative;
+  top: 20%;
+  margin: 0;
+  font-size: 6.25em;
+}
