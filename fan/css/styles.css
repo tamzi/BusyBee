@@ -133,3 +133,37 @@ li[class^="bar"] {
   -webkit-animation: blades 130ms infinite linear;
           animation: blades 130ms infinite linear;
 }
+
+
+.blades li {
+  height: 3.25em;
+  width: 3.25em;
+  position: absolute;
+  border-radius: 0 50% 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.b1 {
+  top: 3.5em;
+  left: 1.375em;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.b2 {
+  top: 0.25em;
+  left: -0.5em;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.b3 {
+  top: 0.25em;
+  left: 3.25em;
+  -webkit-transform: rotate(285deg);
+      -ms-transform: rotate(285deg);
+          transform: rotate(285deg);
+}
