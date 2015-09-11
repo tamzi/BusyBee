@@ -1,5 +1,4 @@
     /*Your Custom Style sheet goes here*/
-
 body {
   background: #eee;
 }
@@ -29,7 +28,6 @@ body {
   animation: droid-rotate 2s ease-in-out infinite;
   transform-origin: bottom left;
 }
-
 
 @keyframes droid-rotate {
   0%, 100% {
@@ -163,4 +161,3 @@ body {
     transform: rotate(10deg) translateY(2px);
   }
 }
-
