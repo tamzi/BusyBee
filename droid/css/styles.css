@@ -41,3 +41,17 @@ body {
   }
 }
 
+.droid {
+  width: 125px;
+  height: 165px;
+  margin: 0 auto;
+}
+
+.left-arm,
+.right-arm {
+  width: 25px;
+  height: 65px;
+  border-radius: 15px;
+  margin: 105px 5px 0;
+  transform-origin: center 12.5px;
+}
