@@ -111,4 +111,27 @@ body {
   transform: rotate(30deg);
 }
 
+.head {
+  width: 125px;
+  height: 60px;
+  border-radius: 60px 60px 0 0;
+  margin-bottom: 5px;
+}
+/* Eyes */
+
+.head:after,
+.head:before {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #eee;
+  border-radius: 50%;
+  margin: 25px 0 0 32px;
+}
+
+.head:after {
+  margin-left: 40px;
+}
+/* Right eye */
 
