@@ -23,4 +23,11 @@ body {
   float: left;
 }
 
+.android-container {
+  width: 200px;
+  margin: 20px auto;
+  animation: droid-rotate 2s ease-in-out infinite;
+  transform-origin: bottom left;
+}
+
 
