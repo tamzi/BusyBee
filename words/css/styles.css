@@ -80,3 +80,39 @@
     	translate(4.1em, -18.0em);
 }
 
+.responsive {
+  font-weight: 300;
+  letter-spacing: -.03em;
+  word-spacing: .3em;
+  -webkit-transform:
+    	scale(2)
+    	translate(2.12em, 5.14em);
+  -moz-transform:
+    	scale(2)
+    	translate(2.12em, 5.14em);
+}
+
+.usability {
+  font-weight: 400;
+  letter-spacing: -.04em;
+  -webkit-transform:
+    	scale(2.85, 3)
+      translate(7.14em, 3.55em);
+  -moz-transform:
+      scale(2.85, 3)
+      translate(7.14em, 3.55em);
+}
+
+.ajax {
+  letter-spacing: -0.01em;
+  font-weight: 700;
+	-webkit-transform:
+    	scale(2.4, 2.3)
+    	rotate(90deg)
+    	translate(6em, -5.8em);
+  -moz-transform:
+    	scale(2.4, 2.3)
+    	rotate(90deg)
+    	translate(6em, -5.8em);
+}
+
