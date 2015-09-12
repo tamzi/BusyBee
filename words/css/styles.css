@@ -1,6 +1,5 @@
     /*Your Custom Style sheet goes here*/
 
-
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 
 #techList {
@@ -20,3 +19,5 @@
   left: 0;
 }
 
+.html5 {@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+}
