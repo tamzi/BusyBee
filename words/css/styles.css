@@ -198,3 +198,17 @@
       scale(2)
       translate(12.7em, 8.6em);
 }
+
+
+.jg {
+  color: #ee5d29;
+  font-weight: 700;
+  letter-spacing: -.03em;
+  -webkit-transform:
+    	scale(3.4)
+      translate(7.03em, 2.15em);
+  -moz-transform:
+      scale(3.4)
+      translate(7.03em, 2.15em);
+}
+
