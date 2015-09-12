@@ -42,3 +42,24 @@ body {
   }
 }
 
+.atom {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  padding-top: 108px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 63px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 98px;
+  height: 298px;
+  border: 1px solid #fff;
+  border-radius: 120px / 350px;
+}
+
