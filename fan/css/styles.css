@@ -11,9 +11,14 @@ li {
 
 body {
   background: #18b;
-  padding: 2em;
+  padding: 5em;
   -webkit-animation: bg 300s infinite ease-out;
           animation: bg 300s infinite ease-out;
+	align-content: center;
+}
+.container{
+	background: black	;
+
 }
 
 #fan {
