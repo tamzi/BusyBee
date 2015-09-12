@@ -7,3 +7,38 @@ body {
   background: rgb(122, 224, 180);
 }
 
+@keyframes neutrino {
+  0% {
+    left: 37px;
+    top: -8px;
+  }
+  10% {
+    left: 70px;
+    top: 20px;
+  }
+  25% {
+    left: 85px;
+    top: 90px;
+  }
+  40% {
+    left: 70px;
+    top: 270px;
+  }
+  50% {
+    left: 37px;
+    top: 290px;
+  }
+  60% {
+    left: 10px;
+    top: 270px;
+  }
+  75% {
+    left: -10px;
+    top: 90px;
+  }
+  90% {
+    left: 0px;
+    top: 20px;
+  }
+}
+
