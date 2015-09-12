@@ -86,6 +86,19 @@ body {
 }
 
 
+/*Starting the decks*/
+
+/*To add a new deck copy the below code segment that is commented and edit  the items in caps
+
+.deck__item--YOUR NEW NAME {
+  background: YOUR HTML COLOUR CODE;
+  transform: rotate(-20deg);
+}
+
+
+
+*/
+
 
 .deck__item--facebook {
   background: #3b5998;
