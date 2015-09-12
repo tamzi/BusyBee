@@ -63,3 +63,34 @@ body {
   border-radius: 120px / 350px;
 }
 
+.line:nth-child(1) {}
+
+.line:nth-child(2) {
+  transform: rotate(55deg);
+}
+
+.line:nth-child(3) {
+  transform: rotate(-55deg);
+}
+
+.neutrino {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: blue;
+  border: 2px solid rgb(122, 224, 180);
+  border-radius: 12px;
+  left: 37px;
+  top: -8px;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.2), inset -3px -3px 5px rgba(0, 0, 0, 0.4);
+  animation: neutrino 1s linear infinite;
+}
+
+.b {
+  animation-delay: 0.6s;
+}
+
+.c {
+  animation-delay: 0.3s;
+}
+
