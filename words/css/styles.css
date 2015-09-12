@@ -40,6 +40,8 @@
   left: 0;
 }
 
+/*SKILLS START HERE*/
+
 .html5 {
   font-weight: 700;
   letter-spacing: -.05em;
@@ -50,3 +52,31 @@
     	scale(7.5, 7.8)
  			translate(1.18em, .68em);
 }
+
+
+.javascript {
+  letter-spacing: -.04em;
+  font-weight: 400;
+	-webkit-transform:
+    	scale(1.4)
+    	rotate(90deg)
+    	translate(3.88em, -13.2em);
+  -moz-transform:
+    	scale(1.4)
+    	rotate(90deg)
+    	translate(3.88em, -13.2em);
+}
+
+.accessibility {
+  letter-spacing: -.05em;
+  font-weight: 300;
+	-webkit-transform:
+    	scale(1.4, 1.33)
+    	rotate(90deg)
+    	translate(4.1em, -18.0em);
+  -moz-transform:
+    	scale(1.4, 1.33)
+    	rotate(90deg)
+    	translate(4.1em, -18.0em);
+}
+
