@@ -95,7 +95,11 @@ body {
   transform: rotate(-20deg);
 }
 
+How to add transformation:
+edit the number in this line:
+ // transform: rotate(-20deg)
 
+edit with regards to where on the deck you place it.
 
 */
 
