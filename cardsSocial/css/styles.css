@@ -68,3 +68,20 @@ body {
   z-index: 2;
 }
 
+
+.deck__link {
+  text-decoration: none;
+  display: block;
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.deck__icon {
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 4em;
+  color: black;
+  color: rgba(0, 0, 0, 0.6);
+  display: block;
+  margin: .5em auto;
+}
+
