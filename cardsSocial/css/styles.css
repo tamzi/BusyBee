@@ -1,2 +1,31 @@
     /*Your Custom Style sheet goes here*/
+
+/*
 font-family: 'Lato', sans-serif;
+*/
+
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #c6c6c6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.deck {
+  position: absolute;
+  width: 10em;
+  height: 13em;
+  top: 50%;
+  left: 50%;
+  margin: -6.5em 0 0 -5em;
+  -webkit-backface-visibility: hidden;
+  font-family: 'Ubuntu', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-align: center;
+}
+
