@@ -140,3 +140,61 @@
     	scale(3.88, 3.8)
     	translate(5.42em, 3.72em);
 }
+
+
+.objectoriented {
+  font-weight: 700;
+  letter-spacing: -.010em;
+  -webkit-transform:
+    	scale(1.85, 1.9)
+      translate(1.86em, 6.5em);
+  -moz-transform:
+      scale(1.85, 1.9)
+      translate(1.86em, 6.5em);
+}
+
+.wordpress {
+  font-weight: 300;
+  letter-spacing: -0.05em;
+  -webkit-transform:
+    	scale(2.75, 3)
+      translate(1.72em, 4.95em);
+  -moz-transform:
+      scale(2.75, 3)
+      translate(1.72em, 4.95em);
+}
+
+.seo {
+  font-weight: 300;
+  letter-spacing: -0.07em;
+  -webkit-transform:
+    	scale(3.9, 4)
+      translate(6.05em, .95em);
+  -moz-transform:
+      scale(3.9, 4)
+      translate(6.05em, .95em);
+}
+
+.crossbrowser {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  word-spacing: .2em;
+  -webkit-transform:
+  		scale(2)
+      translate(2.28em, 8.58em);
+  -moz-transform:
+      scale(2)
+      translate(2.28em, 8.58em);
+}
+
+.webstandards {
+  font-weight: 300;
+  letter-spacing: 0em;
+  word-spacing: .1em;
+  -webkit-transform:
+    	scale(2)
+      translate(12.7em, 8.6em);
+  -moz-transform:
+      scale(2)
+      translate(12.7em, 8.6em);
+}
