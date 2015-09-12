@@ -116,3 +116,27 @@
     	translate(6em, -5.8em);
 }
 
+
+.css3 {
+  letter-spacing: .01em;
+  font-weight: 700;
+	-webkit-transform:
+    	scale(6.8, 6.75)
+    	rotate(90deg)
+    	translate(1.32em, -4.54em);
+  -moz-transform:
+    	scale(6.8, 6.75)
+    	rotate(90deg)
+    	translate(1.32em, -4.54em);
+}
+
+.jquery {
+  letter-spacing: 0.045em;
+  font-weight: 700;
+	-webkit-transform:
+    	scale(3.88, 3.8)
+    	translate(5.42em, 3.72em);
+  -moz-transform:
+    	scale(3.88, 3.8)
+    	translate(5.42em, 3.72em);
+}
