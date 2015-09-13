@@ -96,3 +96,23 @@ body {
     color: #007fd5
   }
 }
+
+@-webkit-keyframes moon {
+  0% {
+    opacity: 0;
+    left: -200% -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    -moz-transform: scale(1);
+    left: 0% bottom: 250px;
+    -webkit-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    bottom: 500px;
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+}
