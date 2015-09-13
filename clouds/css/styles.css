@@ -1,2 +1,24 @@
     /*Your Custom Style sheet goes here*/
+
+/*
 font-family: 'Lato', sans-serif;
+*/
+
+html,
+body {
+  margin: 0;
+  height: 100%
+}
+
+.sky {
+  height: 480px;
+  background: #007fd5;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: sky_background 50s ease-out infinite;
+  -moz-animation: sky_background 50s ease-out infinite;
+  -o-animation: sky_background 50s ease-out infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
