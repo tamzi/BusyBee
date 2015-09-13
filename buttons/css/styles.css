@@ -32,3 +32,9 @@ button {
     					0 60px 20px -12px hsla(0,0%,0%,.1);
   animation: float 1s infinite ease-in-out alternate;
 }
+
+button.login {
+  animation-delay: .3s;
+}
+
+
