@@ -22,3 +22,18 @@ body {
   -moz-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0)
 }
+
+.moon {
+  background: url("imgs/moon.png");
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: moon 50s linear infinite;
+  -moz-animation: moon 50s linear infinite;
+  -o-animation: moon 50s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
+
