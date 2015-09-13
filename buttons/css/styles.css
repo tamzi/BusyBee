@@ -1,2 +1,12 @@
     /*Your Custom Style sheet goes here*/
+/*
 font-family: 'Lato', sans-serif;
+*/
+
+html {
+  background: hsl(50,50%,90%);
+}
+body {
+  text-align: center;
+  padding-top: 100px;
+}
