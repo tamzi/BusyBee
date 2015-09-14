@@ -178,3 +178,83 @@ body {
   left: 55px;
 }
 
+
+#glass #center #name,
+#glass #center #desc {
+  top: 10px;
+  left: 32px;
+  font-variant: small-caps;
+  font-size: 8px;
+}
+
+#glass #center #desc {
+  top: 70px;
+  margin-left: 4px;
+  transform: none;
+}
+
+#glass #center #dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #444e5e;
+  *zoom: 1;
+  filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF444E5E', endColorstr='#FF4F4E5E');
+  left: 51px;
+  top: 55px;
+}
+
+#glass #center #smallHand,
+#glass #center #midHand,
+#glass #center #bigHand {
+  background: #1c2252;
+  width: 45px;
+  height: 2px;
+  border: 1px solid #4f4e5e;
+  box-shadow: 0 0 1px #b5afaf;
+  /* enables antialiasing */
+
+  border-radius: 80%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transform-origin: 0% 50%;
+  transform: rotate(-45deg);
+  -webkit-animation: hours 43200s infinite linear;
+  -moz-animation: hours 43200s infinite linear;
+  -ms-animation: hours 43200s infinite linear;
+  -o-animation: hours 43200s infinite linear;
+  animation: hours 43200s infinite linear;
+}
+/* line 169, ../sass/s.scss */
+
+#glass #center #bigHand {
+  width: 65px;
+  height: 0;
+  border-bottom: none;
+  -webkit-animation: seconds 60s infinite linear;
+  -moz-animation: seconds 60s infinite linear;
+  -ms-animation: seconds 60s infinite linear;
+  -o-animation: seconds 60s infinite linear;
+  animation: seconds 60s infinite linear;
+}
+
+#glass #center #midHand {
+  width: 65px;
+  height: 1px;
+  -webkit-animation: minutes 3600s infinite linear;
+  -moz-animation: minutes 3600s infinite linear;
+  -ms-animation: minutes 3600s infinite linear;
+  -o-animation: minutes 3600s infinite linear;
+  animation: minutes 3600s infinite linear;
+}
+
+@-webkit-keyframes seconds {
+  0% {
+    -webkit-transform: rotate(120deg);
+  }
+  to {
+    -webkit-transform: rotate(480deg);
+  }
+}
+
+
