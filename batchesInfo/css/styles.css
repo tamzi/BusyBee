@@ -68,3 +68,30 @@ body {
   color: #f2f2f2;
   z-index: 1;
 }
+.tile .tag .text {
+  padding: 2px 7px;
+}
+.tile .tag.red {
+  background: rgba(255, 20, 0, 0.7);
+}
+.tile .tag.blue {
+  background: rgba(0, 67, 250, 0.7);
+}
+.tile .tag.orange {
+  background: rgba(213, 135, 0, 0.7);
+}
+.tile .tag.green {
+  background: rgba(61, 176, 0, 0.7);
+}
+.tile .tag.purple {
+  background: rgba(153, 3, 176, 0.7);
+}
+.tile.wide {
+  width: 248px;
+}
+.tile:hover {
+  transform: scale(0.96, 0.96);
+}
+.tile:active {
+  transform: scale(0.94, 0.94);
+}
