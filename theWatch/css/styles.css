@@ -64,4 +64,12 @@ body {
   position: absolute;
 }
 
+#topBand {
+  top: -80px;
+  left: 63px;
+}
 
+#botBand {
+  top: 140px;
+  left: 63px;
+}
