@@ -177,4 +177,50 @@ section {
   }
 }
 
+#four {
+  width: 70%;
+  /*animation*/
+
+  -webkit-animation: four 2s ease-in-out infinite alternate;
+  -moz-animation: four 2s ease-in-out infinite alternate;
+  -ms-animation: four 2s ease-in-out infinite alternate;
+  -o-animation: four 2s ease-in-out infinite alternate;
+  animation: four 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes four {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #781848;
+  }
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #F2BBE9;
+  }
+}
+
+@-moz-keyframes four {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #781848;
+  }
+  to {
+    -moz-box-shadow: 0 0 100px 15px #F2BBE9;
+  }
+}
+
+@-o-keyframes four {
+  from {
+    -o-box-shadow: 0 0 250px 20px #781848;
+  }
+  to {
+    -o-box-shadow: 0 0 100px 15px #F2BBE9;
+  }
+}
+		/*!!!!Funny brackets behaviour on shadow tag: Its a try*/
+@keyframes four {
+  from {
+    shadow: 0 0 250px 20px #781848;
+  }
+  to {
+    shadow: 0 0 100px 15px #F2BBE9;
+  }
+}
 
