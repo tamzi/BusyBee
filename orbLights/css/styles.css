@@ -130,5 +130,51 @@ section {
   }
 }
 
+#three {
+  width: 80%;
+  /*animation*/
+
+  -webkit-animation: three 3s ease-in-out infinite alternate;
+  -moz-animation: three 3s ease-in-out infinite alternate;
+  -ms-animation: three 3s ease-in-out infinite alternate;
+  -o-animation: three 3s ease-in-out infinite alternate;
+  animation: three 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes three {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #FFDD00;
+  }
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #3E33FF;
+  }
+}
+
+@-moz-keyframes three {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #FFDD00;
+  }
+  to {
+    -moz-box-shadow: 0 0 100px 15px #3E33FF
+  }
+}
+
+@-o-keyframes three {
+  from {
+    -o-box-shadow: 0 0 250px 20px #FFDD00;
+  }
+  to {
+    -o-box-shadow: 0 0 100px 15px #3E33FF
+  }
+}
+
+@keyframes three {
+  from {
+    box-shadow: 0 0 250px 20px #FFDD00;
+  }
+  to {
+    box-shadow: 0 0 100px 15px #3E33FF
+  }
+}
 
 
