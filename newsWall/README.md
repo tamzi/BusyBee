@@ -1,2 +1,2 @@
-# Batches Info
+# newsWall
 Showing a wall for news websites
