@@ -47,5 +47,41 @@ section {
   -o-animation: one 5s ease-in-out infinite alternate;
   animation: one 5s ease-in-out infinite alternate;
 }
+@-webkit-keyframes one {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #473C78;
+  }
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #F72A3B;
+  }
+}
+
+@-moz-keyframes one {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #473C78;
+  }
+  to {
+    -moz-box-shadow: 0 0 100px 15px #F72A3B;
+  }
+}
+
+@-o-keyframes one {
+  from {
+    -o-box-shadow: 0 0 250px 20px #473C78;
+  }
+  to {
+    -o-box-shadow: 0 0 100px 15px #F72A3B;
+  }
+}
+
+@keyframes one {
+  from {
+    box-shadow: 0 0 250px 20px #473C78;
+  }
+  to {
+    box-shadow: 0 0 100px 15px #F72A3B;
+  }
+}
+
 
 
