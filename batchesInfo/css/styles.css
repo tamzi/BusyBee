@@ -27,3 +27,29 @@ body {
   cursor: pointer;
   overflow: hidden;
 }
+.tile .live {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+}
+.tile img {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  z-index: 0;
+}
+.tile .description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #e2e2e2;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
