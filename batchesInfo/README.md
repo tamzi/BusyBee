@@ -1,2 +1,2 @@
 # Batches Info
-Showing a refiletring mechanism for news websites
+Showing a wall for news websites
