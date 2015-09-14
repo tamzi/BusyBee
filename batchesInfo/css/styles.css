@@ -1,2 +1,29 @@
     /*Your Custom Style sheet goes here*/
-font-family: 'Lato', sans-serif;
+/*font-family: 'Lato', sans-serif;*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e2e2e2;
+  background-image: radial-gradient(50% 50%, circle, #ffffff, #999999 100%);
+}
+.page {
+  position: relative;
+  top: 25px;
+  margin: auto;
+  width: 632px;
+  height: 100%;
+  font-size: 0;
+  column-count: 4;
+  column-gap: 0;
+}
+.tile {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+  cursor: pointer;
+  overflow: hidden;
+}
