@@ -214,13 +214,13 @@ section {
     -o-box-shadow: 0 0 100px 15px #F2BBE9;
   }
 }
-		/*!!!!Funny brackets behaviour on shadow tag: Its a try*/
+
 @keyframes four {
   from {
-    shadow: 0 0 250px 20px #781848;
+    box-shadow: 0 0 250px 20px #781848;
   }
   to {
-    shadow: 0 0 100px 15px #F2BBE9;
+    box-shadow: 0 0 100px 15px #F2BBE9;
   }
 }
 
