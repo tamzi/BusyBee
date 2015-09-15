@@ -422,13 +422,12 @@ body {
   top: 135px;
   left: 67px;
 }
-/* line 118, ../sass/s.scss */
+
 
 #glass #nine {
   top: 66px;
   left: 5px;
 }
-/* line 121, ../sass/s.scss */
 
 #glass #center {
   background: #e1ddd2;
@@ -478,7 +477,6 @@ body {
   height: 2px;
   border: 1px solid #4f4e5e;
   box-shadow: 0 0 1px #b5afaf;
-  /* enables antialiasing */
 
   border-radius: 80%;
   border-top-left-radius: 0;
