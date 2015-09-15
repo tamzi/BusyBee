@@ -258,3 +258,162 @@ body {
 }
 
 
+@-webkit-keyframes minutes {
+  0% {
+    -webkit-transform: rotate(178deg);
+  }
+  to {
+    -webkit-transform: rotate(538deg);
+  }
+}
+
+@-webkit-keyframes hours {
+  0% {
+    -webkit-transform: rotate(130deg);
+  }
+  to {
+    -webkit-transform: rotate(490deg);
+  }
+}
+
+@-moz-keyframes seconds {
+  0% {
+    -moz-transform: rotate(120deg);
+  }
+  to {
+    -moz-transform: rotate(480deg);
+  }
+}
+
+@-moz-keyframes minutes {
+  0% {
+    -moz-transform: rotate(178deg);
+  }
+  to {
+    -moz-transform: rotate(538deg);
+  }
+}
+
+@-moz-keyframes hours {
+  0% {
+    -moz-transform: rotate(130deg);
+  }
+  to {
+    -moz-transform: rotate(490deg);
+  }
+}
+
+@-o-keyframes seconds {
+  0% {
+    -o-transform: rotate(120deg);
+  }
+  to {
+    -o-transform: rotate(480deg);
+  }
+}
+
+@-o-keyframes minutes {
+  0% {
+    -o-transform: rotate(178deg);
+  }
+  to {
+    -o-transform: rotate(538deg);
+  }
+}
+
+@-o-keyframes hours {
+  0% {
+    -o-transform: rotate(130deg);
+  }
+  to {
+    -o-transform: rotate(490deg);
+  }
+}
+
+@-ms-keyframes seconds {
+  0% {
+    -ms-transform: rotate(120deg);
+  }
+  to {
+    -ms-transform: rotate(480deg);
+  }
+}
+
+@-ms-keyframes minutes {
+  0% {
+    -ms-transform: rotate(178deg);
+  }
+  to {
+    -ms-transform: rotate(538deg);
+  }
+}
+
+@-ms-keyframes hours {
+  0% {
+    -ms-transform: rotate(130deg);
+  }
+  to {
+    -ms-transform: rotate(490deg);
+  }
+}
+
+@keyframes seconds {
+  0% {
+    transform: rotate(120deg);
+  }
+  to {
+    transform: rotate(480deg);
+  }
+}
+
+@keyframes minutes {
+  0% {
+    transform: rotate(178deg);
+  }
+  to {
+    transform: rotate(538deg);
+  }
+}
+
+@keyframes hours {
+  0% {
+    transform: rotate(130deg);
+  }
+  to {
+    transform: rotate(490deg);
+  }
+}#glass {
+  box-shadow: inset 0 0 6px #000;
+  background: #a6a39e;
+  *zoom: 1;
+  filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFC8C5C0', endColorstr='#FFADA8A2');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c8c5c0), color-stop(100%, #ada8a2));
+  background-image: -webkit-linear-gradient(top, #c8c5c0 0%, #ada8a2 100%);
+  background-image: -moz-linear-gradient(top, #c8c5c0 0%, #ada8a2 100%);
+  background-image: -o-linear-gradient(top, #c8c5c0 0%, #ada8a2 100%);
+  background-image: linear-gradient(top, #c8c5c0 0%, #ada8a2 100%);
+  width: 150px;
+  height: 150px;
+  border: 1px solid #999;
+  border-radius: 80px;
+  position: relative;
+}
+
+#glass div {
+  position: absolute;
+  font-size: 14px;
+}
+
+#glass div:nth-child(2n) {
+  transform: rotate(-90deg);
+}
+
+#glass #twelve {
+  top: 3px;
+  left: 65px;
+}
+
+#glass #three {
+  top: 66px;
+  left: 135px;
+}
