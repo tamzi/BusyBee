@@ -225,7 +225,6 @@ body {
   -o-animation: hours 43200s infinite linear;
   animation: hours 43200s infinite linear;
 }
-/* line 169, ../sass/s.scss */
 
 #glass #center #bigHand {
   width: 65px;
@@ -488,4 +487,25 @@ body {
   -ms-animation: hours 43200s infinite linear;
   -o-animation: hours 43200s infinite linear;
   animation: hours 43200s infinite linear;
+}
+
+#glass #center #bigHand {
+  width: 65px;
+  height: 0;
+  border-bottom: none;
+  -webkit-animation: seconds 60s infinite linear;
+  -moz-animation: seconds 60s infinite linear;
+  -ms-animation: seconds 60s infinite linear;
+  -o-animation: seconds 60s infinite linear;
+  animation: seconds 60s infinite linear;
+}
+
+#glass #center #midHand {
+  width: 65px;
+  height: 1px;
+  -webkit-animation: minutes 3600s infinite linear;
+  -moz-animation: minutes 3600s infinite linear;
+  -ms-animation: minutes 3600s infinite linear;
+  -o-animation: minutes 3600s infinite linear;
+  animation: minutes 3600s infinite linear;
 }
