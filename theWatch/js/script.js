@@ -22,3 +22,28 @@ var d = new Date(),
     keyframes = "",
     VENDORS = [ '-webkit-', '-moz-', '-o-', '-ms-', '' ];
 
+
+for( var i = 0, len = VENDORS.length; i < len; i++ ) {
+
+  keyframes += "@"+VENDORS[i]+"keyframes seconds {"+
+    "0%{"+VENDORS[i]+"transform: rotate("+baseDegSEC+"deg);}"+
+    "to{"+VENDORS[i]+"transform: rotate("+endDegSEC+"deg);}}"+
+
+    "@"+VENDORS[i]+"keyframes minutes {"+
+    "0%{"+VENDORS[i]+"transform: rotate("+baseDegMIN+"deg);}"+
+    "to{"+VENDORS[i]+"transform: rotate("+endDegMIN+"deg);}}"+
+
+    "@"+VENDORS[i]+"keyframes hours {"+
+    "0%{"+VENDORS[i]+"transform: rotate("+baseDegHR+"deg);}"+
+    "to{"+VENDORS[i]+"transform: rotate("+endDegHR+"deg);}}";
+}
+
+// Add the Keyframes in a <style> tag in the <head>
+var cssAnimation = document.createElement('style');
+cssAnimation.type = 'text/css';
+
+var rules = document.createTextNode(keyframes);
+cssAnimation.appendChild(rules);
+
+document.getElementsByTagName("head")[0].appendChild(cssAnimation);
+
