@@ -47,3 +47,13 @@ cssAnimation.appendChild(rules);
 
 document.getElementsByTagName("head")[0].appendChild(cssAnimation);
 
+
+// Reloading the stylesheets
+var links = document.getElementsByTagName("link");
+
+for (var i = 0; i < links.length; i++) {
+  var link = links[i];
+  if (link.rel === "stylesheet") {
+    link.href += "?";
+  }
+}
