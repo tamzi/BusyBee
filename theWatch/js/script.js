@@ -1,6 +1,22 @@
         /*Your Custom Javascript file goes here.*/
 
 /*
+From:
+
+http://thesisb.com
+Realistic wristwatch in pure HTML/CSS
+
+---
+No images!
+CSS texture for the band borrowed from http://lea.verou.me/css3patterns/
+Idea by Brian Shumate - http://news.ycombinator.com/item?id=4373036
+---
+
+Click details above and drop a comment/suggestion/critique
+*/
+
+
+/*
  Added to start the time at your local time.
 */
 
