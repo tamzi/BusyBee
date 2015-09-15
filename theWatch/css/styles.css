@@ -509,3 +509,52 @@ body {
   -o-animation: minutes 3600s infinite linear;
   animation: minutes 3600s infinite linear;
 }
+
+/* keyframes added with JS so that watch starts at local time */
+
+@-webkit-keyframes seconds {
+  0% {
+    -webkit-transform: rotate(120deg);
+  }
+  to {
+    -webkit-transform: rotate(480deg);
+  }
+}
+
+@-webkit-keyframes minutes {
+  0% {
+    -webkit-transform: rotate(178deg);
+  }
+  to {
+    -webkit-transform: rotate(538deg);
+  }
+}
+
+@-webkit-keyframes hours {
+  0% {
+    -webkit-transform: rotate(130deg);
+  }
+  to {
+    -webkit-transform: rotate(490deg);
+  }
+}
+
+@-moz-keyframes seconds {
+  0% {
+    -moz-transform: rotate(120deg);
+  }
+  to {
+    -moz-transform: rotate(480deg);
+  }
+}
+
+@-moz-keyframes minutes {
+  0% {
+    -moz-transform: rotate(178deg);
+  }
+  to {
+    -moz-transform: rotate(538deg);
+  }
+}
+
+
