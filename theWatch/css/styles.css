@@ -617,5 +617,32 @@ body {
   }
 }
 
+@keyframes seconds {
+  0% {
+    transform: rotate(120deg);
+  }
+  to {
+    transform: rotate(480deg);
+  }
+}
+
+@keyframes minutes {
+  0% {
+    transform: rotate(178deg);
+  }
+  to {
+    transform: rotate(538deg);
+  }
+}
+
+@keyframes hours {
+  0% {
+    transform: rotate(130deg);
+  }
+  to {
+    transform: rotate(490deg);
+  }
+}
+
 
 
