@@ -590,6 +590,32 @@ body {
   }
 }
 
+@-ms-keyframes seconds {
+  0% {
+    -ms-transform: rotate(120deg);
+  }
+  to {
+    -ms-transform: rotate(480deg);
+  }
+}
+
+@-ms-keyframes minutes {
+  0% {
+    -ms-transform: rotate(178deg);
+  }
+  to {
+    -ms-transform: rotate(538deg);
+  }
+}
+
+@-ms-keyframes hours {
+  0% {
+    -ms-transform: rotate(130deg);
+  }
+  to {
+    -ms-transform: rotate(490deg);
+  }
+}
 
 
 
