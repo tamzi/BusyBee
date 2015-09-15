@@ -417,3 +417,77 @@ body {
   top: 66px;
   left: 135px;
 }
+
+#glass #six {
+  top: 135px;
+  left: 67px;
+}
+/* line 118, ../sass/s.scss */
+
+#glass #nine {
+  top: 66px;
+  left: 5px;
+}
+/* line 121, ../sass/s.scss */
+
+#glass #center {
+  background: #e1ddd2;
+  box-shadow: inset 0 1px 1px #777777, inset 0 -1px 1px #777777;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+}
+
+#glass #center div {
+  top: 55px;
+  left: 55px;
+}
+
+#glass #center #name,
+#glass #center #desc {
+  top: 10px;
+  left: 32px;
+  font-variant: small-caps;
+  font-size: 8px;
+}
+
+#glass #center #desc {
+  top: 70px;
+  margin-left: 4px;
+  transform: none;
+}
+
+#glass #center #dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #444e5e;
+  *zoom: 1;
+  filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF444E5E', endColorstr='#FF4F4E5E');
+  left: 51px;
+  top: 55px;
+}
+
+#glass #center #smallHand,
+#glass #center #midHand,
+#glass #center #bigHand {
+  background: #1c2252;
+  width: 45px;
+  height: 2px;
+  border: 1px solid #4f4e5e;
+  box-shadow: 0 0 1px #b5afaf;
+  /* enables antialiasing */
+
+  border-radius: 80%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transform-origin: 0% 50%;
+  transform: rotate(-45deg);
+  -webkit-animation: hours 43200s infinite linear;
+  -moz-animation: hours 43200s infinite linear;
+  -ms-animation: hours 43200s infinite linear;
+  -o-animation: hours 43200s infinite linear;
+  animation: hours 43200s infinite linear;
+}
