@@ -285,4 +285,21 @@ Magnetic = new function() {
       particle.shift.x += ((closestMagnet.position.x + (force.x * 8)) - particle.shift.x) * particle.speed;
       particle.shift.y += ((closestMagnet.position.y + (force.y * 8)) - particle.shift.y) * particle.speed;
 
-	}}
+	      // Apply the combined position including shift, angle and orbit
+      particle.position.x = particle.shift.x + Math.cos(i + particle.angle) * (particle.orbit * particle.force);
+      particle.position.y = particle.shift.y + Math.sin(i + particle.angle) * (particle.orbit * particle.force);
+
+      // Limit to screen bounds
+      particle.position.x = Math.max(Math.min(particle.position.x, SCREEN_WIDTH - particle.size / 2), particle.size / 2);
+      particle.position.y = Math.max(Math.min(particle.position.y, SCREEN_HEIGHT - particle.size / 2), particle.size / 2);
+
+      // Slowly inherit the cloest magnets orbit
+      particle.orbit += (closestMagnet.orbit - particle.orbit) * 0.1;
+
+      context.beginPath();
+      context.fillStyle = particle.color;
+      context.arc(particle.position.x, particle.position.y, particle.size / 2, 0, Math.PI * 2, true);
+      context.fill();
+    }
+  }
+
