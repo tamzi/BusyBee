@@ -277,3 +277,12 @@ Magnetic = new function() {
       }
 
       closestMagnet.connections += 1;
+
+      // Rotation
+      particle.angle += particle.speed;
+
+      // Translate towards the magnet position
+      particle.shift.x += ((closestMagnet.position.x + (force.x * 8)) - particle.shift.x) * particle.speed;
+      particle.shift.y += ((closestMagnet.position.y + (force.y * 8)) - particle.shift.y) * particle.speed;
+
+	}}
