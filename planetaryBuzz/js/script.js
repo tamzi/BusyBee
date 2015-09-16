@@ -116,3 +116,8 @@ Magnetic = new function() {
     }
   }
 
+  function documentMouseMoveHandler(event) {
+    mouseX = event.clientX - (window.innerWidth - SCREEN_WIDTH) * .5;
+    mouseY = event.clientY - (window.innerHeight - SCREEN_HEIGHT) * .5;
+  }
+
