@@ -192,4 +192,45 @@ Magnetic = new function() {
     canvas.style.left = (window.innerWidth - SCREEN_WIDTH) * .5 + 'px';
     canvas.style.top = (window.innerHeight - SCREEN_HEIGHT) * .5 + 'px';
   }
+  function loop() {
+
+    if (skins[skinIndex].useFade) {
+      context.fillStyle = skins[skinIndex].fadeFill;
+      context.fillRect(0, 0, context.canvas.width, context.canvas.height);
+    } else {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    var particle, magnet;
+    var i, j, ilen, jlen;
+
+    // Render the magnets
+    for (j = 0, jlen = magnets.length; j < jlen; j++) {
+      magnet = magnets[j];
+
+      if (magnet.dragging) {
+        magnet.position.x += (mouseX - magnet.position.x) * 0.2;
+        magnet.position.y += (mouseY - magnet.position.y) * 0.2;
+      }
+
+      // Increase the size of the magnet center point depending on # of connections
+      magnet.size += ((magnet.connections / 3) - magnet.size) * 0.025;
+      magnet.size = Math.max(magnet.size, 2);
+
+      var gradientFill = context.createRadialGradient(magnet.position.x, magnet.position.y, 0, magnet.position.x, magnet.position.y, magnet.size * 10);
+      gradientFill.addColorStop(0, skins[skinIndex].glowA);
+      gradientFill.addColorStop(1, skins[skinIndex].glowB);
+
+      context.beginPath();
+      context.fillStyle = gradientFill;
+      context.arc(magnet.position.x, magnet.position.y, magnet.size * 10, 0, Math.PI * 2, true);
+      context.fill();
+
+      context.beginPath();
+      context.fillStyle = '#00000000';
+      context.arc(magnet.position.x, magnet.position.y, magnet.size, 0, Math.PI * 2, true);
+      context.fill();
+
+      magnet.connections = 0;
+    }
 
