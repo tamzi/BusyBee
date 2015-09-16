@@ -79,3 +79,27 @@ Magnetic = new function() {
     }
   }
 
+  function createMagnets() {
+    var w = 300;
+    var h = 300;
+
+    for (var i = 0; i < MAGNETS_AT_START; i++) {
+      var position = {
+        x: (SCREEN_WIDTH - w) * 0.5 + (Math.random() * w),
+        y: (SCREEN_HEIGHT - h) * 0.5 + (Math.random() * h)
+      };
+
+      createMagnet(position);
+    }
+  }
+
+  function createMagnet(position) {
+    var m = new Magnet();
+    m.position.x = position.x;
+    m.position.y = position.y;
+
+    magnets.push(m);
+
+    createParticles(m.position);
+  }
+
