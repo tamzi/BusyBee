@@ -172,3 +172,24 @@ Magnetic = new function() {
     updateSkin();
   }
 
+  function updateSkin() {
+    skinIndex = skinIndex < 0 ? skins.length - 1 : skinIndex;
+    skinIndex = skinIndex > skins.length - 1 ? 0 : skinIndex;
+
+    for (var i = 0, len = particles.length; i < len; i++) {
+      particles[i].color = skins[skinIndex].particleFill;
+    }
+  }
+
+  function windowResizeHandler() {
+    SCREEN_WIDTH = window.innerWidth;
+    SCREEN_HEIGHT = window.innerHeight;
+
+    canvas.width = SCREEN_WIDTH;
+    canvas.height = SCREEN_HEIGHT;
+
+    canvas.style.position = 'absolute';
+    canvas.style.left = (window.innerWidth - SCREEN_WIDTH) * .5 + 'px';
+    canvas.style.top = (window.innerHeight - SCREEN_HEIGHT) * .5 + 'px';
+  }
+
