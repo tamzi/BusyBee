@@ -150,3 +150,25 @@ Magnetic = new function() {
       }
     }
   }
+
+  function documentMouseUpHandler(event) {
+    mouseIsDown = false;
+
+    for (var i = 0, len = magnets.length; i < len; i++) {
+      magnet = magnets[i];
+      magnet.dragging = false;
+    }
+  }
+
+  function previousSkinClickHandler(event) {
+    event.preventDefault();
+    --skinIndex;
+    updateSkin();
+  }
+
+  function nextSkinClickHandler(event) {
+    event.preventDefault();
+    ++skinIndex;
+    updateSkin();
+  }
+
