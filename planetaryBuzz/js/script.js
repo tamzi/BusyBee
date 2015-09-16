@@ -247,3 +247,33 @@ Magnetic = new function() {
         y: 0
       };
 
+      // For each particle, we check what the closes magnet is
+      for (j = 0, jlen = magnets.length; j < jlen; j++) {
+        magnet = magnets[j];
+
+        currentDistance = distanceBetween(particle.position, magnet.position) - (magnet.orbit * 0.5);
+
+        if (particle.magnet != magnet) {
+          var fx = magnet.position.x - particle.position.x;
+          if (fx > -MAGNETIC_FORCE_THRESHOLD && fx < MAGNETIC_FORCE_THRESHOLD) {
+            force.x += fx / MAGNETIC_FORCE_THRESHOLD;
+          }
+
+          var fy = magnet.position.y - particle.position.y;
+          if (fy > -MAGNETIC_FORCE_THRESHOLD && fy < MAGNETIC_FORCE_THRESHOLD) {
+            force.y += fy / MAGNETIC_FORCE_THRESHOLD;
+          }
+
+        }
+
+        if (closestMagnet == null || currentDistance < closestDistance) {
+          closestDistance = currentDistance;
+          closestMagnet = magnet;
+        }
+      }
+
+      if (particle.magnet == null || particle.magnet != closestMagnet) {
+        particle.magnet = closestMagnet;
+      }
+
+      closestMagnet.connections += 1;
