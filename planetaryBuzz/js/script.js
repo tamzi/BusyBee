@@ -121,3 +121,32 @@ Magnetic = new function() {
     mouseY = event.clientY - (window.innerHeight - SCREEN_HEIGHT) * .5;
   }
 
+  function documentMouseDownHandler(event) {
+    event.preventDefault();
+
+    mouseIsDown = true;
+
+    if (new Date().getTime() - mouseDownTime < 300) {
+      // The mouse was pressed down twice with a < 300 ms interval: add a magnet
+      createMagnet({
+        x: mouseX,
+        y: mouseY
+      });
+
+      mouseDownTime = 0;
+    }
+
+    mouseDownTime = new Date().getTime();
+
+    for (var i = 0, len = magnets.length; i < len; i++) {
+      magnet = magnets[i];
+
+      if (distanceBetween(magnet.position, {
+          x: mouseX,
+          y: mouseY
+        }) < magnet.orbit * .5) {
+        magnet.dragging = true;
+        break;
+      }
+    }
+  }
