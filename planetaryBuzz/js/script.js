@@ -1,3 +1,5 @@
+					/*js file*/
+
 Magnetic = new function() {
 
   var SCREEN_WIDTH = window.innerWidth;
@@ -103,7 +105,7 @@ Magnetic = new function() {
     createParticles(m.position);
   }
 
- function createParticles(position) {
+  function createParticles(position) {
     for (var i = 0; i < PARTICLES_PER_MAGNET; i++) {
       var p = new Particle();
       p.position.x = position.x;
@@ -192,6 +194,7 @@ Magnetic = new function() {
     canvas.style.left = (window.innerWidth - SCREEN_WIDTH) * .5 + 'px';
     canvas.style.top = (window.innerHeight - SCREEN_HEIGHT) * .5 + 'px';
   }
+
   function loop() {
 
     if (skins[skinIndex].useFade) {
@@ -285,7 +288,7 @@ Magnetic = new function() {
       particle.shift.x += ((closestMagnet.position.x + (force.x * 8)) - particle.shift.x) * particle.speed;
       particle.shift.y += ((closestMagnet.position.y + (force.y * 8)) - particle.shift.y) * particle.speed;
 
-	      // Apply the combined position including shift, angle and orbit
+      // Appy the combined position including shift, angle and orbit
       particle.position.x = particle.shift.x + Math.cos(i + particle.angle) * (particle.orbit * particle.force);
       particle.position.y = particle.shift.y + Math.sin(i + particle.angle) * (particle.orbit * particle.force);
 
@@ -329,3 +332,15 @@ function Particle() {
   this.magnet = null;
 }
 
+function Magnet() {
+  this.orbit = 100;
+  this.position = {
+    x: 0,
+    y: 0
+  };
+  this.dragging = false;
+  this.connections = 0;
+  this.size = 1;
+}
+
+Magnetic.init();
