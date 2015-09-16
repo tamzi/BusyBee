@@ -56,3 +56,26 @@ Magnetic = new function() {
     useFade: false
   }];
 
+  this.init = function() {
+
+    canvas = document.getElementById('world');
+
+    if (canvas && canvas.getContext) {
+      context = canvas.getContext('2d');
+
+      // Register event listeners
+      window.addEventListener('mousemove', documentMouseMoveHandler, false);
+      window.addEventListener('mousedown', documentMouseDownHandler, false);
+      window.addEventListener('mouseup', documentMouseUpHandler, false);
+      document.getElementById('prevSkin').addEventListener('click', previousSkinClickHandler, false);
+      document.getElementById('nextSkin').addEventListener('click', nextSkinClickHandler, false);
+      window.addEventListener('resize', windowResizeHandler, false);
+
+      createMagnets();
+
+      windowResizeHandler();
+
+      setInterval(loop, 1000 / 60);
+    }
+  }
+
