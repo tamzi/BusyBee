@@ -1,2 +1,2 @@
 # Planetary Buzz
-PLanets, Particles, Light and a buzz
+Planets, Particles, Light and a buzz
