@@ -103,3 +103,16 @@ Magnetic = new function() {
     createParticles(m.position);
   }
 
+ function createParticles(position) {
+    for (var i = 0; i < PARTICLES_PER_MAGNET; i++) {
+      var p = new Particle();
+      p.position.x = position.x;
+      p.position.y = position.y;
+      p.shift.x = position.x;
+      p.shift.y = position.y;
+      p.color = skins[skinIndex].particleFill;
+
+      particles.push(p);
+    }
+  }
+
