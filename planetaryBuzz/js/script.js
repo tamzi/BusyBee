@@ -234,3 +234,16 @@ Magnetic = new function() {
       magnet.connections = 0;
     }
 
+    // Render the particles
+    for (i = 0, ilen = particles.length; i < ilen; i++) {
+      particle = particles[i];
+
+      var currentDistance = -1;
+      var closestDistance = -1;
+      var closestMagnet = null;
+
+      var force = {
+        x: 0,
+        y: 0
+      };
+
