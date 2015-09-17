@@ -1,0 +1,14 @@
+    /*Your Custom Style sheet goes here*/
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+body {
+  background: url(https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/dark_leather.png);
+}
+
+.logo {
+  -webkit-animation: flicker 1500ms infinite alternate-reverse;
+  -webkit-animation-timing-function: step-start;
+  background-image: url(http://i.imgur.com/Yn2T9.png);
+  height: 236px;
+  margin: -60px auto auto auto;
+  width: 474px;
+}
