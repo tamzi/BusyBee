@@ -30,3 +30,43 @@ body {
   margin: 0;
   z-index: 5;
 }
+
+@-webkit-keyframes flicker {
+  0% {
+    background-position: 0px 0px;
+  }
+  50% {
+    background-position: 0px 0px;
+  }
+  61% {
+    background-position: 0px 0px;
+  }
+  67% {
+    background-position: 0px 0px;
+  }
+  68% {
+    background-position: 0px -472px;
+  }
+  72% {
+    background-position: 0px -236px;
+  }
+  78% {
+    background-position: 0px -472px;
+  }
+  80% {
+    background-position: 0px -236px;
+  }
+  76% {
+    background-position: 0px -236px;
+  }
+  81% {
+    background-position: 0px -472px;
+  }
+  89% {
+    background-position: 0px -236px;
+  }
+  100% {
+    background-position: 0px -472px;
+  }
+}
+
