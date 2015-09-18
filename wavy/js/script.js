@@ -28,3 +28,11 @@ init = function(event) {
       x: (i / pointCount) * (canvas.width + 200),
       y: 100
     };
+	      points[i].o = {
+      x: points[i].x,
+      y: points[i].y
+    };
+  }
+  console.log(points);
+
+
