@@ -59,4 +59,15 @@ init = function(event) {
     };
     var previousMidpoint = null;
 
+   // Slowly erase after drawing
+    context.fillStyle = "rgba(0, 0, 0,0.04)";
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    context.save();
+    context.lineWidth = 0.5;
+    context.translate(0, canvas.height / 2);
+    context.globalCompositeOperation = "lighter";
+    for (i = 0; i < points.length; ++i) {
+      var hsv = CanvasPS3.HSVRGB((t * 360 * 5) % 360, 60, 100);
+      position = spline.get2DPoint(points, i / pointCount);
+      context.beginPath();
 
