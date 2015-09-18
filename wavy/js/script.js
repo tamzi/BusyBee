@@ -35,4 +35,18 @@ init = function(event) {
   }
   console.log(points);
 
+  // Loop
+  var count = 0;
+  (function loop() {
+    //  tn += 0.00000000;
+    tn += 0.04;
+    for (var i = 0; i < pointCount; i++) {
+      var p = points[i];
+      //       var noise = CanvasPS3.noise(p.o.x+tn, p.o.y+tn, tn);
+      var noise = CanvasPS3.noise(p.o.x * 0.005 + tn, p.o.y * 0.01, tn * 0.3);
+      //var noise = CanvasPS3.noise(p.o.x, p.o.y, tn);
+      p.x = p.o.x;
+      p.y = (noise * 200);
+    }
+
 
