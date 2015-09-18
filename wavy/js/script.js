@@ -174,3 +174,22 @@ function grad(hash, x, y, z) {
 
   }
 
+// Retrieve the namespace
+  CanvasPS3.noise = function(x, y, z) {
+
+    var floorX = ~~x,
+      floorY = ~~y,
+      floorZ = ~~z;
+
+    var X = floorX & 255,
+      Y = floorY & 255,
+      Z = floorZ & 255;
+
+    x -= floorX;
+    y -= floorY;
+    z -= floorZ;
+
+    var xMinus1 = x - 1,
+      yMinus1 = y - 1,
+      zMinus1 = z - 1;
+
