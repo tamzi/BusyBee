@@ -192,4 +192,25 @@ function grad(hash, x, y, z) {
     var xMinus1 = x - 1,
       yMinus1 = y - 1,
       zMinus1 = z - 1;
+    var u = fade(x),
+      v = fade(y),
+      w = fade(z);
+
+    var A = p[X] + Y,
+      AA = p[A] + Z,
+      AB = p[A + 1] + Z,
+      B = p[X + 1] + Y,
+      BA = p[B] + Z,
+      BB = p[B + 1] + Z;
+
+    return lerp(w, lerp(v, lerp(u, grad(p[AA], x, y, z),
+          grad(p[BA], xMinus1, y, z)),
+        lerp(u, grad(p[AB], x, yMinus1, z),
+          grad(p[BB], xMinus1, yMinus1, z))),
+      lerp(v, lerp(u, grad(p[AA + 1], x, y, zMinus1),
+          grad(p[BA + 1], xMinus1, y, z - 1)),
+        lerp(u, grad(p[AB + 1], x, yMinus1, zMinus1),
+          grad(p[BB + 1], xMinus1, yMinus1, zMinus1))));
+
+  };
 
