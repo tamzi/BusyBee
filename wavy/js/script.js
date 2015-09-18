@@ -214,3 +214,14 @@ function grad(hash, x, y, z) {
 
   };
 
+  CanvasPS3.HSVRGB = function(h, s, v) {
+    var r, g, b;
+    var i;
+    var f, p, q, t;
+
+    // Make sure our arguments stay in-range
+    h = Math.max(0, Math.min(360, h));
+    s = Math.max(0, Math.min(100, s));
+    v = Math.max(0, Math.min(100, v));
+
+
