@@ -78,3 +78,19 @@ init = function(event) {
         y: oldPosition.y + (position.y - oldPosition.y) * .5
       };
 
+      //  Draw a quadratic bezier curve to the next point in the path
+      if (previousMidpoint) {
+        context.moveTo(previousMidpoint.x, previousMidpoint.y);
+        context.quadraticCurveTo(oldPosition.x, oldPosition.y, midpoint.x, midpoint.y);
+      } else {}
+
+      context.strokeStyle = "rgba(" + hsv[0] + "," + hsv[1] + "," + hsv[2] + ", 1)";
+      context.stroke();
+      context.closePath();
+      previousMidpoint = midpoint;
+      oldPosition.x = position.x;
+      oldPosition.y = position.y;
+    }
+    context.restore();
+    t += 0.0016;
+
