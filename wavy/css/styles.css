@@ -1,2 +1,13 @@
     /*Your Custom Style sheet goes here*/
-font-family: 'Lato', sans-serif;
+
+body {
+  margin: 0;
+  background-color: #000000;
+
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
