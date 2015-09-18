@@ -71,3 +71,10 @@ init = function(event) {
       position = spline.get2DPoint(points, i / pointCount);
       context.beginPath();
 
+
+      // Midpoint
+      var midpoint = {
+        x: oldPosition.x + (position.x - oldPosition.x) * .5,
+        y: oldPosition.y + (position.y - oldPosition.y) * .5
+      };
+
