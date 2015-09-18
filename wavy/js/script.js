@@ -49,4 +49,14 @@ init = function(event) {
       p.y = (noise * 200);
     }
 
+   console.log(points);
+
+    var spline = new Spline();
+    var position = spline.get2DPoint(points, 0);
+    var oldPosition = {
+      x: position.x,
+      y: position.y
+    };
+    var previousMidpoint = null;
+
 
