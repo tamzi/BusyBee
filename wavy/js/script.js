@@ -93,4 +93,8 @@ init = function(event) {
     }
     context.restore();
     t += 0.0016;
+   // Loop
+    window.requestAnimationFrame(loop, null);
+  })();
+};
 
