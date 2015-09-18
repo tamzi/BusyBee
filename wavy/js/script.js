@@ -98,3 +98,11 @@ init = function(event) {
   })();
 };
 
+function update() {
+
+};
+
+function draw() {
+
+}
+
