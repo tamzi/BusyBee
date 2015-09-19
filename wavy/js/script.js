@@ -1,5 +1,6 @@
         /*Your Custom Javascript file goes here.*/
 // 'trying stuff' below
+// Lots of 'trying out stuff' below, so view at your own peril
 CanvasPS3 = {};
 console.log("Hi");
 
@@ -28,7 +29,7 @@ init = function(event) {
       x: (i / pointCount) * (canvas.width + 200),
       y: 100
     };
-	      points[i].o = {
+    points[i].o = {
       x: points[i].x,
       y: points[i].y
     };
@@ -49,7 +50,7 @@ init = function(event) {
       p.y = (noise * 200);
     }
 
-   console.log(points);
+    console.log(points);
 
     var spline = new Spline();
     var position = spline.get2DPoint(points, 0);
@@ -59,7 +60,7 @@ init = function(event) {
     };
     var previousMidpoint = null;
 
-   // Slowly erase after drawing
+    // Slowly erase
     context.fillStyle = "rgba(0, 0, 0,0.04)";
     context.fillRect(0, 0, canvas.width, canvas.height);
     context.save();
@@ -70,7 +71,6 @@ init = function(event) {
       var hsv = CanvasPS3.HSVRGB((t * 360 * 5) % 360, 60, 100);
       position = spline.get2DPoint(points, i / pointCount);
       context.beginPath();
-
 
       // Midpoint
       var midpoint = {
@@ -93,7 +93,8 @@ init = function(event) {
     }
     context.restore();
     t += 0.0016;
-   // Loop
+
+    // Loop
     window.requestAnimationFrame(loop, null);
   })();
 };
@@ -132,7 +133,7 @@ function Spline() {
     return v2;
   }
 
-   // Catmull-Rom
+  // Catmull-Rom
 
   function interpolate(p0, p1, p2, p3, t) {
 
@@ -165,7 +166,20 @@ function Spline() {
     p[256 + i] = p[i];
 
   }
-function grad(hash, x, y, z) {
+
+  function fade(t) {
+
+    return t * t * t * (t * (t * 6 - 15) + 10);
+
+  }
+
+  function lerp(t, a, b) {
+
+    return a + t * (b - a);
+
+  }
+
+  function grad(hash, x, y, z) {
 
     var h = hash & 15;
     var u = h < 8 ? x : y,
@@ -174,7 +188,7 @@ function grad(hash, x, y, z) {
 
   }
 
-// Retrieve the namespace
+  // Retrieve the namespace
   CanvasPS3.noise = function(x, y, z) {
 
     var floorX = ~~x,
@@ -192,6 +206,7 @@ function grad(hash, x, y, z) {
     var xMinus1 = x - 1,
       yMinus1 = y - 1,
       zMinus1 = z - 1;
+
     var u = fade(x),
       v = fade(y),
       w = fade(z);
@@ -224,7 +239,7 @@ function grad(hash, x, y, z) {
     s = Math.max(0, Math.min(100, s));
     v = Math.max(0, Math.min(100, v));
 
-	     // We accept saturation and value arguments from 0 to 100 because that's
+    // We accept saturation and value arguments from 0 to 100 because that's
     // how Photoshop represents those values. Internally, however, the
     // saturation and value are calculated from a range of 0 to 1. We make
     // That conversion here.
@@ -236,7 +251,6 @@ function grad(hash, x, y, z) {
       r = g = b = v;
       return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
     }
-
 
     h /= 60; // sector 0 to 5
     i = Math.floor(h);
@@ -257,7 +271,8 @@ function grad(hash, x, y, z) {
         g = v;
         b = p;
         break;
-			  case 2:
+
+      case 2:
         r = p;
         g = v;
         b = t;
@@ -296,4 +311,8 @@ function grad(hash, x, y, z) {
     d = a + c;
     return e
   });
-
+  window.cancelAnimationFrame || (window.cancelAnimationFrame = function(a) {
+    clearTimeout(a)
+  })
+})();
+init();
