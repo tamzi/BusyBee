@@ -224,4 +224,18 @@ function grad(hash, x, y, z) {
     s = Math.max(0, Math.min(100, s));
     v = Math.max(0, Math.min(100, v));
 
+	     // We accept saturation and value arguments from 0 to 100 because that's
+    // how Photoshop represents those values. Internally, however, the
+    // saturation and value are calculated from a range of 0 to 1. We make
+    // That conversion here.
+    s /= 100;
+    v /= 100;
+
+    if (s == 0) {
+      // Achromatic (grey)
+      r = g = b = v;
+      return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+    }
+
+
 
