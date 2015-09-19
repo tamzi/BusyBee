@@ -257,6 +257,33 @@ function grad(hash, x, y, z) {
         g = v;
         b = p;
         break;
+			  case 2:
+        r = p;
+        g = v;
+        b = t;
+        break;
+
+      case 3:
+        r = p;
+        g = q;
+        b = v;
+        break;
+
+      case 4:
+        r = t;
+        g = p;
+        b = v;
+        break;
+
+      default: // case 5:
+        r = v;
+        g = p;
+        b = q;
+    }
+
+    return [Math.floor(r * 255), Math.floor(g * 255), Math.floor(b * 255)];
+  }
+})();
 
 
 
