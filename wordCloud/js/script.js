@@ -10,6 +10,9 @@ $(document).ready(function () {
 		textFont: null,
 		textColour: null,
 		weightMode: 'both',
-		weight: true,
+		weight: true, 'tags')) {
+     // something went wrong, hide the canvas container
+    $('#myCanvasContainer').hide();
+  }
 	},
 });
