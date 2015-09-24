@@ -94,3 +94,13 @@ h1 {
     color: #6d5669;
     text-shadow: 0 0 3px #635861, 0 0 5px #635861;
 }
+.animate {
+    -webkit-animation-name: turnonlights;
+    -webkit-animation-duration: 3.0s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-timing-function: steps(2, start);
+    -moz-animation-name: turnonlights;
+    -moz-animation-duration: 3.0s;
+    -moz-animation-fill-mode: both;
+    -moz-animation-timing-function: steps(2, start);
+}
