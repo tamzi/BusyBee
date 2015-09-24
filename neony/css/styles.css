@@ -68,3 +68,29 @@ body {
     text-transform: uppercase;
     color: #222; text-shadow: 0px 2px 3px #555;
 }
+.content #switch {
+   color:#999;
+   position: absolute;
+   top: 1em;
+   left: 1em;
+   cursor: pointer;
+}
+.content {
+    position: relative;
+    width: 700px;
+    padding: 2em;
+    margin: 1em auto;
+    background-color: #222;
+    border-radius: 12px;
+}
+h1 {
+    text-align: center;
+    margin: 0.5em auto;
+    letter-spacing: 0.15em;
+    font-family: "Advent Pro";
+    font-weight: 700;
+    font-size: 4.6em;
+    text-transform: uppercase;
+    color: #6d5669;
+    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
+}
