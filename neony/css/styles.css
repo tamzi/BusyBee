@@ -1,2 +1,8 @@
     /*Your Custom Style sheet goes here*/
-font-family: 'Lato', sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:700);
+@-webkit-keyframes turnonlights {
+    0%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    1%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de}
+    4%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de}
+    7%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    8%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de}
