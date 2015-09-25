@@ -103,4 +103,32 @@ li:hover .label {
     transform: translateZ(-100px) translateX(0) rotateY(180deg);
   }
 }
+/*===== Boring stuff =====*/
 
+body {
+  background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/creampaper.png);
+  font-family: Ubuntu, Helvetica, Arial, sans;
+  padding: 20px;
+  text-shadow: 0px 1px 1px #FFF;
+}
+
+.container {
+  margin: 0 auto;
+  width: 425px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-bottom: 20px;
+  overflow: hidden;
+  /* contain floats */
+}
+
+li {
+  float: left;
+  margin-right: 10px;
+
+}
