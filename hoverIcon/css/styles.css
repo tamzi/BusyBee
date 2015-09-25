@@ -62,4 +62,45 @@ li:hover .label {
 .slow li:hover .label {
   animation-duration: 2s;
 }
+@keyframes rotateIn {
+  0% {
+    opacity: 0;
+    transform: translateZ(-100px) translateX(0) rotateY(180deg);
+  }
+  /*
+    We need to reset it back to negative to avoid it flipping around like crazy
+    Comment this line out to see what I mean.
+  */
+
+  1% {
+    transform: translateZ(-100px) rotateY(-180deg);
+  }
+  50% {
+    opacity: 0.5;
+    z-index: 1;
+    transform: translateZ(-50px) translateX(-25px) rotateY(-90deg);
+  }
+  100% {
+    opacity: 1;
+    z-index: 1;
+    transform: translateZ(0) translateX(0) rotateY(0deg);
+  }
+}
+
+@keyframes rotateOut {
+  0% {
+    opacity: 1;
+    transform: translateZ(0) translateX(0) rotateY(0deg);
+  }
+  50% {
+    opacity: 0.5;
+    z-index: 0;
+    transform: translateZ(-50px) translateX(25px) rotateY(90deg);
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+    transform: translateZ(-100px) translateX(0) rotateY(180deg);
+  }
+}
 
