@@ -37,3 +37,29 @@ li:nth-of-type(2n+5) .icon {
   position: absolute;
   top: 17px;
 }
+/*===== Animation (ie: the good stuff) =====*/
+
+li:hover .icon,
+.label {
+  transform: translateZ(-32px) rotateY(180deg);
+  animation-duration: 0.33s;
+  animation-name: rotateOut;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.icon,
+li:hover .label {
+  animation-duration: 0.33s;
+  animation-name: rotateIn;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.slow .icon,
+.slow .label,
+.slow li:hover .icon,
+.slow li:hover .label {
+  animation-duration: 2s;
+}
+
