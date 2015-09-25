@@ -1,2 +1,39 @@
     /*Your Custom Style sheet goes here*/
-font-family: 'Lato', sans-serif;
+/*===== Presentational/layout stuff =====*/
+
+li {
+  position: relative;
+  text-align: center;
+  width: 75px;
+  /* Decrease this number to *increase* the 3D effect (and vice versa). */
+  perspective: 250 !important;
+}
+
+.icon {
+  background: url(http://lorempixel.com/50/50/nature/1);
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+
+li:nth-of-type(2n+2) .icon {
+  background: url(http://lorempixel.com/50/50/nature/2);
+}
+
+li:nth-of-type(2n+3) .icon {
+  background: url(http://lorempixel.com/50/50/nature/3);
+}
+
+li:nth-of-type(2n+4) .icon {
+  background: url(http://lorempixel.com/50/50/nature/4);
+}
+
+li:nth-of-type(2n+5) .icon {
+  background: url(http://lorempixel.com/50/50/nature/5);
+}
+
+.label {
+  left: 20px;
+  position: absolute;
+  top: 17px;
+}
