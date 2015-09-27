@@ -61,3 +61,38 @@ function newGradient(gradient) {
   return grad;
 }
 
+function animate() {
+  if (!trackmouse) {
+    per.x = mX = w / 2 + Math.round(Math.cos(per.step) * w / 2);
+    per.y = mY = h / 2 + Math.round(Math.sin(per.step) * h / 2);
+    per.step += 0.03;
+    if (per.step > twoPI)
+      per.step = 0;
+  }
+
+  c.save();
+  c.globalCompositeOperation = "source-over";
+  c.fillStyle = newGradient({
+    type: "radial",
+    x1: mX,
+    y1: mY,
+    r1: 0,
+    r2: w,
+    stops: [{
+        s: 0,
+        c: "rgba(" + (h - mY) + "," + (h - mY) + "," + (h - mY) + ",0.5)"
+      }, {
+        s: 0.05,
+        c: "rgba(" + (h - mY) + "," + (h - mY - 128) + ",128,0.5)"
+      }, {
+        s: 1,
+        c: "rgba(0," + (h - mY - 128) + "," + (h - mY) + ",0.5)"
+      }
+
+    ]
+  });
+  c.fillRect(0, 0, w, h);
+  mtn.draw();
+}
+
+
