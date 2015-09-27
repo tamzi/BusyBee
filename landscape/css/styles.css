@@ -6,3 +6,11 @@
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box
 }
+
+body
+{
+	font-size:75%;
+	background:#222;
+	font-family:arial;
+	padding:20px 0 0 20px
+}
