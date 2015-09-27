@@ -14,3 +14,11 @@ body
 	font-family:arial;
 	padding:20px 0 0 20px
 }
+
+canvas
+{
+	border:1px solid #181818;
+	display:block;
+	box-shadow:0 0 10px #111;
+	background:rgba(20,20,20,1)
+}
