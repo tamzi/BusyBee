@@ -43,3 +43,21 @@ window.onload = function() {
   window.setInterval(animate, 17);
 }
 
+function newGradient(gradient) {
+  var grad;
+  switch (gradient.type) {
+    case "radial":
+      grad = c.createRadialGradient(gradient.x1, gradient.y1, gradient.r1, gradient.x1, gradient.y1, gradient.r2);
+      break;
+    case "linear":
+      grad = c.createLinearGradient(gradient.x1, gradient.y1, gradient.x2, gradient.y2);
+      break;
+  }
+
+  for (var i = 0; i < gradient.stops.length; i++) {
+    grad.addColorStop(gradient.stops[i].s, gradient.stops[i].c);
+  }
+
+  return grad;
+}
+
