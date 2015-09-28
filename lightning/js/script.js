@@ -37,3 +37,22 @@ var canvasLightning = function(c, cw, ch) {
     return !(x1 + w1 < x2 || x2 + w2 < x1 || y1 + h1 < y2 || y2 + h2 < y1);
   };
 
+ /*=============================================================================*/
+  /* Create Lightning
+  /*=============================================================================*/
+  this.createL = function(x, y, canSpawn) {
+    this.lightning.push({
+      x: x,
+      y: y,
+      xRange: this.rand(5, 30),
+      yRange: this.rand(5, 25),
+      path: [{
+        x: x,
+        y: y
+      }],
+      pathLimit: this.rand(10, 35),
+      canSpawn: canSpawn,
+      hasFired: false
+    });
+  };
+
