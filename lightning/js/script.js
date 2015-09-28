@@ -219,3 +219,17 @@ var setupRAF = function() {
     };
   };
 };
+/*=============================================================================*/
+/* Define Canvas and Initialize
+/*=============================================================================*/
+$(window).load(function() {
+  if (isCanvasSupported) {
+    var c = document.getElementById('canvas');
+    var cw = c.width = window.innerWidth;
+    var ch = c.height = window.innerHeight;
+    var cl = new canvasLightning(c, cw, ch);
+
+    setupRAF();
+    cl.init();
+  }
+});
