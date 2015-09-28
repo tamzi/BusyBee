@@ -149,3 +149,13 @@ var canvasLightning = function(c, cw, ch) {
     }
   }
 
+  /*=============================================================================*/
+  /* Clear Canvas
+  /*=============================================================================*/
+  this.clearCanvas = function() {
+    this.ctx.globalCompositeOperation = 'destination-out';
+    this.ctx.fillStyle = 'rgba(0,0,0,' + this.rand(1, 30) / 100 + ')';
+    this.ctx.fillRect(0, 0, this.cw, this.ch);
+    this.ctx.globalCompositeOperation = 'source-over';
+  };
+
