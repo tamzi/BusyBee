@@ -167,3 +167,19 @@ var canvasLightning = function(c, cw, ch) {
     _this.ch = _this.c.height = window.innerHeight;
   });
 
+ /*=============================================================================*/
+  /* Animation Loop
+  /*=============================================================================*/
+  this.loop = function() {
+    var loopIt = function() {
+      requestAnimationFrame(loopIt, _this.c);
+      _this.clearCanvas();
+      _this.updateL();
+      _this.lightningTimer();
+      _this.renderL();
+    };
+    loopIt();
+  };
+
+};
+
