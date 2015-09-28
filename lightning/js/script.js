@@ -106,3 +106,29 @@ var canvasLightning = function(c, cw, ch) {
 
       var pathCount = light.path.length;
       this.ctx.moveTo(light.x, light.y);
+	   for (var pc = 0; pc < pathCount; pc++) {
+
+        this.ctx.lineTo(light.path[pc].x, light.path[pc].y);
+
+        if (light.canSpawn) {
+          if (this.rand(0, 100) == 0) {
+            light.canSpawn = false;
+            this.createL(light.path[pc].x, light.path[pc].y, false);
+          }
+        }
+      }
+
+      if (!light.hasFired) {
+        this.ctx.fillStyle = 'rgba(255, 255, 255, ' + this.rand(4, 12) / 100 + ')';
+        this.ctx.fillRect(0, 0, this.cw, this.ch);
+      }
+
+      if (this.rand(0, 30) == 0) {
+        this.ctx.fillStyle = 'rgba(255, 255, 255, ' + this.rand(1, 3) / 100 + ')';
+        this.ctx.fillRect(0, 0, this.cw, this.ch);
+      }
+
+      this.ctx.stroke();
+    };
+  };
+
