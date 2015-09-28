@@ -56,3 +56,23 @@ var canvasLightning = function(c, cw, ch) {
     });
   };
 
+ /*=============================================================================*/
+  /* Update Lightning
+  /*=============================================================================*/
+  this.updateL = function() {
+    var i = this.lightning.length;
+    while (i--) {
+      var light = this.lightning[i];
+
+      light.path.push({
+        x: light.path[light.path.length - 1].x + (this.rand(0, light.xRange) - (light.xRange / 2)),
+        y: light.path[light.path.length - 1].y + (this.rand(0, light.yRange))
+      });
+
+      if (light.path.length > light.pathLimit) {
+        this.lightning.splice(i, 1)
+      }
+      light.hasFired = true;
+    };
+  };
+
