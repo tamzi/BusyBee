@@ -132,3 +132,20 @@ var canvasLightning = function(c, cw, ch) {
     };
   };
 
+  /*=============================================================================*/
+  /* Lightning Timer
+  /*=============================================================================*/
+  this.lightningTimer = function() {
+    this.lightTimeCurrent++;
+    if (this.lightTimeCurrent >= this.lightTimeTotal) {
+      var newX = this.rand(100, cw - 100);
+      var newY = this.rand(0, ch / 2);
+      var createCount = this.rand(1, 3);
+      while (createCount--) {
+        this.createL(newX, newY, true);
+      }
+      this.lightTimeCurrent = 0;
+      this.lightTimeTotal = this.rand(30, 100);
+    }
+  }
+
