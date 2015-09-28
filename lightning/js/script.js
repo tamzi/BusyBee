@@ -76,3 +76,33 @@ var canvasLightning = function(c, cw, ch) {
     };
   };
 
+ /*=============================================================================*/
+  /* Render Lightning
+  /*=============================================================================*/
+  this.renderL = function() {
+    var i = this.lightning.length;
+    while (i--) {
+      var light = this.lightning[i];
+
+      this.ctx.strokeStyle = 'hsla(0, 100%, 100%, ' + this.rand(10, 100) / 100 + ')';
+      this.ctx.lineWidth = 1;
+      if (this.rand(0, 30) == 0) {
+        this.ctx.lineWidth = 2;
+      }
+      if (this.rand(0, 60) == 0) {
+        this.ctx.lineWidth = 3;
+      }
+      if (this.rand(0, 90) == 0) {
+        this.ctx.lineWidth = 4;
+      }
+      if (this.rand(0, 120) == 0) {
+        this.ctx.lineWidth = 5;
+      }
+      if (this.rand(0, 150) == 0) {
+        this.ctx.lineWidth = 6;
+      }
+
+      this.ctx.beginPath();
+
+      var pathCount = light.path.length;
+      this.ctx.moveTo(light.x, light.y);
