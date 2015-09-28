@@ -159,3 +159,11 @@ var canvasLightning = function(c, cw, ch) {
     this.ctx.globalCompositeOperation = 'source-over';
   };
 
+ /*=============================================================================*/
+  /* Resize on Canvas on Window Resize
+  /*=============================================================================*/
+  $(window).on('resize', function() {
+    _this.cw = _this.c.width = window.innerWidth;
+    _this.ch = _this.c.height = window.innerHeight;
+  });
+
