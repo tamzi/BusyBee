@@ -12,3 +12,18 @@ var canvasLightning = function(c, cw, ch) {
     this.loop();
   };
 
+/*=============================================================================*/
+  /* Variables
+  /*=============================================================================*/
+  var _this = this;
+  this.c = c;
+  this.ctx = c.getContext('2d');
+  this.cw = cw;
+  this.ch = ch;
+  this.mx = 0;
+  this.my = 0;
+
+  this.lightning = [];
+  this.lightTimeCurrent = 0;
+  this.lightTimeTotal = 50;
+
