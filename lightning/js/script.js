@@ -182,4 +182,10 @@ var canvasLightning = function(c, cw, ch) {
   };
 
 };
-
+/*=============================================================================*/
+/* Check Canvas Support
+/*=============================================================================*/
+var isCanvasSupported = function() {
+  var elem = document.createElement('canvas');
+  return !!(elem.getContext && elem.getContext('2d'));
+};
