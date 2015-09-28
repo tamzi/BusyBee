@@ -1,6 +1,3 @@
-# {Project Title gos here}
-This project.....
+# Lightning
 
-
-Add your readMe here. Its attached to all the projects.
-Explain what your project does etc
+Lightning in a dark night...no clouds
