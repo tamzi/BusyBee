@@ -38,7 +38,6 @@ var Application = ( function () {
             init: init
         };
 
-
     }());
 
  Application.init();
