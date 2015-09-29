@@ -111,3 +111,28 @@ canvas {
     animation-delay: 8s;
 }
 
+@keyframes asd {
+    0% {
+        top: -20%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+h1 {
+    z-index: 3;
+    position: absolute;
+    font: bold 200px/200px Arial, sans-serif;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    width: 100%;
+    margin-left: -50%;
+    height: 200px;
+    text-align: center;
+    color: transparent;
+    text-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    animation: asdd 2s linear infinite;
+}
+
