@@ -40,3 +40,5 @@ var Application = ( function () {
 
 
     }());
+
+ Application.init();
