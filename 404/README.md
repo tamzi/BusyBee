@@ -1,6 +1,2 @@
-# {Project Title gos here}
-This project.....
-
-
-Add your readMe here. Its attached to all the projects.
-Explain what your project does etc
+# 404 page
+Like the one that shos when the tv loses its signal.
