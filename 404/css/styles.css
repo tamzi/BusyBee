@@ -19,3 +19,20 @@ canvas {
     height: 100%;
 }
 
+.caps {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: as 8s linear infinite;
+}
+
+.caps img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
