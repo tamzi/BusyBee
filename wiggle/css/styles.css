@@ -20,3 +20,21 @@ b {
   border-radius: 5%;
   transform: rotate(-10deg);
 }
+b:nth-child(1) {
+  width: 20px;
+  height: 20px;
+  left: -10px;
+  top: -10px;
+  -webkit-filter: blur(0.3px);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+  animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 50ms infinite alternate;
+}
+b:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  left: -20px;
+  top: -20px;
+  -webkit-filter: blur(0.6px);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
+  animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 100ms infinite alternate;
+}
