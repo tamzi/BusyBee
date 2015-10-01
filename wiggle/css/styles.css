@@ -190,3 +190,12 @@ b:nth-child(16) {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
   animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 750ms infinite alternate;
 }
+b:nth-child(17) {
+  width: 340px;
+  height: 340px;
+  left: -170px;
+  top: -170px;
+  -webkit-filter: blur(5.1px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 750ms infinite alternate;
+}
