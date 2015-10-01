@@ -39,6 +39,31 @@ b:nth-child(2) {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
   animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 100ms infinite alternate;
 }
+			/*
+				formula of adding boxes
+				For each new box you want to add:
+				n is previous box number
+				z was the original measurement of height and width
+				g was the previous left and right space depth
+				k was the previous blur
+				{Box shadow} and
+				{animation: wiggle} stay the same
+
+				Add or reduce the seconds to have a variated wiggle
+
+			*/
+
+b:nth-child(n+1) {
+  width: z+20px;
+  height: z+20px;
+  left: -(g+10)px;
+  top: -(g+10)px;
+	-webkit-filter: blur([k+ 0.3]px);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
+  animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 100ms infinite alternate;
+}
+
+
 b:nth-child(3) {
   width: 60px;
   height: 60px;
