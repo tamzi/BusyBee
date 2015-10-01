@@ -20,6 +20,7 @@ b {
   border-radius: 5%;
   transform: rotate(-10deg);
 }
+
 b:nth-child(1) {
   width: 20px;
   height: 20px;
@@ -37,4 +38,49 @@ b:nth-child(2) {
   -webkit-filter: blur(0.6px);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
   animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 100ms infinite alternate;
+}
+b:nth-child(3) {
+  width: 60px;
+  height: 60px;
+  left: -30px;
+  top: -30px;
+  -webkit-filter: blur(0.9px);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+  animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 150ms infinite alternate;
+}
+b:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: -40px;
+  top: -40px;
+  -webkit-filter: blur(1.2px);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+  animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 200ms infinite alternate;
+}
+b:nth-child(5) {
+  width: 100px;
+  height: 100px;
+  left: -50px;
+  top: -50px;
+  -webkit-filter: blur(1.5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 250ms infinite alternate;
+}
+b:nth-child(6) {
+  width: 120px;
+  height: 120px;
+  left: -60px;
+  top: -60px;
+  -webkit-filter: blur(1.8px);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 300ms infinite alternate;
+}
+b:nth-child(7) {
+  width: 140px;
+  height: 140px;
+  left: -70px;
+  top: -70px;
+  -webkit-filter: blur(2.1px);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.9);
+  animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 350ms infinite alternate;
 }
