@@ -49,21 +49,26 @@ b:nth-child(2) {
 				{Box shadow} stays the same
 				{animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 100ms**This has to change}
 				animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) hms infinite alternate;
-				hms increases by 50
-
+				hms  is the time for the snale like movementt. Delays of 50 allow for the smooth lik transition.
+				increases by 50 ms
 				Add or reduce the seconds to have a variated wiggle
+
+
+				The Formula
+
+				 b:nth-child(n+1) {
+				  width: z+20px;
+				  height: z+20px;
+				  left: -(g+10)px;
+				  top: -(g+10)px;
+					-webkit-filter: blur([k+ 0.3]px);
+				  box-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
+				  animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) (h+50)ms infinite alternate;
+				}
 
 			*/
 
-b:nth-child(n+1) {
-  width: z+20px;
-  height: z+20px;
-  left: -(g+10)px;
-  top: -(g+10)px;
-	-webkit-filter: blur([k+ 0.3]px);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
-  animation: wiggle 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) (h+50)ms infinite alternate;
-}
+
 
 
 b:nth-child(3) {
