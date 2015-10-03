@@ -248,6 +248,20 @@ function stackBlurCanvasRGBA(canvas, top_x, top_y, width, height, radius) {
       stack = stack.next;
     }
 
+    for (i = 1; i < radiusPlus1; i++) {
+      p = yi + ((widthMinus1 < i ? widthMinus1 : i) << 2);
+      r_sum += (stack.r = (pr = pixels[p])) * (rbs = radiusPlus1 - i);
+      g_sum += (stack.g = (pg = pixels[p + 1])) * rbs;
+      b_sum += (stack.b = (pb = pixels[p + 2])) * rbs;
+      a_sum += (stack.a = (pa = pixels[p + 3])) * rbs;
+
+      r_in_sum += pr;
+      g_in_sum += pg;
+      b_in_sum += pb;
+      a_in_sum += pa;
+
+      stack = stack.next;
+    }
 
 
 
