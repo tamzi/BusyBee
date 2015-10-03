@@ -411,6 +411,11 @@ function stackBlurCanvasRGBA(canvas, top_x, top_y, width, height, radius) {
       yi += width;
     }
   }
+	  context.putImageData(imageData, top_x, top_y);
+
+}
+
+
 
 
 
