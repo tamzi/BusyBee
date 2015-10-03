@@ -216,5 +216,17 @@ function stackBlurCanvasRGBA(canvas, top_x, top_y, width, height, radius) {
     if (i == radiusPlus1) var stackEnd = stack;
   }
 
+  stack.next = stackStart;
+  var stackIn = null;
+  var stackOut = null;
+
+  yw = yi = 0;
+
+  var mul_sum = mul_table[radius];
+  var shg_sum = shg_table[radius];
+
+  for (y = 0; y < height; y++) {
+    r_in_sum = g_in_sum = b_in_sum = a_in_sum = r_sum = g_sum = b_sum = a_sum = 0;
+
 
 
