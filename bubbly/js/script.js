@@ -48,3 +48,19 @@ window.onload = function() {
     return fauxCanvas;
   }
 
+  Snow.prototype.draw = function() {
+    this.ctx.drawImage(this.data, this.x, this.y);
+    return this;
+  };
+
+  Snow.prototype.tick = function() {
+    ++this.seed;
+    if (this.outOfBounds()) {
+      this.y = 0;
+      this.x = Math.random() * this.canvas.width;
+    }
+    this.y += this.depth / 7;
+    this.applyWind();
+    this.draw();
+  }
+
