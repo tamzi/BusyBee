@@ -62,6 +62,19 @@ z = particleCount;
     sketch.clear = function () {
         return sketch.clearRect(0, 0, sketch.width, sketch.height);
     };
+	sketch.update = function () {
+        var i, results;
+        i = particles.length;
+        results = [];
+        while (i--) {
+            if (window.CP.shouldStopExecution(2)) {
+                break;
+            }
+            results.push(particles[i].update());
+        }
+        window.CP.exitedLoop(2);
+        return results;
+    };
 
 
 }.call(this));
