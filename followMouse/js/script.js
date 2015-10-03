@@ -42,6 +42,15 @@
                 return this.vy = -random(1, 10) / 5;
             }
         },
+		    render: function () {
+            sketch.beginPath();
+            sketch.arc(this.x, this.y, this.radius, 0, TWO_PI);
+            sketch.closePath();
+            sketch.fillStyle = 'hsla(' + this.hue + ', 60%, 40%, .35)';
+            sketch.fill();
+            return sketch.stroke();
+        }
+    };
 
 
 
