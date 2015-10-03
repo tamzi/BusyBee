@@ -163,5 +163,32 @@ function stackBlurImage(imageID, canvasID, radius, blurAlphaChannel) {
     stackBlurCanvasRGB(canvasID, 0, 0, w, h, radius);
 }
 
+function stackBlurCanvasRGBA(canvas, top_x, top_y, width, height, radius) {
+  if (isNaN(radius) || radius < 1) return;
+  radius |= 0;
+
+  var context = canvas.getContext("2d");
+  var imageData;
+
+  try {
+    try {
+      imageData = context.getImageData(top_x, top_y, width, height);
+    } catch (e) {
+
+
+      try {
+        netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
+        imageData = context.getImageData(top_x, top_y, width, height);
+      } catch (e) {
+        alert("Cannot access local image");
+        throw new Error("unable to access local image data: " + e);
+        return;
+      }
+    }
+  } catch (e) {
+    alert("Cannot access image");
+    throw new Error("unable to access image data: " + e);
+  }
+
 
 
