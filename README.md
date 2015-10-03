@@ -1,2 +1,3 @@
 # BusyBee
-FrontEnd Projects Repo
+FrontEnd code snippets
+
