@@ -51,7 +51,17 @@
             return sketch.stroke();
         }
     };
-
+z = particleCount;
+    while (z--) {
+        if (window.CP.shouldStopExecution(1)) {
+            break;
+        }
+        particles.push(new Particle());
+    }
+    window.CP.exitedLoop(1);
+    sketch.clear = function () {
+        return sketch.clearRect(0, 0, sketch.width, sketch.height);
+    };
 
 
 }.call(this));
