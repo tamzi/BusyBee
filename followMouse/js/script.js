@@ -75,6 +75,15 @@ z = particleCount;
         window.CP.exitedLoop(2);
         return results;
     };
+	 sketch.draw = function () {
+        var i, results;
+        i = particles.length;
+        results = [];
+        while (i--) {
+            results.push(particles[i].render());
+        }
+        return results;
+    };
 
 
 }.call(this));
