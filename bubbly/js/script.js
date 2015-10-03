@@ -21,3 +21,30 @@ window.onload = function() {
   ctx.globalCompositeOperation = 'xor';
   document.body.appendChild(elm);
 
+ var Snow = function(canvas) {
+    this.canvas = canvas;
+    this.depth = Math.floor(Math.random() * 20);
+    this.seed = Math.random() * 2500;
+    this.data = this.generateFlake();
+    this.x = Math.random() * this.canvas.width;
+    this.y = Math.random() * this.canvas.height;
+    this.ctx = this.canvas.getContext('2d');
+  }
+
+  Snow.prototype.generateFlake = function() {
+    var fauxCanvas = document.createElement('canvas');
+    fauxCanvas.setAttribute("height", 150);
+    fauxCanvas.setAttribute("width", 150);
+    var fauxContext = fauxCanvas.getContext('2d');
+
+    fauxContext.beginPath();
+    fauxContext.fillStyle = "#FFF";
+
+    fauxContext.rect(this.depth, this.depth, this.depth % 20, this.depth % 20);
+    fauxContext.fill();
+    fauxContext.closePath();
+    stackBlurCanvasRGBA(fauxCanvas, 0, 0, 100, 100, this.depth)
+
+    return fauxCanvas;
+  }
+
