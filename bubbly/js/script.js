@@ -191,8 +191,29 @@ function stackBlurCanvasRGBA(canvas, top_x, top_y, width, height, radius) {
       }
     }
   } catch (e) {
-    alert("Cannot access image");
-    throw new Error("unable to access image data: " + e);
+    alert("Can't gain access to the image");
+    throw new Error("unable to access the image data: " + e);
+  }
+
+  var pixels = imageData.data;
+
+  var x, y, i, p, yp, yi, yw, r_sum, g_sum, b_sum, a_sum,
+    r_out_sum, g_out_sum, b_out_sum, a_out_sum,
+    r_in_sum, g_in_sum, b_in_sum, a_in_sum,
+    pr, pg, pb, pa, rbs;
+
+  var div = radius + radius + 1;
+  var w4 = width << 2;
+  var widthMinus1 = width - 1;
+  var heightMinus1 = height - 1;
+  var radiusPlus1 = radius + 1;
+  var sumFactor = radiusPlus1 * (radiusPlus1 + 1) / 2;
+
+  var stackStart = new BlurStack();
+  var stack = stackStart;
+  for (i = 1; i < div; i++) {
+    stack = stack.next = new BlurStack();
+    if (i == radiusPlus1) var stackEnd = stack;
   }
 
 
