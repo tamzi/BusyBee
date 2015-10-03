@@ -64,3 +64,40 @@ window.onload = function() {
     this.draw();
   }
 
+  Snow.prototype.outOfBounds = function() {
+    return this.y + 1 > this.canvas.height || this.x > this.canvas.width || this.x < 0;
+  }
+
+  Snow.prototype.applyWind = function() {
+    if (winds[this.depth]) {
+      this.y += winds[this.depth].yRate;
+      this.x += winds[this.depth].xRate;
+    }
+  }
+
+  for (var i = 0; i < count; ++i) {
+    var id = i + "_" + (new Date()).getTime()
+    flakes[id] = new Snow(elm, id).draw();
+  }
+
+  for (var i = 0; i < 3; ++i) {
+    depth = ~~(Math.random() * 20);
+    winds[depth] = {
+      xRate: Math.random() * 2,
+      yRate: Math.random() * 2,
+      depth: depth
+    };
+  }
+
+  function tick() {
+    ctx.clearRect(0, 0, elm.width, elm.height);
+    for (flake in flakes) {
+      flakes[flake].tick();
+    }
+  }
+
+  tick();
+
+  setInterval(tick, 16)
+}
+
