@@ -240,6 +240,14 @@ function stackBlurCanvasRGBA(canvas, top_x, top_y, width, height, radius) {
 
     stack = stackStart;
 
+    for (i = 0; i < radiusPlus1; i++) {
+      stack.r = pr;
+      stack.g = pg;
+      stack.b = pb;
+      stack.a = pa;
+      stack = stack.next;
+    }
+
 
 
 
