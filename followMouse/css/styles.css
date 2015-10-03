@@ -1,2 +1,5 @@
     /*Your Custom Style sheet goes here*/
-font-family: 'Lato', sans-serif;
+canvas {
+  background: #023;
+  display: block;
+}
