@@ -1,2 +1,14 @@
     /*Your Custom Style sheet goes here*/
 
+div {
+	font-family: 'Lato', sans-serif;
+	font-size: 80px;
+	text-align: center;
+
+	top: 40%;
+	width: 99%;
+	display: table-cell;
+	vertical-align: middle;
+
+	cursor: pointer;
+}
