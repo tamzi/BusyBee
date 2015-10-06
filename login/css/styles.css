@@ -1,2 +1,12 @@
     /*Your Custom Style sheet goes here*/
 font-family: 'Lato', sans-serif;
+
+
+$color: #999;
+$color-bg: #eaeaea;
+
+$font-family: sans-serif;
+$font-size: 16px;
+$font-weight: 400;
+
+$line-height: 1.5em;
