@@ -24,3 +24,40 @@ for (t in text) {
   dom.appendChild(span);
 
 }
+
+
+var SECONDS = 1000;
+var FPS = 30;
+var animationLength = 2 * SECONDS;
+
+var time, k;
+
+var rand = Math.random;
+
+animations = [
+
+  function animate1(k) {
+    dom.style.webkitTransform = 'translateX(' + ~~(k * 300) + 'px)';
+  },
+
+  function animate2(k) {
+
+    for (i = 0; i < 5; i++) {
+      chars[i].innerHTML = String.fromCharCode(~~(65 + rand() * 26));
+    }
+
+  },
+
+  function animate3(k) {
+
+    // left to right
+
+    kk = k * 5;
+    for (i = 0; i < 5; i++) {
+      if (kk < i)
+        chars[i].innerHTML = String.fromCharCode(~~(65 + rand() * 26)) //65/97
+      else
+        chars[i].innerHTML = text[i];
+    }
+
+  },
