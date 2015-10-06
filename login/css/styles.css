@@ -80,3 +80,19 @@ input[type="submit"] { cursor: pointer; }
   transform: translate(-50%, -50%);
 }
 
+/* ---------- LOGIN-FORM ---------- */
+
+#login-form {
+	width: 300px;
+}
+
+#login-form h3 {
+	background-color: #282830;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	font-size: 14px;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
