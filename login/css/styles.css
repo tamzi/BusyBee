@@ -10,3 +10,44 @@ $font-size: 16px;
 $font-weight: 400;
 
 $line-height: 1.5em;
+
+/* ---------- GENERAL ---------- */
+
+* {
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+
+}
+
+body {
+	background: $color-bg;
+	color: $color;
+  font: $font-weight #{$font-size}/#{$line-height} $font-family;
+	margin: 0;
+}
+
+h3 { margin: 0; }
+
+a {
+	color: #999;
+	text-decoration: none;
+}
+
+a:hover { color: #1dabb8; }
+
+fieldset {
+	border: none;
+	margin: 0;
+}
+
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	margin: 0;
+	-webkit-appearance: none;
+}
