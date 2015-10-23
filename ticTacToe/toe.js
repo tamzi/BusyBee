@@ -46,3 +46,17 @@ $(document).ready(function() {
     COMPUTER_CLASS = 'cross';
     $(".board__settings").css('visibility', 'hidden');
   });
+
+
+  /* Difficulty selected */
+  $("div[class*=board__difficulty__button]").click(function() {
+    var difficulty = $(this).attr("id");
+
+    if (difficulty === 'easy') MAX_DEPTH = 1;
+    else if (difficulty === 'medium') MAX_DEPTH = 3;
+    else MAX_DEPTH = 6;
+
+    $(".board__difficulty").removeClass('slideDown').addClass('slideUp');
+    new_game();
+
+  });
