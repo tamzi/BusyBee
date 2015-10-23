@@ -127,3 +127,23 @@ function get_available_moves(state) {
 function full(state) {
   return !get_available_moves(state).length;
 }
+
+
+/* Given a state of the board, returns true if the specified player has won */
+function wins(state, player) {
+  var win;
+
+  for (var i = 0; i < WIN_COMBOS.length; i++) {
+    win = true;
+    for (var j = 0; j < WIN_COMBOS[i].length; j++) {
+      if (state[WIN_COMBOS[i][j]] != player) {
+        win = false;
+      }
+    }
+    if (win) {
+      return true;
+    }
+  }
+  return false;
+}
+
