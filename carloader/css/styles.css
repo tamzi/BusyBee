@@ -65,3 +65,71 @@ body {
   background-color: #000;
   border-radius: 10px 10px 0 0;
 }
+.wheel_back {
+  width: 25px;
+  height: 25px;
+  bottom: 0;
+  left: 15px;
+  position: absolute;
+  background-color: #000;
+  border-radius: 50%;
+  animation: wheel_rotate 0.3s infinite linear;
+  -webkit-animation: wheel_rotate 0.3s infinite linear;
+}
+.wheel_back::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  z-index: 2;
+  background-color: #000;
+  border-radius: 50%;
+}
+.wheel_back::after {
+  content: "";
+  width: 10px;
+  height: 17px;
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.wheel_front {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  background-color: #000;
+  border-radius: 50%;
+  animation: wheel_rotate 0.3s infinite linear;
+  -webkit-animation: wheel_rotate 0.3s infinite linear;
+}
+.wheel_front::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  z-index: 2;
+  background-color: #000;
+  border-radius: 50%;
+}
+.wheel_front::after {
+  content: "";
+  width: 10px;
+  height: 17px;
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
