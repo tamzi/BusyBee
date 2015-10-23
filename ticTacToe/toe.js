@@ -164,4 +164,48 @@ function score(state) {
   }
 }
 
+/* Finds the optimal decision for the AI */
+function minimax(state, player, depth) {
+  if (depth >= MAX_DEPTH || terminal(state)) {
+    return score(state);
+  }
+
+  var max_score,
+    min_score,
+    scores = [],
+    moves = [],
+    opponent = (player == "X") ? "O" : "X",
+    successors = get_available_moves(state);
+
+  for (var s in successors) {
+    var possible_state = state;
+    possible_state[successors[s]] = player;
+    scores.push(minimax(possible_state, opponent, depth + 1));
+    possible_state[successors[s]] = "";
+    moves.push(successors[s]);
+  }
+
+  if (player == "X") {
+    AI_MOVE = moves[0];
+    max_score = scores[0];
+    for (var s in scores) {
+      if (scores[s] > max_score) {
+        max_score = scores[s];
+        AI_MOVE = moves[s];
+      }
+    }
+    return max_score;
+  } else {
+    AI_MOVE = moves[0];
+    min_score = scores[0];
+    for (var s in scores) {
+      if (scores[s] < min_score) {
+        min_score = scores[s];
+        AI_MOVE = moves[s];
+      }
+    }
+    return min_score;
+  }
+}
+
 
