@@ -175,4 +175,20 @@ body {
   animation-delay: 1.2s;
   -webkit-animation-delay: 1.2s;
 }
-
+.road {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 53%;
+  z-index: 1;
+  background-color: #c1c1c1;
+  box-shadow: 0 0 10px rgba(170, 170, 170, 0.7);
+}
+.road::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  border-bottom: 3px dashed #fff;
+}
