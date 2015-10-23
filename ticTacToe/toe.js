@@ -111,3 +111,19 @@ function new_game() {
 
   RUNNING = true;
 }
+
+
+/* For a given state of the board, returns all the available moves */
+function get_available_moves(state) {
+  var all_moves = Array.apply(null, {
+    length: NUM_SQUARES
+  }).map(Number.call, Number);
+  return all_moves.filter(function(i) {
+    return state[i] == "";
+  });
+}
+
+/* Given a state of the board, returns true if the board is full */
+function full(state) {
+  return !get_available_moves(state).length;
+}
