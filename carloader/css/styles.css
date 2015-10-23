@@ -1,2 +1,67 @@
     /*Your Custom Style sheet goes here*/
 font-family: 'Lato', sans-serif;
+
+
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fde07c;
+}
+.preloader_horizontal {
+  min-width: 100px;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  overflow: hidden;
+  -webkit-transform: translateZ(0px) translate(-50%, 0);
+  transform: translateZ(0px) translate(0, 0);
+  z-index: 2;
+}
+.animate_element {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  animation: horisontal_move 8s infinite linear;
+  -webkit-animation: horisontal_move 8s infinite linear;
+}
+.animate_auto_up {
+  width: 75px;
+  height: 20px;
+  position: absolute;
+  bottom: 28px;
+  left: 20px;
+  background-color: #000;
+  border-radius: 20px 20px 0 0;
+}
+.animate_auto_up::before {
+  background-color: #fff;
+  content: "";
+  width: 30px;
+  height: 15px;
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  border-radius: 0 25px 0 0;
+}
+.animate_auto_up::after {
+  content: "";
+  width: 30px;
+  height: 15px;
+  left: 5px;
+  position: absolute;
+  top: 3px;
+  border-radius: 15px 0 0;
+  background-color: #fff;
+}
+.animate_auto_down {
+  width: 120px;
+  height: 18px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  background-color: #000;
+  border-radius: 10px 10px 0 0;
+}
