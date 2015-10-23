@@ -1,2 +1,20 @@
     /*Your Custom Style sheet goes here*/
 font-family: 'Lato', sans-serif;
+
+@charset "UTF-8";
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.social__item {
+   display: inline-block;
+   margin-right: 0.1em;
+}
