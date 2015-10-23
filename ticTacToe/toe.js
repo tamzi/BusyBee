@@ -95,3 +95,19 @@ $(document).ready(function() {
     }
   });
 });
+
+
+/* Starts a new game */
+function new_game() {
+  /* Clear the table */
+  $(".board__slot").each(function() {
+    $(this).removeClass(PLAYER_CLASS + ' player-color computer-color ' + COMPUTER_CLASS);
+  });
+
+  /* Clear the gameboard */
+  for (var i = 0; i < NUM_SQUARES; i++) {
+    GAMEBOARD[i] = "";
+  }
+
+  RUNNING = true;
+}
