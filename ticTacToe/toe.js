@@ -60,3 +60,38 @@ $(document).ready(function() {
     new_game();
 
   });
+
+
+  /* Process a square being clicked */
+  $(".board__slot").click(function() {
+    if (RUNNING) {
+      var pos = Number($(this).attr("id"));
+
+      /* If the square is empty, process the click */
+      if (GAMEBOARD[pos] == "") {
+        $(this).addClass(PLAYER_CLASS + ' player-color');
+        GAMEBOARD[pos] = "X";
+
+        if (full(GAMEBOARD)) {
+          RUNNING = false;
+          $(".board__header-difficulty").html("It's a tie!");
+          $(".board__difficulty").removeClass('slideUp').addClass('slideDown');
+        } else if (wins(GAMEBOARD, "X")) {
+          RUNNING = false;
+          $(".board__header-difficulty").html("You win!");
+          $(".board__difficulty").removeClass('slideUp').addClass('slideDown');
+        } else {
+          minimax(GAMEBOARD, "O", 0);
+          GAMEBOARD[AI_MOVE] = "O";
+          $(".board__slot[id=" + AI_MOVE + "]").addClass(COMPUTER_CLASS + ' computer-color');
+
+          if (wins(GAMEBOARD, "O")) {
+            RUNNING = false;
+            $(".board__header-difficulty").html("You lost!");
+            $(".board__difficulty").removeClass('slideUp').addClass('slideDown');
+          }
+        }
+      }
+    }
+  });
+});
