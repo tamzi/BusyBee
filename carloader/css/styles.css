@@ -133,3 +133,46 @@ body {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
+.smoke {
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: -60px;
+}
+.smoke_item {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  opacity: 0.3;
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  background-color: #000;
+  border-radius: 50%;
+}
+.smoke_item1 {
+  animation: smoke1 1.5s infinite ease-out;
+  -webkit-animation: smoke1 1.5s infinite ease-out;
+}
+.smoke_item2 {
+  animation: smoke2 1.5s infinite ease-out;
+  -webkit-animation: smoke2 1.5s infinite ease-out;
+  animation-delay: .4s;
+  -webkit-animation-delay: .4s;
+}
+.smoke_item3 {
+  animation: smoke1 1.5s infinite ease-out;
+  -webkit-animation: smoke1 1.5s infinite ease-out;
+  animation-delay: .8s;
+  -webkit-animation-delay: .8s;
+}
+.smoke_item4 {
+  animation: smoke2 1.5s infinite ease-out;
+  -webkit-animation: smoke1 1.5s infinite ease-out;
+  animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+}
+
