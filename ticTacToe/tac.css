@@ -118,3 +118,69 @@ body {
   border-radius: 51px;
   border: 3px solid rgba(0, 0, 0, 0.2);
 }
+
+
+.board__settings__choice, .board__settings__choice-cross, .board__settings__choice-nought {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin: 5px;
+  z-index: 99;
+  padding-top: 8px;
+}
+@media (min-width: 450px) {
+  .board__settings__choice, .board__settings__choice-cross, .board__settings__choice-nought {
+    height: 110px;
+    width: 110px;
+    border-radius: 30px;
+  }
+}
+.board__settings__choice-cross {
+  font-size: .7em;
+}
+.board__settings__choice-nought {
+  font-size: .2em;
+}
+.board__settings__choice:hover, .board__settings__choice-cross:hover, .board__settings__choice-nought:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.board__settings__choice:active, .board__settings__choice-cross:active, .board__settings__choice-nought:active {
+  border: 2px solid rgba(0, 0, 0, 0.09);
+}
+
+.board__settings__choice-cross {
+  font-family: 'FontAwesome';
+  font-size: 2.3em;
+  cursor: pointer;
+}
+@media (min-width: 450px) {
+  .board__settings__choice-cross {
+    font-size: 3em;
+    top: 15px;
+  }
+}
+.board__settings__choice-cross:before {
+  color: white;
+  content: "";
+}
+
+.board__settings__choice-nought {
+  font-family: 'FontAwesome';
+  font-size: 2.3em;
+  cursor: pointer;
+}
+@media (min-width: 450px) {
+  .board__settings__choice-nought {
+    font-size: 2.8em;
+    top: 10px;
+  }
+}
+.board__settings__choice-nought:before {
+  color: white;
+  content: "";
+}
