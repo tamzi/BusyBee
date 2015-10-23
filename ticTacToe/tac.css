@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,300);
+body {
+  font-family: Arial;
+  background-color: #BB4A9F;
+  background-image: -webkit-linear-gradient(-320deg, #BB4A9F 0%, #E4E5D7 35%, #BEE8D7 65%, #51C8C8 90%);
+  background-image: linear-gradient(50deg,#BB4A9F 0%, #E4E5D7 35%, #BEE8D7 65%, #51C8C8 90%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.board-default, .board, .board__settings, .board__difficulty {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.board-default:before, .board:before, .board__settings:before, .board__difficulty:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border-radius: 51px;
+  border: 15px solid rgba(0, 0, 0, 0.05);
+}
+@media (min-width: 450px) {
+  .board-default, .board, .board__settings, .board__difficulty {
+    width: 400px;
+    height: 400px;
+  }
+}
