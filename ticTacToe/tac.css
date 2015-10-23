@@ -247,3 +247,43 @@ body {
   border-color: transparent;
   cursor: pointer;
 }
+
+
+.board__difficulty__button:hover:before, .board__difficulty__button-easy:hover:before, .board__difficulty__button-medium:hover:before, .board__difficulty__button-hard:hover:before, .board__difficulty__button:hover:after, .board__difficulty__button-easy:hover:after, .board__difficulty__button-medium:hover:after, .board__difficulty__button-hard:hover:after {
+  box-shadow: 0 15px 12px rgba(31, 31, 31, 0.7);
+}
+.board__difficulty__button-easy {
+  margin-top: 70px;
+}
+@media (min-width: 450px) {
+  .board__difficulty__button, .board__difficulty__button-easy, .board__difficulty__button-medium, .board__difficulty__button-hard {
+    padding: 10px 40px;
+    font-size: 2em;
+    width: 200px;
+  }
+}
+
+.nought:before, .cross:before {
+  font-family: 'FontAwesome';
+  font-size: 3em;
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+  cursor: default;
+}
+@media (min-width: 450px) {
+  .nought:before, .cross:before {
+    font-size: 5em;
+    top: 15px;
+  }
+}
+
+.nought:before {
+  content: "";
+}
+
+.cross:before {
+  content: "";
+}
