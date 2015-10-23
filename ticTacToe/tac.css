@@ -184,3 +184,66 @@ body {
   color: white;
   content: "";
 }
+
+
+.board__difficulty {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  text-align: center;
+  background-color: rgba(223, 244, 239, 0.8);
+}
+
+.board__header, .board__header-settings, .board__header-difficulty {
+  font-family: 'PT Sans', Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.5em;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+}
+@media (min-width: 450px) {
+  .board__header, .board__header-settings, .board__header-difficulty {
+    font-size: 2em;
+  }
+}
+
+.board__difficulty__button, .board__difficulty__button-easy, .board__difficulty__button-medium, .board__difficulty__button-hard {
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  font-family: 'PT Sans', arial, sans-serif;
+  font-size: 1em;
+  width: 150px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #000;
+  text-transform: uppercase;
+}
+.board__difficulty__button:before, .board__difficulty__button-easy:before, .board__difficulty__button-medium:before, .board__difficulty__button-hard:before, .board__difficulty__button:after, .board__difficulty__button-easy:after, .board__difficulty__button-medium:after, .board__difficulty__button-hard:after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  transition: all 250ms ease-out;
+  bottom: 15px;
+  width: 50%;
+  height: 20%;
+  box-shadow: 0 10px 30px rgba(31, 31, 31, 0.5);
+}
+.board__difficulty__button:before, .board__difficulty__button-easy:before, .board__difficulty__button-medium:before, .board__difficulty__button-hard:before {
+  left: 8px;
+  transform: rotate(-3deg);
+}
+.board__difficulty__button:after, .board__difficulty__button-easy:after, .board__difficulty__button-medium:after, .board__difficulty__button-hard:after {
+  right: 8px;
+  transform: rotate(3deg);
+}
+.board__difficulty__button:hover, .board__difficulty__button-easy:hover, .board__difficulty__button-medium:hover, .board__difficulty__button-hard:hover {
+  border-color: transparent;
+  cursor: pointer;
+}
