@@ -18,3 +18,31 @@ var NUM_ROWS = 3,
   PLAYER_CLASS = 'cross',
   COMPUTER_CLASS = 'nought',
   RUNNING = false;
+
+
+$(document).ready(function() {
+  /* Start a new game */
+  new_game();
+
+  /* Settings cog clicked, show the settings menu */
+  $(".board__settings-cog").click(function() {
+    if ($(".board__settings").css('visibility') == 'hidden') {
+      $(".board__settings").css('visibility', 'visible');
+    } else {
+      $(".board__settings").css('visibility', 'hidden');
+    }
+  });
+
+  /* Player class has been switched from the settings menu */
+  $(".board__settings__choice-cross").click(function() {
+    PLAYER_CLASS = 'cross';
+    COMPUTER_CLASS = 'nought';
+    $(".board__settings").css('visibility', 'hidden');
+    console.log('set class to cross');
+  });
+
+  $(".board__settings__choice-nought").click(function() {
+    PLAYER_CLASS = 'nought';
+    COMPUTER_CLASS = 'cross';
+    $(".board__settings").css('visibility', 'hidden');
+  });
