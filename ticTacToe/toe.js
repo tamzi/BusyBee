@@ -147,3 +147,21 @@ function wins(state, player) {
   return false;
 }
 
+
+/* Given a state of the board, returns true if the board is full or a player has won */
+function terminal(state) {
+  return full(state) || wins(state, "X") || wins(state, "O");
+}
+
+/* Returns the value of a state of the board */
+function score(state) {
+  if (wins(state, "X")) {
+    return 10;
+  } else if (wins(state, "O")) {
+    return -10;
+  } else {
+    return 0;
+  }
+}
+
+
