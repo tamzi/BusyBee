@@ -58,3 +58,43 @@ header svg {
   background-repeat: no-repeat;
   background-size: cover;
 }
+/**
+ * Card styles
+ */
+.card {
+  overflow: hidden;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 5px 5px rgba(0,0,0,.22);
+  transition: box-shadow .25s ease-in;
+  &:focus,
+  &:hover {box-shadow: 0 13px 8px rgba(0,0,0,.22);}
+}
+.card-img {width: 100%;}
+.card-img-overlay {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: background .25s ease-in;
+  background: rgba(0,0,0,.31);
+}
+.card .card-img-overlay:focus,
+.card .card-img-overlay:hover {
+  background: rgba(0,0,0,.15);
+}
+.card-img-overlay > .card-block {align-self: flex-end;}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.card-inverse .card-text {color: #fff;}
+.card a {
+  color: rgba(255,255,255,1);
+  transition: color .25s ease-in;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: rgba(255,255,255,.5);
+  }
+}
+.
