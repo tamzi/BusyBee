@@ -6,6 +6,40 @@ function init() {
   var animationOn = false;
 
 
+var viewBoxes = {
+    "overHouses": {
+      x: 43,
+      y: 290,
+      width: 130,
+      height: 67
+    },
+    "overSnowmen": {
+      x: 250,
+      y: 325,
+      width: 225,
+      height: 115
+    },
+    "overPenguins": {
+      x: 634,
+      y: 310,
+      width: 95,
+      height: 140
+    },
+    "overHanging": {
+      x: 774,
+      y: 416,
+      width: 49,
+      height: 38
+    },
+    "overSkilift": {
+      x: 897,
+      y: 284,
+      width: 217,
+      height: 130,
+    }
+  };
+
+
 
 
 
