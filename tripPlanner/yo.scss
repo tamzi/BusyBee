@@ -98,3 +98,22 @@ header svg {
   }
 }
 .
+btn {
+  position: fixed;
+  right: 2.25rem;
+  bottom: -4rem;
+  padding: .9rem .9rem;
+  line-height: 0;
+  background-color: #e91e63;
+  border-radius: 50%;
+  box-shadow: 0 8px 8px rgba(0,0,0,.22);
+  transition: box-shadow .25s ease-in;
+  &:focus,
+  &:hover {box-shadow: 0 13px 8px rgba(0,0,0,.3);}
+  &:focus svg,
+  &:hover svg {fill: rgba(255,255,255,.5);}
+}
+.btn svg {
+  fill: rgba(255,255,255,.9);
+  transition: fill .25s ease-in;
+}
