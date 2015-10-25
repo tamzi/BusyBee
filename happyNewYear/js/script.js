@@ -1,12 +1,12 @@
-        /*Your Custom Javascript file goes here.*/
+        /*Javascript file to handlethe various effects.*/
+
 
 function init() {
   var svg = document.querySelector(".scene");
   var zoom = false;
   var animationOn = false;
 
-
-var viewBoxes = {
+  var viewBoxes = {
     "overHouses": {
       x: 43,
       y: 290,
@@ -55,8 +55,7 @@ var viewBoxes = {
     hangingDom = svg.querySelectorAll("#hanging > g"),
     letters = svg.querySelectorAll("#letters path");
 
-
-function startScene() {
+  function startScene() {
 
     TweenMax.set([svg.querySelector("#leftSkiLift"), svg.querySelector("#rightSkiLift")], {
       y: -600
@@ -116,8 +115,317 @@ function startScene() {
 
   }
 
+  function openBox() {
+    document.querySelector(".gift").removeEventListener("click", openBox);
+    TweenMax.set(".hat", {
+      transformOrigin: "left bottom"
+    });
+    TweenMax.to(".hat", 1, {
+      rotationZ: -80,
+      x: -500,
+      opacity: 0,
+      ease: Power2.easeIn
+    });
+    TweenMax.to(".box", 1, {
+      y: 800,
+      ease: Power2.easeIn
+    });
+    TweenMax.to(".gift", 1, {
+      opacity: 0,
+      delay: 1,
+      onStart: function() {
+        startScene();
+      },
+      onComplete: function() {
+        document.querySelector(".gift").classList.add("hidden");
+      }
+    });
+  }
 
-//SNOW
+  function startAnimations() {
+    animationOn = true;
+
+    //Ski Lift
+    var skilift = new TimelineMax({
+      repeat: -1,
+      repeatDelay: 0.5
+    });
+    skilift.to(skiliftDom.querySelector("#lift"), 7, {
+      x: 145,
+      y: -64,
+      ease: Power1.easeInOut
+    });
+    skilift.to(skiliftDom.querySelector("#lift"), 7, {
+      x: 0,
+      y: 0,
+      ease: Power1.easeInOut
+    }, "+=.5");
+
+    //Ski Lift
+    houses.smoke1 = houses.dom.querySelectorAll("#smokes > g:nth-child(5) path");
+    houses.smoke2 = houses.dom.querySelectorAll("#smokes > g:nth-child(4) path");
+    houses.smoke3 = houses.dom.querySelectorAll("#smokes > g:nth-child(3) path");
+    houses.smoke4 = houses.dom.querySelectorAll("#smokes > g:nth-child(2) path");
+    houses.smoke5 = houses.dom.querySelectorAll("#smokes > g:nth-child(1) path");
+    TweenMax.staggerTo(houses.smoke1, 4, {
+      y: -11,
+      opacity: 0,
+      repeat: -1,
+      ease: Linear.easeNone
+    }, 0.5);
+    TweenMax.staggerTo(houses.smoke2, 4, {
+      y: -13,
+      opacity: 0,
+      repeat: -1,
+      ease: Linear.easeNone
+    }, 0.5);
+    TweenMax.staggerTo(houses.smoke3, 4, {
+      y: -9,
+      opacity: 0,
+      repeat: -1,
+      ease: Linear.easeNone
+    }, 0.8);
+    TweenMax.staggerTo(houses.smoke4, 4, {
+      y: -14,
+      opacity: 0,
+      repeat: -1,
+      ease: Linear.easeNone
+    }, 1);
+    TweenMax.staggerTo(houses.smoke5, 7, {
+      y: -17,
+      opacity: 0,
+      repeat: -1,
+      ease: Linear.easeNone
+    }, 1.3);
+
+    //Hanging
+    var hanging = new TimelineMax({
+      repeat: -1
+    });
+    TweenMax.set(hangingDom, {
+      transformOrigin: "center top"
+    });
+    TweenMax.set(hangingDom[0], {
+      rotationZ: 10
+    });
+    TweenMax.set(hangingDom[1], {
+      rotationZ: 5
+    });
+    TweenMax.set(hangingDom[2], {
+      rotationZ: -13
+    });
+    TweenMax.set(hangingDom[3], {
+      rotationZ: -8
+    });
+    TweenMax.set(hangingDom[4], {
+      rotationZ: 15
+    });
+    TweenMax.to(hangingDom[0], 3, {
+      rotationZ: -10,
+      ease: Power1.easeInOut,
+      repeat: -1,
+      yoyo: true
+    });
+    TweenMax.to(hangingDom[1], 2, {
+      rotationZ: -5,
+      ease: Power1.easeInOut,
+      repeat: -1,
+      yoyo: true
+    });
+    TweenMax.to(hangingDom[2], 5, {
+      rotationZ: 13,
+      ease: Power1.easeInOut,
+      repeat: -1,
+      yoyo: true
+    });
+    TweenMax.to(hangingDom[3], 4, {
+      rotationZ: 8,
+      ease: Power1.easeInOut,
+      repeat: -1,
+      yoyo: true
+    });
+    TweenMax.to(hangingDom[4], 3, {
+      rotationZ: -15,
+      ease: Power1.easeInOut,
+      repeat: -1,
+      yoyo: true
+    });
+
+    //Pinguins
+    var penguins1 = new TimelineMax({
+      repeat: -1
+    });
+    penguins1.to(penguinsDom[0], 3, {
+      x: 35,
+      y: 90,
+      ease: Power2.easeIn
+    });
+    penguins1.set(penguinsDom[0], {
+      x: 0,
+      y: 0,
+      opacity: 0,
+      scale: 0
+    });
+    penguins1.to(penguinsDom[0], 0.7, {
+      opacity: 1,
+      scale: 1
+    }, "+=1");
+
+    var penguins2 = new TimelineMax({
+      repeat: -1,
+      delay: 1
+    });
+    penguins2.to(penguinsDom[1], 3, {
+      x: 34,
+      y: 90,
+      ease: Power2.easeIn
+    });
+    penguins2.set(penguinsDom[1], {
+      x: 0,
+      y: 0,
+      opacity: 0,
+      scale: 0
+    });
+    penguins2.to(penguinsDom[1], 0.7, {
+      opacity: 1,
+      scale: 1
+    }, "+=1");
+
+    var penguins3 = new TimelineMax({
+      repeat: -1
+    });
+    penguins3.staggerTo(babyPenguins, 4, {
+      x: 39,
+      y: 100,
+      ease: Power2.easeIn
+    }, 1.1);
+    penguins3.set(babyPenguins, {
+      opacity: 0,
+      x: 0,
+      y: 0,
+      scale: 0
+    });
+    penguins3.staggerTo(babyPenguins, 0.7, {
+      opacity: 1,
+      scale: 1
+    }, .2);
+    penguins3.progress(.5);
+
+    //Snowman hat
+    TweenMax.set(handHat, {
+      transformOrigin: "70% bottom"
+    });
+    TweenMax.to(handHat, 3, {
+      rotationZ: 20,
+      yoyo: true,
+      repeat: -1,
+      ease: Power1.easeInOut
+    });
+    TweenMax.set(eyesHat, {
+      transformOrigin: "center center"
+    });
+    var eyesHatTl = new TimelineMax({
+      repeat: -1,
+      repeatDelay: 1.5
+    });
+    eyesHatTl.to(eyesHat, 0.1, {
+      scaleY: 0
+    });
+    eyesHatTl.to(eyesHat, 0.1, {
+      scaleY: 1
+    });
+
+    //Snowman elf
+    var elfButtonsTl = new TimelineMax({
+      repeat: -1
+    });
+    elfButtonsTl.set(elfButtons[0], {
+      fill: "#EE4250"
+    });
+    elfButtonsTl.set(elfButtons[0], {
+      fill: "#22BC34"
+    }, "+=0.3");
+    elfButtonsTl.set(elfButtons[1], {
+      fill: "#EE4250"
+    });
+    elfButtonsTl.set(elfButtons[1], {
+      fill: "#22BC34"
+    }, "+=0.3");
+    elfButtonsTl.set(elfButtons[2], {
+      fill: "#EE4250"
+    });
+    elfButtonsTl.set(elfButtons[2], {
+      fill: "#22BC34"
+    }, "+=0.3");
+
+    TweenMax.set(elfBow, {
+      transformOrigin: "center center"
+    })
+    var elfBowTl = new TimelineMax({
+      repeat: -1,
+      repeatDelay: .4
+    });
+    elfBowTl.to(elfBow, 0.4, {
+      scaleX: 1.6
+    });
+    elfBowTl.to(elfBow, 0.8, {
+      scaleX: 1,
+      ease: Elastic.easeOut
+    });
+
+    TweenMax.set(elfMan.querySelector("#elfLeftArm"), {
+      transformOrigin: "right top",
+      rotationZ: 55
+    });
+    TweenMax.to(elfMan.querySelector("#elfLeftArm"), 1, {
+      rotationZ: 100,
+      yoyo: true,
+      repeat: -1,
+      ease: Power1.easeInOut
+    });
+    TweenMax.set(elfMan.querySelector("#elfRightArm"), {
+      transformOrigin: "left top",
+      rotationZ: -60
+    });
+    TweenMax.to(elfMan.querySelector("#elfRightArm"), 1, {
+      rotationZ: -110,
+      yoyo: true,
+      repeat: -1,
+      ease: Power1.easeInOut,
+      delay: -0.21
+    });
+
+    //Snowman scard
+    TweenMax.to(scarfMan.querySelector("#pieceScarfMan"), 3, {
+      rotationZ: -18,
+      yoyo: true,
+      repeat: -1,
+      ease: Linear.easeNone
+    });
+
+    var scarfManTl = new TimelineMax({
+      repeat: -1,
+      repeatDelay: 1
+    });
+    TweenMax.set(scarfMan, {
+      transformOrigin: "center bottom"
+    });
+    scarfManTl.to(scarfMan, 0.2, {
+      scaleY: 0.92
+    });
+    scarfManTl.to(scarfMan, 0.6, {
+      scaleY: 1.07,
+      y: -8
+    });
+    scarfManTl.to(scarfMan, 0.4, {
+      scaleY: 1,
+      y: 0,
+      ease: Power1.easeIn
+    });
+
+  }
+
+  //SNOW
   var snow = svg.querySelector("#snow").querySelectorAll("ellipse, path");
   var snows = [
     [],
@@ -270,7 +578,6 @@ function startScene() {
 
 }
 
-
 //preload images
 var glass = new Image()
 glass.src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/glass-01.png";
@@ -279,6 +586,5 @@ cross.src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/cross.png";
 
 window.onload = function() {
   init();
-
-
 };
+
