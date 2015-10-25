@@ -39,7 +39,21 @@ var viewBoxes = {
     }
   };
 
-
+  var skiliftDom = svg.querySelector("#skilift"),
+    houses = {
+      dom: svg.querySelector("#houses")
+    },
+    penguinsDom = svg.querySelectorAll("#penguins > g"),
+    babyPenguins = [penguinsDom[2], penguinsDom[3], penguinsDom[4]],
+    snowManHat = svg.querySelector("#hatman"),
+    handHat = snowManHat.querySelector("#handhat_1_"),
+    eyesHat = snowManHat.querySelector("#eyesHatMan"),
+    elfMan = svg.querySelector("#elfman"),
+    elfButtons = elfMan.querySelectorAll("#elfButtons circle"),
+    elfBow = elfMan.querySelectorAll("#bowElf"),
+    scarfMan = svg.querySelector("#scarfman"),
+    hangingDom = svg.querySelectorAll("#hanging > g"),
+    letters = svg.querySelectorAll("#letters path");
 
 
 
