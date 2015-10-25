@@ -1,0 +1,35 @@
+// Remy
+@function remy($value) {
+  @return ($value / 16px) * 1rem;
+}
+/**
+ * Scrollbar hacks
+ */
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {width: .85rem;}
+::-webkit-scrollbar-track {background: #666;}
+::-webkit-scrollbar-thumb {
+  width: .85rem;
+  height: 45px;
+  background: #222;
+}
+::-webkit-scrollbar-thumb:hover {background: #111;}
+/**
+ * Base
+ */
+body {
+  font: 100% / 1.414 "Roboto", arial, sans-serif;
+  background-color: #f1f1f1;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: remy(480px);
+  height: remy(640px);
+  box-shadow: 0 5px 5px rgba(0,0,0,.22);
+  transform: translateY(-50%);
+}
