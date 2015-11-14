@@ -146,3 +146,34 @@ $menuTextAT: $menuItemSlideAT + $menuItemClickedAT / 2;
     }
   }
 
+      &__menu-item {
+    height: 6rem;
+    padding-left: 2rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.8rem;
+    line-height: 6rem;
+    color: #7F91A4;
+    background-color: rgba(#7F91A4, 0);
+    opacity: 0;
+    transform: translateX(-1rem);
+    transition: opacity $menuItemSlideAT $menuItemClickedAT / 2, transform $menuItemSlideAT $menuItemClickedAT / 2;
+    cursor: pointer;
+
+    &.clicked {
+      animation: menuItemClicked $menuItemClickedAT;
+    }
+
+    .demo.menu-active &  {
+      opacity: 1;
+      transform: translateX(0);
+
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+          transition: opacity $menuItemSlideAT $animStep + ($i - 1) * 0.15s, transform $menuItemSlideAT $animStep + ($i - 1) * 0.15s;
+        }
+      }
+    }
+  }
+
+
+}
