@@ -1,1 +1,1 @@
-        /*Your Custom Javascript file goes here.*/
+        /*A no js file.*/
