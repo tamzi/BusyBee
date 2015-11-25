@@ -76,3 +76,47 @@ body {
   display: block;
   cursor: pointer;
 }
+
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked ~ label:after {
+  transform: rotate(45deg);
+  color: tomato;
+}
+input[type="checkbox"]:checked ~ .content {
+  max-height: 1000px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 10px;
+  margin-top: 10px;
+  padding: 0 25px;
+  transition: max-height 0.25s ease-in;
+}
+.content {
+  max-height: 0;
+  overflow: hidden;
+}
+.content blockquote {
+  position: relative;
+}
+.content blockquote:before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: 0;
+  height: 100%;
+  border-left: 2px solid #fcd000;
+}
+[data-color=red]:after {
+  background-color: #ff3c41 !important;
+}
+[data-color=blue]:after {
+  background-color: #2cb5e8 !important;
+}
+[data-color=green]:after {
+  background-color: #47cf73 !important;
+}
+[data-color=yellow]:after {
+  background-color: #fcd000 !important;
+}
