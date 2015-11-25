@@ -14,7 +14,6 @@ body {
   font-weight: normal;
   letter-spacing: 20px;
 }
-
 .activity-feed {
   list-style-type: none;
   padding: 0;
@@ -76,8 +75,6 @@ body {
   display: block;
   cursor: pointer;
 }
-
-
 input[type="checkbox"] {
   display: none;
 }
