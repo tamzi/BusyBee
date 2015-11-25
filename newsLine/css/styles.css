@@ -14,3 +14,65 @@ body {
   font-weight: normal;
   letter-spacing: 20px;
 }
+
+.activity-feed {
+  list-style-type: none;
+  padding: 0;
+  margin: 50px 50px 50px 60px;
+}
+.activity-feed .feed-item {
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 25px;
+  padding-left: 30px;
+  border-left: 2px solid #ddd;
+}
+.activity-feed .feed-item:last-child {
+  border-color: transparent;
+}
+.activity-feed .feed-item:before {
+  content: attr(data-time);
+  display: flex;
+  width: 100px;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  left: -50px;
+  top: -22px;
+  font-size: 12px;
+  color: #999;
+}
+.activity-feed .feed-item::after {
+  content: attr(data-content);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: -21px;
+  width: 40px;
+  height: 40px;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 50%;
+  color: white;
+  background-color: #ddd;
+}
+.activity-feed .feed-item section {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid #f0f0f0;
+}
+.activity-feed .feed-item section:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.activity-feed .feed-item section label {
+  display: block;
+  cursor: pointer;
+}
