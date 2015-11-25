@@ -1,1 +1,1 @@
-        /*Your Custom Javascript file goes here.*/
+        /*This is a nO Js project.*/

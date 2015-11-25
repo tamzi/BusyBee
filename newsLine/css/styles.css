@@ -1,2 +1,16 @@
     /*Your Custom Style sheet goes here*/
-font-family: 'Lato', sans-serif;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+.banner {
+  background: linear-gradient(45deg, #2cb5e8, #47cf73);
+  padding: 25px 50px;
+}
+.banner h1 {
+  color: white;
+  font-weight: normal;
+  letter-spacing: 20px;
+}
